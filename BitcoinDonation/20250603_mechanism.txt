@@ -1,0 +1,131 @@
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 1 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+*week+1
+replace grant_all = 1 if week == 16
+replace grant_all = 1 if week == 21
+replace grant_all = 1 if week == 28 
+replace grant_all = 1 if week == 32 
+replace grant_all = 1 if week == 72
+
+*week+2
+replace grant_all = 1 if week == 17
+replace grant_all = 1 if week == 22
+replace grant_all = 1 if week == 29 
+replace grant_all = 1 if week == 33 
+replace grant_all = 1 if week == 73
+
+*week+3
+*replace grant_all = 1 if week == 18
+*replace grant_all = 1 if week == 23
+*replace grant_all = 1 if week == 30
+*replace grant_all = 1 if week == 34
+*replace grant_all = 1 if week == 74
+
+*week-1
+replace grant_all = 1 if week == 14
+replace grant_all = 1 if week == 19 
+replace grant_all = 1 if week == 26 
+replace grant_all = 1 if week == 30 
+replace grant_all = 1 if week == 70
+
+*cumlative number
+drop grant_sum
+gen grant_sum = 0
+replace grant_sum = 4 if week >= 15 
+replace grant_sum = 5 if week >= 20 
+replace grant_sum = 6 if week >= 27 
+replace grant_sum = 7 if week >= 31 
+replace grant_sum = 8 if week >= 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen halfyear=0
+replace halfyear = 1 if season == 0 | season == 1
+replace halfyear = 2 if season == 2 | season == 3
+replace halfyear = 3 if season == 4 | season == 5
+replace halfyear = 4 if season == 6 | season == 7
+replace halfyear = 5 if season == 8
+tab halfyear, gen(halfyear_dum)
+
+
+***工具变量
+**google trend
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+
+***异质性分析
+**所有活动总和
+*50 50
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 & sumAE>1 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 & sumAE>1 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 & sumAE>1 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 & sumAE>1 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 & sumAE==1 ,ffirst fe robust savefirst savefprefix(st11)
+est store second5
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 & sumAE==1 ,ffirst fe robust savefirst savefprefix(st12)
+est store second6
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 & sumAE==1 ,ffirst fe robust savefirst savefprefix(st13)
+est store second7
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 & sumAE==1 ,ffirst fe robust savefirst savefprefix(st14)
+est store second8
+esttab second1 second2 second3 second4 second5 second6 second7 second8, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_mechanism_1.csv
+
+
+**仓库数量
+*50 50
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount>=19 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount>=19 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount>=19 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount>=19 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount<19 ,ffirst fe robust savefirst savefprefix(st11)
+est store second5
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount<19 ,ffirst fe robust savefirst savefprefix(st12)
+est store second6
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount<19 ,ffirst fe robust savefirst savefprefix(st13)
+est store second7
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 & RepositoriesCount<19,ffirst fe robust savefirst savefprefix(st14)
+est store second8
+esttab second1 second2 second3 second4 second5 second6 second7 second8, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_mechanism_2.csv

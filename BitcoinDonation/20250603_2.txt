@@ -1,0 +1,327 @@
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 1 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+*week+1
+replace grant_all = 1 if week == 16
+replace grant_all = 1 if week == 21
+replace grant_all = 1 if week == 28 
+replace grant_all = 1 if week == 32 
+replace grant_all = 1 if week == 72
+
+*week+2
+replace grant_all = 1 if week == 17
+replace grant_all = 1 if week == 22
+replace grant_all = 1 if week == 29 
+replace grant_all = 1 if week == 33 
+replace grant_all = 1 if week == 73
+
+*week+3
+*replace grant_all = 1 if week == 18
+*replace grant_all = 1 if week == 23
+*replace grant_all = 1 if week == 30
+*replace grant_all = 1 if week == 34
+*replace grant_all = 1 if week == 74
+
+*week-1
+replace grant_all = 1 if week == 14
+replace grant_all = 1 if week == 19 
+replace grant_all = 1 if week == 26 
+replace grant_all = 1 if week == 30 
+replace grant_all = 1 if week == 70
+
+*cumlative number
+drop grant_sum
+gen grant_sum = 0
+replace grant_sum = 4 if week >= 15 
+replace grant_sum = 5 if week >= 20 
+replace grant_sum = 6 if week >= 27 
+replace grant_sum = 7 if week >= 31 
+replace grant_sum = 8 if week >= 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen halfyear=0
+replace halfyear = 1 if season == 0 | season == 1
+replace halfyear = 2 if season == 2 | season == 3
+replace halfyear = 3 if season == 4 | season == 5
+replace halfyear = 4 if season == 6 | season == 7
+replace halfyear = 5 if season == 8
+tab halfyear, gen(halfyear_dum)
+
+*累计人数 累计金额
+*48425
+drop donation_sum lndonation_sum
+gen donation_sum = 48425
+replace donation_sum = 48425 + 355000 if week >= 2
+replace donation_sum = 48425 + 355000 + 300000 if week >= 5
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 if week >= 18
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 if week >= 21
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 if week >= 24
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 if week >= 70
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 if week >= 71
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 + 100000 if week >= 73
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 + 100000 + 1550000 if week >= 74
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 + 100000 + 1550000 + 180000 if week >= 76
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 + 100000 + 1550000 + 180000 + 5000000 if week >= 77
+replace donation_sum = 48425 + 355000 + 300000 + 1000000 + 25000 + 50000 + 150000 + 100000 + 100000 + 1550000 + 180000 + 5000000 + 150000 if week >= 104
+replace donation_sum = donation_sum / 10000
+gen lndonation_sum = ln(donation_sum)
+gen lndonation_sum_grant_sum = lndonation_sum * grant_sum
+gen lndonation_sum_grant_all = lndonation_sum * grant_all
+
+***grantall是一个只和时间相关的变量，当控制了time-fixed effect之后无论星期月份季度半年都不显著了
+*基准回归-no time control 
+xtreg lnAll L.lnAll lndonation grant_all lndonation_grant_all lnVolume return lnFork lnWatch if granted==0 , fe robust
+est store main1
+xtreg lnCodeCon L.lnCodeCon lndonation grant_all lndonation_grant_all lnVolume return lnFork lnWatch if granted==0 , fe robust
+est store main2
+xtreg lnCodeRev L.lnCodeRev lndonation grant_all lndonation_grant_all lnVolume return lnFork lnWatch if granted==0 , fe robust
+est store main3
+xtreg lnISSUE L.lnISSUE lndonation grant_all lndonation_grant_all lnVolume return lnFork lnWatch if granted==0 , fe robust
+est store main4
+esttab main1 main2 main3 main4, varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a, fmt(%12.0f %12.0f %9.3f %9.3f)) nonumbers, using 20250603_main.csv
+
+
+***工具变量
+**google trend
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_IV.csv
+esttab st11lndonation st12lndonation st13lndonation st14lndonation st11lndonation_grant_all  st12lndonation_grant_all st13lndonation_grant_all st14lndonation_grant_all, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers
+
+
+***rubustness check (0,1)
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 1 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+*week+1
+replace grant_all = 1 if week == 16
+replace grant_all = 1 if week == 21
+replace grant_all = 1 if week == 28 
+replace grant_all = 1 if week == 32 
+replace grant_all = 1 if week == 72
+
+*cumlative number
+drop grant_sum
+gen grant_sum = 0
+replace grant_sum = 4 if week >= 15 
+replace grant_sum = 5 if week >= 20 
+replace grant_sum = 6 if week >= 27 
+replace grant_sum = 7 if week >= 31 
+replace grant_sum = 8 if week >= 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen halfyear=0
+replace halfyear = 1 if season == 0 | season == 1
+replace halfyear = 2 if season == 2 | season == 3
+replace halfyear = 3 if season == 4 | season == 5
+replace halfyear = 4 if season == 6 | season == 7
+replace halfyear = 5 if season == 8
+tab halfyear, gen(halfyear_dum)
+
+***工具变量
+**google trend
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_robust_1.csv
+esttab st11lndonation st12lndonation st13lndonation st14lndonation st11lndonation_grant_all  st12lndonation_grant_all st13lndonation_grant_all st14lndonation_grant_all, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers
+
+
+***rubustness check (-1,1)
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 1 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+*week+1
+replace grant_all = 1 if week == 16
+replace grant_all = 1 if week == 21
+replace grant_all = 1 if week == 28 
+replace grant_all = 1 if week == 32 
+replace grant_all = 1 if week == 72
+
+*week-1
+replace grant_all = 1 if week == 14
+replace grant_all = 1 if week == 19 
+replace grant_all = 1 if week == 26 
+replace grant_all = 1 if week == 30 
+replace grant_all = 1 if week == 70
+
+*cumlative number
+drop grant_sum
+gen grant_sum = 0
+replace grant_sum = 4 if week >= 15 
+replace grant_sum = 5 if week >= 20 
+replace grant_sum = 6 if week >= 27 
+replace grant_sum = 7 if week >= 31 
+replace grant_sum = 8 if week >= 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen halfyear=0
+replace halfyear = 1 if season == 0 | season == 1
+replace halfyear = 2 if season == 2 | season == 3
+replace halfyear = 3 if season == 4 | season == 5
+replace halfyear = 4 if season == 6 | season == 7
+replace halfyear = 5 if season == 8
+tab halfyear, gen(halfyear_dum)
+
+***工具变量
+**google trend
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_robust_2.csv
+esttab st11lndonation st12lndonation st13lndonation st14lndonation st11lndonation_grant_all  st12lndonation_grant_all st13lndonation_grant_all st14lndonation_grant_all, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers
+
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 4 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+*****人数
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_robust_3.csv
+
+
+*****累计人数
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_sum = lnsbbgtrend lnsbbgtrend_grant_sum) grant_sum l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_sum = lnsbbgtrend lnsbbgtrend_grant_sum) grant_sum l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_sum = lnsbbgtrend lnsbbgtrend_grant_sum) grant_sum l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_sum = lnsbbgtrend lnsbbgtrend_grant_sum) grant_sum l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers, using 20250603_robust_4.csv

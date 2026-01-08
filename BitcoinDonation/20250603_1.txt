@@ -1,0 +1,41 @@
+clear
+use "/Users/mengfan/Desktop/bitcoin_donation/BitcoinDonationData/STATA/BD_weekly_data.dta"
+drop _est_second1 _est_second2 _est_second3 _est_second4 _est_s1 _est_s2 _est_s11 _est_s22 _est_first1 _est_first2 _est_first3 _est_first4
+
+drop grant_all
+gen grant_all = 0
+*this week
+replace grant_all = 4 if week == 15 
+replace grant_all = 1 if week == 20 
+replace grant_all = 1 if week == 27 
+replace grant_all = 1 if week == 31 
+replace grant_all = 1 if week == 71
+
+drop lndonation_grant_all lndonation_grant_sum
+gen lndonation_grant_all = lndonation * grant_all
+gen lndonation_grant_sum = lndonation * grant_sum
+
+xtset id week_new
+replace grant_sum = grant_sum / 10
+drop lndonation
+gen lndonation = ln(donation/1000+1)
+replace lndonation_grant_sum = lndonation * grant_sum
+*replace lndonation_grant_all = lndonation * grant_all
+
+gen lnsbbgtrend_grant_all = lnsbbgtrend * grant_all
+*****人数
+**工具变量回归-no time control 
+*all
+xtivreg2 lnAll (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnAll lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st11)
+est store second1
+*con
+xtivreg2 lnCodeCon (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeCon lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st12)
+est store second2
+*rev
+xtivreg2 lnCodeRev (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnCodeRev lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st13)
+est store second3
+*iss
+xtivreg2 lnISSUE (lndonation lndonation_grant_all = lnsbbgtrend lnsbbgtrend_grant_all) grant_all l.lnISSUE lnVolume return lnFork lnWatch if granted==0 ,ffirst fe robust savefirst savefprefix(st14)
+est store second4
+esttab second1 second2 second3 second4, replace varwidth(25) nogap star(* 0.1 ** 0.05 *** 0.01) b(%8.3f) stats(N N_g F r2_a idstat widstat, fmt(%12.0f %12.0f %9.3f %9.3f %9.3f %9.3f)) nonumbers
+
