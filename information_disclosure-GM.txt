@@ -1,0 +1,44 @@
+### 2.3 Information Disclosure
+
+Information disclosure plays a pivotal role in mitigating information asymmetry between organizations and their stakeholders. In the context  of open-source software (OSS) and decentralized communities like  Bitcoin, disclosure serves not only as a mechanism for accountability  but also as a strategic tool for governance and signaling.
+
+#### 2.3.1 Voluntary Disclosure and Reducing Asymmetry
+
+The foundational literature on voluntary disclosure, rooted in  accounting and finance, posits that managers disclose information  voluntarily to reduce information asymmetry and the cost of capital. **Healy and Palepu (2001)** provide a comprehensive review, arguing that voluntary disclosure  allows high-quality firms to distinguish themselves from "lemons" in the market. In the absence of mandatory regulations, the decision to  disclose is a strategic choice influenced by the trade-off between the  benefits of transparency (e.g., increased trust, lower financing costs)  and the proprietary costs of revealing sensitive information (**Verrecchia, 1983**).
+
+In the non-profit and charitable sector, which closely resembles the  operational model of Bitcoin funding organizations like Brink,  disclosure is critical for building donor trust. **Saxton and Guo (2011)** demonstrate that web-based accountability and the voluntary disclosure  of financial information significantly increase charitable  contributions. For open-source foundations, disclosing how funds are  allocated serves a similar purpose: it assures the community that  resources are being used effectively to support the ecosystem’s  longevity.
+
+#### 2.3.2 Signaling Theory in Decentralized Environments
+
+Signaling theory (**Spence, 1973**) offers a theoretical lens to understand *why* organizations disclose specific information. When information asymmetry exists, high-quality agents (organizations) use costly signals—such as  detailed disclosure reports—to convey their unobservable quality to  principals (investors or developers). **Connelly et al. (2011)** emphasize that for a signal to be effective, it must be observable and costly to imitate.
+
+In the context of OSS, disclosure acts as a governance signal. Since  OSS communities lack traditional hierarchical management, project  leaders and foundations use information dissemination to guide developer behavior without issuing direct commands (**O'Mahony & Ferraro, 2007**). By disclosing donation activities, an organization signals its  financial health and its commitment to the project's values.  Furthermore, the *granularity* of the disclosure—whether it  reveals specific recipients (targeted) or general funding pools  (untargeted)—may send different signals regarding fairness and the  criteria for rewards, potentially influencing the "perceived  organizational support" among developers (**Eisenberger et al., 1986**).
+
+#### 2.3.3 Transparency as Community Governance
+
+Transparency is often cited as a core ethos of the open-source movement. **Granados et al. (2010)** distinguish between *transparent strategy* (revealing intentions) and *transparent operations* (revealing actions). In OSS, operational transparency—such as  publicizing code commits and financial grants—facilitates peer  monitoring and fosters a sense of community ownership.
+
+However, the literature also suggests that transparency is a  double-edged sword. While it builds trust, excessive or specific  transparency (e.g., disclosing individual rewards) can trigger social  comparison and equity concerns among peers. **Bernstein (2012)** argues that in some innovation contexts, too much transparency can  induce pressure that stifles creativity. This tension is particularly  relevant to our research question: while disclosing general donation  information (untargeted) may signal community support, disclosing  specific grantees (targeted) might trigger "expectancy disconfirmation"  or feelings of inequity among non-recipients, a dynamic that remains  underexplored in current OSS literature.
+
+------
+
+### **References for 2.3 (建议添加至参考文献列表)**
+
+以下是上述综述中引用的核心文献，请确保格式与您论文的整体参考文献格式保持一致：
+
+1. **Healy, P. M., & Palepu, K. G. (2001).** Information asymmetry, corporate disclosure, and the capital markets: A review of the empirical disclosure literature. *Journal of Accounting and Economics*, 31(1-3), 405-440. https://doi.org/10.1016/S0165-4101(01)00018-0
+   - *(经典文献：确立了自愿披露是为了减少信息不对称的核心观点)*
+2. **Verrecchia, R. E. (1983).** Discretionary disclosure. *Journal of Accounting and Economics*, 5, 179-194. https://doi.org/10.1016/0165-4101(83)90011-3
+   - *(经典文献：讨论了披露成本与收益的权衡)*
+3. **Saxton, G. D., & Guo, C. (2011).** Accountability online: Understanding the web-based accountability practices of nonprofit organizations. *Nonprofit and Voluntary Sector Quarterly*, 40(2), 270-295. https://doi.org/10.1177/0899764009341086
+   - *(非营利组织视角：证明了披露能增加捐赠和信任，非常贴合Brink这类组织的性质)*
+4. **Spence, M. (1973).** Job market signaling. *The Quarterly Journal of Economics*, 87(3), 355-374. https://doi.org/10.2307/1882010
+   - *(信号理论奠基之作)*
+5. **Connelly, B. L., Certo, S. T., Ireland, R. D., & Reutzel, C. R. (2011).** Signaling theory: A review and assessment. *Journal of Management*, 37(1), 39-67. https://doi.org/10.1177/0149206310388419
+   - *(管理学视角的信号理论综述，适合用来解释组织行为)*
+6. **O'Mahony, S., & Ferraro, F. (2007).** The emergence of governance in an open source community. *Academy of Management Journal*, 50(5), 1079-1106. https://doi.org/10.5465/amj.2007.27169153
+   - *(OSS治理经典：论述了非层级组织如何通过机制进行管理)*
+7. **Granados, N., Gupta, A., & Kauffman, R. J. (2010).** Information transparency in business-to-consumer markets: Concepts, framework, and research agenda. *Information Systems Research*, 21(2), 207-226. https://doi.org/10.1287/isre.1090.0249
+   - *(IS领域关于透明度策略的权威框架)*
+8. **Bernstein, E. S. (2012).** The transparency paradox: A role for privacy in organizational learning and operational control. *Administrative Science Quarterly*, 57(2), 181-216. https://doi.org/10.1177/0001839212453028
+   - *(反直觉观点：透明度过高可能带来的负面影响，为文中Targeted Disclosure可能带来的负面效应提供理论支持)*
