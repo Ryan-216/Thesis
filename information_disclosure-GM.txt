@@ -22,6 +22,28 @@ However, the literature also suggests that transparency is a  double-edged sword
 
 ------
 
+### 2.3 信息披露
+
+信息披露在缓解组织与其利益相关者之间的信息不对称方面发挥着关键作用。在开源软件 (OSS) 和比特币等去中心化社区的背景下，信息披露不仅是问责机制，也是治理和信号传递的战略工具。
+
+#### 2.3.1 自愿披露与减少信息不对称
+
+关于自愿披露的基础文献源于会计和金融领域，认为管理者自愿披露信息是为了减少信息不对称和降低资本成本。**Healy 和 Palepu (2001)** 对此进行了全面的回顾，认为自愿披露使优质企业能够在市场中脱颖而出，区别于“劣质”企业。在缺乏强制性法规的情况下，是否披露信息是一种战略选择，受到透明度带来的益处（例如，提高信任度、降低融资成本）与披露敏感信息所带来的专有成本之间权衡的影响（**Verrecchia, 1983**）。
+
+在非营利和慈善领域，其运营模式与 Brink 等比特币资助机构非常相似，信息披露对于建立捐赠者信任至关重要。**Saxton 和 Guo (2011)** 的研究表明，基于网络的问责制和自愿披露财务信息能够显著增加慈善捐款。对于开源基金会而言，披露资金分配方式也具有类似的作用：它能够确保社区确信资源得到了有效利用，从而支持生态系统的长期发展。
+
+#### 2.3.2 去中心化环境下的信号理论
+
+信号理论（**Spence，1973**）提供了一个理论视角，帮助我们理解组织披露特定信息的*原因*。当存在信息不对称时，高质量的主体（组织）会利用成本高昂的信号——例如详细的披露报告——向委托人（投资者或开发者）传递其难以直接观察到的品质。**Connelly 等人** （2011）**强调，一个信号要有效，必须具有可观察性和难以模仿的代价。
+
+在开源软件（OSS）领域，信息披露发挥着治理信号的作用。由于开源软件社区缺乏传统的层级管理，项目负责人和基金会通过信息传播来引导开发者的行为，而不是直接发布指令（**O'Mahony & Ferraro, 2007**）。通过披露捐赠活动，组织可以表明其财务状况以及对项目价值观的承诺。此外，信息披露的*粒度*——是披露特定受益人（定向捐赠）还是披露一般资金池（非定向捐赠）——可能会传递关于公平性和奖励标准的不同信号，从而可能影响开发者对“组织支持的感知”（**Eisenberger et al., 1986**）。
+
+#### 2.3.3 透明度作为社区治理
+
+透明度通常被认为是开源运动的核心精神。 Granados等人（2010）区分了“透明策略”（揭示意图）和“透明运营”（揭示行动）。在开源软件（OSS）领域，运营透明度——例如公开代码提交和财务拨款——有助于同行监督，并培养社区归属感。
+
+然而，文献也表明，透明度是一把双刃剑。虽然它能建立信任，但过度或具体的透明度（例如，披露个人奖励）可能会引发同行之间的社会比较和公平性担忧。Bernstein（2012）认为，在某些创新环境中，过多的透明度会带来压力，从而扼杀创造力。这种矛盾与我们的研究问题尤为相关：虽然披露一般捐赠信息（非定向）可能表明社区支持，但披露具体的受助者（定向）可能会引发“期望落空”或非受助者感到不公平，而这种动态在当前的开源软件文献中仍未得到充分探讨。
+
 ### **References for 2.3 (建议添加至参考文献列表)**
 
 以下是上述综述中引用的核心文献，请确保格式与您论文的整体参考文献格式保持一致：
@@ -40,5 +62,7 @@ However, the literature also suggests that transparency is a  double-edged sword
    - *(OSS治理经典：论述了非层级组织如何通过机制进行管理)*
 7. **Granados, N., Gupta, A., & Kauffman, R. J. (2010).** Information transparency in business-to-consumer markets: Concepts, framework, and research agenda. *Information Systems Research*, 21(2), 207-226. https://doi.org/10.1287/isre.1090.0249
    - *(IS领域关于透明度策略的权威框架)*
-8. **Bernstein, E. S. (2012).** The transparency paradox: A role for privacy in organizational learning and operational control. *Administrative Science Quarterly*, 57(2), 181-216. https://doi.org/10.1177/0001839212453028
+8. **Bernstein, E. S. (2012).** The transparency paradox: A role for privacy in organizational learning and operational control. *Administrative Science Quarterly*, 57(2), 181-216. https://www.hbs.edu/faculty/Pages/item.aspx?num=43639
    - *(反直觉观点：透明度过高可能带来的负面影响，为文中Targeted Disclosure可能带来的负面效应提供理论支持)*
+
+9. **Le, B. H., Duong, C. H., & Nguyen, G. T. (1986).** Perceived supervisor support and its impact to job performance: Dataset from the hospitality industry in Vietnam. *Data in Brief*, 60, 111649. https://doi.org/10.1016/j.dib.2025.111649
