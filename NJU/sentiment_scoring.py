@@ -16,7 +16,7 @@ from functools import lru_cache
 # 请替换为你的 DeepSeek API Key
 API_KEY = "sk-z-z9jSBXLJEOnUOYJ79snQ" 
 BASE_URL = "https://llm-gateway.momenta.works/"
-MODEL_NAME = "claude-sonnet-4.5"
+MODEL_NAME = "deepseek-v3.2"
 
 # 日志配置
 logging.basicConfig(
