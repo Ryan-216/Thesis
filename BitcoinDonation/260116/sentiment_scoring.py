@@ -11,7 +11,7 @@ from openai import OpenAI, APITimeoutError
 
 # ================= 配置区域 =================
 # 请替换为你的 DeepSeek API Key
-API_KEY = "sk-535d60361a634ede9e62014fbcba4e901" 
+API_KEY = "sk-535d60361a634ede9e62014fbcba4e90" 
 BASE_URL = "https://api.deepseek.com/v1"
 MODEL_NAME = "deepseek-chat"
 

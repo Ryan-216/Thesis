@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+# sentiment cache
+NJU/sentiment_results_claude-sonnet-4.5
+NJU/sentiment_results_deepseek-v3.2
