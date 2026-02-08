@@ -13,7 +13,7 @@ import argparse
 import sys
 from pathlib import Path
 
-def process_comments(input_file, output_file, mode='weekly', exclude_granted=False):
+def process_comments(input_file, output_file, mode='weekly', exclude_granted=False, years=None):
     """
     处理评论数据
     
@@ -22,6 +22,7 @@ def process_comments(input_file, output_file, mode='weekly', exclude_granted=Fal
         output_file: 输出Excel文件路径
         mode: 'weekly' 或 'daily'，指定汇总方式
         exclude_granted: 是否排除获得资助的评论者
+        years: 指定年份列表，例如 [2022, 2023]。如果为None，默认使用2022-2023
     """
     print(f"处理模式: {mode}")
     print(f"输入文件: {input_file}")
@@ -42,13 +43,16 @@ def process_comments(input_file, output_file, mode='weekly', exclude_granted=Fal
     print("\n正在解析时间...")
     df['Comment Time'] = pd.to_datetime(df['Comment Time'])
     
-    # 3. 筛选2022-2023年的数据
-    print("\n正在筛选2022-2023年的数据...")
+    # 3. 筛选指定年份的数据
+    if years is None:
+        years = [2022, 2023]
+    
+    print(f"\n正在筛选{'-'.join(map(str, sorted(years)))}年的数据...")
     df['Year'] = df['Comment Time'].dt.year
-    df_filtered = df[df['Year'].isin([2022, 2023])].copy()
+    df_filtered = df[df['Year'].isin(years)].copy()
     
     if df_filtered.empty:
-        print("警告：未找到2022-2023年的数据！")
+        print(f"警告：未找到{'-'.join(map(str, sorted(years)))}年的数据！")
         return
     
     print(f"筛选后保留 {len(df_filtered)} 条评论记录")
@@ -97,9 +101,11 @@ def process_comments(input_file, output_file, mode='weekly', exclude_granted=Fal
     
     print(f"汇总后共 {len(aggregated)} 条记录")
     
-    # 6. 生成2022-2023年的完整时间周期列表
-    min_date = pd.Timestamp('2022-01-01')
-    max_date = pd.Timestamp('2023-12-31')
+    # 6. 生成指定年份的完整时间周期列表
+    min_year = min(years)
+    max_year = max(years)
+    min_date = pd.Timestamp(f'{min_year}-01-01')
+    max_date = pd.Timestamp(f'{max_year}-12-31')
     
     if mode == 'weekly':
         all_periods = pd.period_range(start=min_date, end=max_date, freq='W')
@@ -152,11 +158,17 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
-  # 按周汇总
+  # 按周汇总（默认2022-2023年）
   python process_comments.py --mode weekly --output weekly_comment.xlsx
   
   # 按日汇总
   python process_comments.py --mode daily --output daily_comment.xlsx
+  
+  # 指定年份（单个年份）
+  python process_comments.py --mode weekly --output weekly_2022.xlsx --years 2022
+  
+  # 指定年份（多个年份）
+  python process_comments.py --mode weekly --output weekly_19_23.xlsx --years 2019 2020 2021 2022 2023
   
   # 指定输入文件
   python process_comments.py --input data.xlsx --mode weekly --output result.xlsx
@@ -191,6 +203,14 @@ def main():
         help='排除获得资助的评论者（0xB10C, vincenzopalazzo, dergoegge, brunoerg, fanquake, adiabat, stickies-v, fjahr）'
     )
     
+    parser.add_argument(
+        '--years',
+        type=int,
+        nargs='+',
+        default=None,
+        help='指定要处理的年份，可以指定多个年份，例如：--years 2022 2023（默认: 2022 2023）'
+    )
+    
     args = parser.parse_args()
     
     # 检查输入文件是否存在
@@ -204,7 +224,7 @@ def main():
     print("评论数据处理脚本")
     print("="*60)
     
-    process_comments(args.input, args.output, args.mode, args.exclude_granted)
+    process_comments(args.input, args.output, args.mode, args.exclude_granted, args.years)
     
     print("\n" + "="*60)
     print("处理完成！")
