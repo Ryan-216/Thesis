@@ -16,7 +16,7 @@ from functools import lru_cache
 # 请替换为你的 DeepSeek API Key
 API_KEY = "sk-z-z9jSBXLJEOnUOYJ79snQ" 
 BASE_URL = "https://llm-gateway.momenta.works/"
-MODEL_NAME = "deepseek-v3.2"
+MODEL_NAME = "claude-sonnet-4.5"
 
 # 日志配置
 logging.basicConfig(
@@ -140,8 +140,23 @@ Return a JSON object with the following structure. For each score, provide a bri
     
     return system_prompt, user_prompt
 
-def request_AI(comment_text, file_name, timeout=60, max_retries=10):
-    """调用 API 进行情感分析（带重试机制）"""
+def request_AI(comment_text, file_name, timeout=60, max_retries=10, max_text_length=15000):
+    """
+    调用 API 进行情感分析（带重试机制）
+    
+    参数：
+        comment_text: 评论文本
+        file_name: 文件名
+        timeout: 超时时间（秒）
+        max_retries: 最大重试次数
+        max_text_length: 最大文本长度，超过此长度会被截断（默认15000字符）
+    """
+    
+    # 截断过长的文本
+    original_length = len(comment_text)
+    if original_length > max_text_length:
+        comment_text = comment_text[:max_text_length]
+        logging.warning(f"Text truncated for {file_name}: {original_length} -> {max_text_length} chars")
     
     for attempt in range(max_retries):
         try:
@@ -241,6 +256,55 @@ def check_local_file(file_name, folder_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = json.load(f)
+            
+            # 处理错误格式1：如果result是字符串，尝试解析为JSON
+            if 'result' in content and isinstance(content['result'], str):
+                logging.info(f"Fixing malformed cache file (type 1 - string result): {file_name}")
+                try:
+                    # 尝试将字符串解析为JSON
+                    correct_result = json.loads(content['result'])
+                    content['result'] = correct_result
+                    save_json_object(file_name, folder_path, content)
+                    logging.info(f"Fixed and saved: {file_name}")
+                except json.JSONDecodeError as e:
+                    logging.error(f"Failed to parse string result for {file_name}: {e}")
+            
+            # 处理错误格式2：如果result中有$PARAMETER_NAME键，提取其中的数据
+            elif 'result' in content and isinstance(content['result'], dict) and '$PARAMETER_NAME' in content['result']:
+                logging.info(f"Fixing malformed cache file (type 2 - $PARAMETER_NAME): {file_name}")
+                # 提取正确的结果
+                correct_result = content['result']['$PARAMETER_NAME']
+                # 更新content
+                content['result'] = correct_result
+                # 保存修复后的文件
+                save_json_object(file_name, folder_path, content)
+                logging.info(f"Fixed and saved: {file_name}")
+            
+            # 处理错误格式3：如果result中有'{}'键，提取其中的数据
+            elif 'result' in content and isinstance(content['result'], dict) and '{}' in content['result']:
+                logging.info(f"Fixing malformed cache file (type 3 - {{}} key): {file_name}")
+                # 提取正确的结果
+                correct_result = content['result']['{}']
+                # 更新content
+                content['result'] = correct_result
+                # 保存修复后的文件
+                save_json_object(file_name, folder_path, content)
+                logging.info(f"Fixed and saved: {file_name}")
+            
+            # 处理错误格式4：如果result中有'output'键（另一种错误格式）
+            elif 'result' in content and isinstance(content['result'], dict) and 'output' in content['result']:
+                logging.info(f"Fixing malformed cache file (type 4 - output key): {file_name}")
+                # 尝试从output中提取数据
+                output_data = content['result']['output']
+                if isinstance(output_data, str):
+                    try:
+                        correct_result = json.loads(output_data)
+                        content['result'] = correct_result
+                        save_json_object(file_name, folder_path, content)
+                        logging.info(f"Fixed and saved: {file_name}")
+                    except json.JSONDecodeError:
+                        logging.error(f"Failed to parse output string for {file_name}")
+            
             return content
         except json.JSONDecodeError:
             return None
@@ -343,6 +407,8 @@ def main():
     parser.add_argument('--cache-dir', '-c', help='Cache directory for JSON results (optional, default: sentiment_results/)')
     parser.add_argument('--threads', '-t', type=int, default=10, help='Number of concurrent threads (default: 10)')
     parser.add_argument('--max-retries', type=int, default=3, help='Maximum retry attempts for failed requests (default: 3)')
+    parser.add_argument('--force-reprocess', action='store_true', help='Force reprocess all comments, ignoring cache')
+    parser.add_argument('--max-text-length', type=int, default=15000, help='Maximum text length for processing (default: 15000)')
     
     args = parser.parse_args()
     
@@ -499,7 +565,7 @@ def main():
     
     # 一次性提取所有结果
     for index, (file_name, res) in results_dict.items():
-        if res:
+        if res and isinstance(res, dict):
             sentiment_data['sentiment_polarity_score'][index] = res.get('sentiment_polarity', {}).get('score')
             sentiment_data['sentiment_polarity_basis'][index] = res.get('sentiment_polarity', {}).get('basis')
             sentiment_data['anger_score'][index] = res.get('anger', {}).get('score')
@@ -516,6 +582,10 @@ def main():
             sentiment_data['surprise_basis'][index] = res.get('surprise', {}).get('basis')
             sentiment_data['disappointment_score'][index] = res.get('disappointment', {}).get('score')
             sentiment_data['disappointment_basis'][index] = res.get('disappointment', {}).get('basis')
+        else:
+            # 如果res不是字典，记录警告并跳过
+            if res:
+                logging.warning(f"Invalid result type for index {index}, file {file_name}: {type(res)}")
     
     # 批量赋值（更高效）
     for col_name, mapping in sentiment_data.items():
