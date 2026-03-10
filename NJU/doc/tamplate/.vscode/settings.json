@@ -1,0 +1,91 @@
+{
+    // LaTeX Workshop 配置 - 用于 NJU 论文模板（MiKTeX）
+    
+    // 使用 XeLaTeX 编译（不使用 latexmk，避免 Perl 依赖）
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "XeLaTeX → Biber → XeLaTeX×2",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    
+    // 设置默认编译方案为 XeLaTeX
+    "latex-workshop.latex.recipe.default": "first",
+    
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    
+    // 自动编译设置
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    
+    // PDF 查看器设置
+    "latex-workshop.view.pdf.viewer": "tab",
+    
+    // 禁用所有清理功能（避免 latexmk 错误）
+    "latex-workshop.latex.autoClean.run": "never",
+    "latex-workshop.latex.clean.enabled": false,
+    "latex-workshop.latex.clean.method": "glob",
+    
+    // 手动清理时的文件类型
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.synctex.gz",
+        "*.run.xml",
+        "*.bcf"
+    ],
+    
+    // 文件编码
+    "files.encoding": "utf8",
+    
+    // 启用智能提示
+    "latex-workshop.intellisense.package.enabled": true,
+    
+    // 错误和警告面板
+    "latex-workshop.message.error.show": true,
+    "latex-workshop.message.warning.show": true
+}
