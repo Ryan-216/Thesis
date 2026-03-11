@@ -9,15 +9,14 @@ echo.
 
 REM Quick compile (without bibliography)
 echo [1/1] Compiling...
-xelatex -interaction=nonstopmode njuthesis-sample.tex
+xelatex -interaction=nonstopmode njuthesis-thesis.tex
 
 echo.
 echo ====================================
 echo    Compile Complete!
 echo ====================================
 echo.
-echo Output: njuthesis-sample.pdf
+echo Output: njuthesis-thesis.pdf
 echo.
 echo For full compile with bibliography, run: compile-full.bat
 echo.
-pause

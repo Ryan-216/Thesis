@@ -9,25 +9,24 @@ echo ====================================
 echo.
 
 echo [1/4] First compile...
-xelatex -interaction=nonstopmode njuthesis-sample.tex
+xelatex -interaction=nonstopmode njuthesis-thesis.tex
 echo.
 
 echo [2/4] Generating bibliography...
-biber njuthesis-sample
+biber njuthesis-thesis
 echo.
 
 echo [3/4] Second compile...
-xelatex -interaction=nonstopmode njuthesis-sample.tex
+xelatex -interaction=nonstopmode njuthesis-thesis.tex
 echo.
 
 echo [4/4] Third compile...
-xelatex -interaction=nonstopmode njuthesis-sample.tex
+xelatex -interaction=nonstopmode njuthesis-thesis.tex
 
 echo.
 echo ====================================
 echo    Full Compile Complete!
 echo ====================================
 echo.
-echo Output: njuthesis-sample.pdf
+echo Output: njuthesis-thesis.pdf
 echo.
-pause
