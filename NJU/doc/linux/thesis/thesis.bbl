@@ -766,6 +766,7 @@
       \strng{nameanamehash}{595cb6e20f94392a0e78fbfd3f2e42bc}
       \strng{nameafullhash}{e90f2fd4fedb0253ea87a3fc246112ea}
       \strng{nameafullhashraw}{e90f2fd4fedb0253ea87a3fc246112ea}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -2078,6 +2079,215 @@
       \field{pages}{632\bibrangedash 668}
       \range{pages}{37}
       \keyw{schroter2010}
+    \endentry
+    \entry{gilardi2023chatgpt}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=42a4e15ad87c60bc88a71df1348bd4e2}{%
+           family={Gilardi},
+           familyi={G\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=56ea0634b107a7ddd6896367aef2ada5}{%
+           family={Alizadeh},
+           familyi={A\bibinitperiod},
+           given={Meysam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e52669eb7da2e5579871c93f8c8129b}{%
+           family={Kubli},
+           familyi={K\bibinitperiod},
+           given={Maël},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=42a4e15ad87c60bc88a71df1348bd4e2}{%
+           family={Gilardi},
+           familyi={G\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=56ea0634b107a7ddd6896367aef2ada5}{%
+           family={Alizadeh},
+           familyi={A\bibinitperiod},
+           given={Meysam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e52669eb7da2e5579871c93f8c8129b}{%
+           family={Kubli},
+           familyi={K\bibinitperiod},
+           given={Maël},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ca303398eb5efdf788d5bf1f44bee484}
+      \strng{fullhash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{fullhashraw}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{bibnamehash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{authorbibnamehash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{authornamehash}{ca303398eb5efdf788d5bf1f44bee484}
+      \strng{authorfullhash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{authorfullhashraw}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{nameabibnamehash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{nameanamehash}{ca303398eb5efdf788d5bf1f44bee484}
+      \strng{nameafullhash}{0cb15cf82c954c430d43b8c515e70bbd}
+      \strng{nameafullhashraw}{0cb15cf82c954c430d43b8c515e70bbd}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{30}
+      \field{title}{{ChatGPT} Outperforms Crowd-Workers for Text-Annotation Tasks}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{120}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{e2305016120}
+      \range{pages}{-1}
+      \keyw{gilardi2023chatgpt}
+    \endentry
+    \entry{zhang2020sentiment}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=532f45e63f404c93fcc530704019db4d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=536ccf9d7b7da290a48717163b4a6722}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Fanying},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44f37120f1686d1133969a7d8cbac0c3}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chunyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f42be51b18acc9d06c06516a449485ce}{%
+           family={Whittle},
+           familyi={W\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=532f45e63f404c93fcc530704019db4d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=536ccf9d7b7da290a48717163b4a6722}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Fanying},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44f37120f1686d1133969a7d8cbac0c3}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chunyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f42be51b18acc9d06c06516a449485ce}{%
+           family={Whittle},
+           familyi={W\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a7d130763a4e32aaa814dd9454fec749}
+      \strng{fullhash}{4ebf33b209c05e5b65a3afc2758173a9}
+      \strng{fullhashraw}{4ebf33b209c05e5b65a3afc2758173a9}
+      \strng{bibnamehash}{658aa18770fac9ff04a76a8516ff41dd}
+      \strng{authorbibnamehash}{658aa18770fac9ff04a76a8516ff41dd}
+      \strng{authornamehash}{a7d130763a4e32aaa814dd9454fec749}
+      \strng{authorfullhash}{4ebf33b209c05e5b65a3afc2758173a9}
+      \strng{authorfullhashraw}{4ebf33b209c05e5b65a3afc2758173a9}
+      \strng{nameabibnamehash}{658aa18770fac9ff04a76a8516ff41dd}
+      \strng{nameanamehash}{a7d130763a4e32aaa814dd9454fec749}
+      \strng{nameafullhash}{4ebf33b209c05e5b65a3afc2758173a9}
+      \strng{nameafullhashraw}{4ebf33b209c05e5b65a3afc2758173a9}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the International Conference on Software Maintenance and Evolution (ICSME)}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Sentiment Analysis for Software Engineering: How Far Can Pre-trained Transformer Models Go?}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{70\bibrangedash 80}
+      \range{pages}{11}
+      \keyw{zhang2020sentiment}
+    \endentry
+    \entry{hutto2014vader}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=73950ec510876cdb0bf7953421906fcd}{%
+           family={Hutto},
+           familyi={H\bibinitperiod},
+           given={Clayton\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c3163690c9103d2541d6910886053ba6}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=73950ec510876cdb0bf7953421906fcd}{%
+           family={Hutto},
+           familyi={H\bibinitperiod},
+           given={Clayton\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c3163690c9103d2541d6910886053ba6}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{50a6554f27da354057cd659ebdab2b42}
+      \strng{fullhash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{fullhashraw}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{bibnamehash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{authorbibnamehash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{authornamehash}{50a6554f27da354057cd659ebdab2b42}
+      \strng{authorfullhash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{authorfullhashraw}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{nameabibnamehash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{nameanamehash}{50a6554f27da354057cd659ebdab2b42}
+      \strng{nameafullhash}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \strng{nameafullhashraw}{d9b8fcad43d62d108d0f2e93350acc9b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the International AAAI Conference on Web and Social Media}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{{VADER}: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{8}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{216\bibrangedash 225}
+      \range{pages}{10}
+      \keyw{hutto2014vader}
     \endentry
   \enddatalist
 \endrefsection
