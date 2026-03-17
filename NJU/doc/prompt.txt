@@ -90,3 +90,18 @@ v0.1.2
 4.修改完后编译并修复错误
 
 中文引号错误仍然存在 ” 动机叠加”，我发现是因为thesis.tex中的引号用的是半角"动机叠加"，修改为全角“动机叠加”后问题解决，请修复文章中所有中文引用
+
+v0.1.3
+文章第四章和第五章的变量名称含义等存在问题，我在NJU/doc/Infomation/260317Variable.txt中给出了变量名和含义，请你进行修复，要求：
+1.严格尊重变量的名称和含义，但是表述不当的地方可以适当修改
+2.变量名称用英文，描述用中文
+
+全文的变量方面都需要相应修改，还有比较大的问题，参考NJU/doc/Infomation/260317Variable.txt进行修改：
+1.原来的变量描述有错误，如代码贡献活动（Code Activity）是开发者对项目代码库最直接的技术贡献，包括 CommitCommentEvent（CCE）和 PullRequestEvent（PRE）两种形式。但是更新的变量中 Code i,t 包含PushEvent, CreateEvent, DeleteEvent, CommitCommentEvent and PullRequestEvent
+2.全文还有部分提到了代码贡献，除了综述外，本文的研究描述中禁止出现“贡献”，因为本文研究的是活动，和贡献有差别
+3.在列表、描述回归结果、等情况下，如有必要可以使用变量名的简写，但是需要事先定义好变量名的简写
+
+
+
+
+

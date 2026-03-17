@@ -1,0 +1,33 @@
+
+文章研究的所有开发活动
+PushEvent CreateEvent DeleteEvent CommitCommentEvent PullRequestEvent PullRequestReviewEvent IssueCommentEvent IssuesEvent PullRequestReviewCommentEvent
+
+变量定义
+研究一：
+变量名 含义
+Code i,t The total number of code-submission-related activities by developer i in week t, including PushEvent, CreateEvent, DeleteEvent, CommitCommentEvent and PullRequestEvent.
+Review i,t The total number of code-review-related activities by developer i in week t, including PullRequestReviewEvent and PullRequestReviewCommentEvent. 
+Issue i,t The total number of issue-discussion-related activities by developer i in week t, including IssuesEvent and IssueCommentEvent.
+AllEvent i,t The sum of all develop activities by developer i in week t, including code-submission-related, code-review-related and discussion-related activities mentioned above.
+DonationAmount t The monetary donation amount disclosed by the organization in week t, measured by the US dollar. For ease of interpretation and to reduce the scale of the coefficients, the amount is expressed in thousands of US dollars (k USD).
+GranteeNumber t The number of donation grantees disclosed by the organization in week t.
+UntargetedDisclosure t A dummy variable indicating whether the monetary amount of untargeted donation is disclosed in week t.
+TargetedDisclosure t A dummy variable indicating whether the name list of targeted grantees is disclosed in week t.
+BitcoinPrice t 比特币在第t周的平均价格
+BitcoinVolume t The investment return of bitcoin in week t.
+BitcoinReturn t  The trading volume of bitcoin in week t.
+BitcoinGoogleTrend t "Bitcoin" 在第t周的谷歌趋势值
+BitcoinBrinkGoogleTrend t "Bitcoin Brink" 在第t周的谷歌趋势值
+Fork i,t The number of repository forks made by developer i in week t.
+Watch i,t The number of repository watches made by developer i in week t.
+
+研究二：
+变量名 含义
+Sentiment t 比特币项目开发者在第t周的情感极性值，1-9，5为中型，小于5为消极，大于5为积极
+Development t 比特币项目开发者在第t周的开发活动，包括 PushEvent CreateEvent DeleteEvent CommitCommentEvent PullRequestEvent PullRequestReviewEvent
+Discussion t 比特币项目开发者在第t周的讨论活动，包括 IssueCommentEvent IssuesEvent PullRequestReviewCommentEvent
+BitcoinReturn t  The trading volume of bitcoin in week t.
+DonationAmount t The monetary donation amount disclosed by the organization in week t, measured by the US dollar. For ease of interpretation and to reduce the scale of the coefficients, the amount is expressed in thousands of US dollars (k USD).
+GranteeNumber t The number of donation grantees disclosed by the organization in week t.
+
+
