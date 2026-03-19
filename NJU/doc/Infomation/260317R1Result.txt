@@ -145,7 +145,7 @@ t statistics in parentheses
 
 ****机制分析一：重度投入者和轻度投入者
 按照开发者在bitcoin项目开发活动将开发者等分，衡量开发者在bitcoin项目的投入程度
-	重度开发者			轻度开发者		
+																			重度投入者  									轻度投入者		
                           	lnCodeCon	lnCodeRev	lnISSUE	lnCodeCon	lnCodeRev	lnISSUE
 ln_avg_donation_4w       	0.004***	0.014***	0.001	0.000	-0.000	-0.001
                          	(2.92)	(3.15)	(0.95)	(1.39)	(-0.11)	(-1.27)
@@ -185,7 +185,7 @@ t statistics in parentheses
 
 ****机制分析二：开源社区活跃者和开源社区非活跃者
 按照开发者的个人仓库数量将开发者等分，衡量开发者的开源社区活跃程度
-	开源活跃者			开源非活跃者	
+																		开源投入者  									开源非活跃者
                          	lnCodeCon	lnCodeRev	lnISSUE	lnCodeCon	lnCodeRev	lnISSUE
 ln_avg_donation_4w       	0.004***	0.016***	0.001	0.001	-0.001	-0.000
                          	(2.68)	(3.56)	(1.04)	(1.54)	(-0.56)	(-0.85)
