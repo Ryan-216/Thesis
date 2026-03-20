@@ -128,3 +128,7 @@ v0.1.4
 请你帮我写个脚本用VADER方法对NJU/comment/weekly_comment_19_23.xlsx中的评论文本进行情感分析，得到情感极性评分，结果存储在NJU/sentiment_result/VADER/ 中
 
 大模型的9分制是5为中性,里面看到的基本是中性,但9分制的值很接近9
+
+v0.2
+我在NJU/doc/Infomation/260320R2RobustSentiment.txt中补充了研究二的稳健性检验结果，分别选了Deepseek-v3.2模型，Gpt-5.2模型，以及Vader情感分析方法进行稳健性检验
+发现只有Gpt的显著性稍弱，总体结果是稳健的，请在文章中补充完善，需要在涉及到的各个地方都补充完善，确保文章一致连贯
