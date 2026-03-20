@@ -112,3 +112,19 @@ v0.1.4
 我有些问题：
 1.变量名如AvgDonation4w𝑡，会不会很奇怪，不符合学术规范？如果是，请你进行修改，并给出新旧变量的对应关系
 2.回归表格中变量名是不是用中文：定向信息披露，非定向信息披露更好？具体变量形式只是这两个概念的代理
+
+继续修改
+1.NJU/doc/Infomation/260319R1Describe.txt中补充了研究一需要的结果，请你更新结果和解读
+2.所有结果表格中变量统一采用中文（英文）的方式，如：非定向信息披露（𝑈𝐷𝑡）
+
+研究二存在一些问题：
+1.变量名不统一：外部捐赠变量（Donation）与授权拨款变量（Grant）和DonationAmount𝑡 GranteeNumber𝑡，请你选择合适的变量来统一
+2.数据来源部分与变量定义不统一：开发活动（Development）定义为同一时期的CommitCommentEvent（CCE）与PullRequestEvent（PRE）之和，，Development t 比特币项目开发者在第t周的开发活动，包括 PushEvent CreateEvent DeleteEvent CommitCommentEvent PullRequestEvent PullRequestReviewEvent
+变量定义可以参照NJU/doc/Infomation/260317Variable.txt
+3.由于变量名称较长，表格文字出现相互覆盖
+4.结果表格中变量是纯英文，需要改为中文（英文）的方式，如：非定向信息披露（𝑈𝐷𝑡）
+
+
+请你帮我写个脚本用VADER方法对NJU/comment/weekly_comment_19_23.xlsx中的评论文本进行情感分析，得到情感极性评分，结果存储在NJU/sentiment_result/VADER/ 中
+
+大模型的9分制是5为中性,里面看到的基本是中性,但9分制的值很接近9

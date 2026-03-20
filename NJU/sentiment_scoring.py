@@ -16,7 +16,7 @@ from functools import lru_cache
 # 请替换为你的 DeepSeek API Key
 API_KEY = "sk-z-z9jSBXLJEOnUOYJ79snQ" 
 BASE_URL = "https://llm-gateway.momenta.works/"
-MODEL_NAME = "claude-sonnet-4.5"
+MODEL_NAME = "gpt-5.2"
 
 # 日志配置
 logging.basicConfig(
@@ -140,7 +140,7 @@ Return a JSON object with the following structure. For each score, provide a bri
     
     return system_prompt, user_prompt
 
-def request_AI(comment_text, file_name, timeout=60, max_retries=10, max_text_length=15000):
+def request_AI(comment_text, file_name, timeout=60, max_retries=10, max_text_length=100000):
     """
     调用 API 进行情感分析（带重试机制）
     
@@ -408,26 +408,28 @@ def main():
     parser.add_argument('--threads', '-t', type=int, default=10, help='Number of concurrent threads (default: 10)')
     parser.add_argument('--max-retries', type=int, default=3, help='Maximum retry attempts for failed requests (default: 3)')
     parser.add_argument('--force-reprocess', action='store_true', help='Force reprocess all comments, ignoring cache')
-    parser.add_argument('--max-text-length', type=int, default=15000, help='Maximum text length for processing (default: 15000)')
+    parser.add_argument('--max-text-length', type=int, default=100000, help='Maximum text length for processing (default: 100000)')
     
     args = parser.parse_args()
     
     # 设置输入输出路径
     INPUT_FILE = args.input
-    
+
+    # 提取纯文件名（不含路径和扩展名）
+    input_file_name = os.path.splitext(os.path.basename(INPUT_FILE))[0]
+
+    # 默认输出和缓存路径：sentiment_result/{model_name}/
+    model_dir = os.path.join('sentiment_result', MODEL_NAME)
+
     if args.output:
         FINAL_OUTPUT_FILE = args.output
     else:
-        # 默认输出文件名：在输入文件名后加 _sentiment_scored
-        base_name = os.path.splitext(INPUT_FILE)[0]
-        FINAL_OUTPUT_FILE = f"{base_name}_sentiment_scored.xlsx"
-    
+        FINAL_OUTPUT_FILE = os.path.join(model_dir, f"{input_file_name}_sentiment_score.xlsx")
+
     if args.cache_dir:
         OUTPUT_FOLDER = args.cache_dir
     else:
-        # 默认缓存目录：在输入文件所在目录创建 sentiment_results 文件夹
-        input_dir = os.path.dirname(INPUT_FILE) or '.'
-        OUTPUT_FOLDER = os.path.join(input_dir, f'sentiment_results_{MODEL_NAME}')
+        OUTPUT_FOLDER = os.path.join(model_dir, 'cache')
     
     # 1. 读取数据
     print(f"Loading data from {INPUT_FILE}...")
