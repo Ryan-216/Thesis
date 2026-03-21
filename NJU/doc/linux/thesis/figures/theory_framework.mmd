@@ -1,0 +1,26 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px', 'primaryColor': '#f8f8f8', 'primaryBorderColor': '#333', 'lineColor': '#333', 'primaryTextColor': '#000'}}}%%
+flowchart TB
+    subgraph S1["<b>研究一：捐赠信息披露 → 开发者活动</b>"]
+        direction TB
+        T1A["自愿信息披露理论 + 信号理论"] -->|"两种披露的信号性质"| H1H2
+        T1B["期望理论"] -->|"效价 / 工具性路径"| H1H2["H1：非定向披露正向主效应<br/>H2：定向披露正向主效应"]
+        T1C["期望失验理论"] -->|"负向失验机制"| H3["H3：定向披露对非定向披露的负向调节"]
+    end
+
+    subgraph S2["<b>研究二：社区情感 → 开发者活动</b>"]
+        direction TB
+        T2A["情感即信息理论"] -->|"情感信号激活行动"| H4H5["H4：负面情感 → 开发活动增加<br/>H5：负面情感 → 讨论活动增加"]
+        T2B["目标手段替代理论"] -->|"活动间认知替代"| H6["H6：开发活动 → 讨论活动减少"]
+    end
+
+    S1 ~~~ S2
+
+    style T1A fill:#fff,stroke:#666
+    style T1B fill:#fff,stroke:#666
+    style T1C fill:#fff,stroke:#666
+    style T2A fill:#fff,stroke:#666
+    style T2B fill:#fff,stroke:#666
+    style H1H2 fill:#e8e8e8,stroke:#333,stroke-width:2px
+    style H3 fill:#e8e8e8,stroke:#333,stroke-width:2px
+    style H4H5 fill:#e8e8e8,stroke:#333,stroke-width:2px
+    style H6 fill:#e8e8e8,stroke:#333,stroke-width:2px

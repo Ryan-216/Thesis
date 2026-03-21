@@ -1,0 +1,13 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px', 'primaryColor': '#fff', 'primaryBorderColor': '#333', 'lineColor': '#333', 'primaryTextColor': '#000'}}}%%
+flowchart LR
+    S["<b>情感极性</b><br/>（Sentiment）"]
+    D["<b>开发活动</b><br/>（Development）"]
+    C["<b>讨论活动</b><br/>（Discussion）"]
+
+    S -->|"H4（−）<br/>情感即信息理论"| D
+    S -->|"H5（−）<br/>情感即信息理论"| C
+    D -->|"H6（−）<br/>目标手段替代理论"| C
+
+    style S fill:#f0f0f0,stroke:#333,stroke-width:2px
+    style D fill:#f0f0f0,stroke:#333,stroke-width:2px
+    style C fill:#f0f0f0,stroke:#333,stroke-width:2px

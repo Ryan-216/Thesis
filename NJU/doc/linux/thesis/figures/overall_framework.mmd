@@ -1,0 +1,28 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px', 'primaryColor': '#f5f5f5', 'primaryBorderColor': '#333', 'lineColor': '#333', 'primaryTextColor': '#000'}}}%%
+flowchart TB
+    Title["<b>研究情境：比特币 GitHub 开源社区</b>"]
+
+    subgraph R1["<b>研究一</b>（2022年1月 — 2023年12月）"]
+        direction TB
+        R1A["<b>外部信息输入</b><br/>Brink 捐赠信息披露"]
+        R1A -->|"信息激励"| R1B["<b>个体开发者活动</b><br/>开发者—周面板数据"]
+        R1B --> R1C["<b>方法</b><br/>面板固定效应 + 2SLS"]
+    end
+
+    subgraph R2["<b>研究二</b>（2020年1月 — 2023年12月）"]
+        direction TB
+        R2A["<b>内部信息积累</b><br/>社区 Issue 讨论情感"]
+        R2A -->|"情感驱动"| R2B["<b>社区聚合活动</b><br/>周级时间序列数据"]
+        R2B --> R2C["<b>方法</b><br/>VAR + 格兰杰因果检验"]
+    end
+
+    Title ~~~ R1
+    Title ~~~ R2
+
+    style Title fill:#e0e0e0,stroke:#333,stroke-width:2px
+    style R1A fill:#fff,stroke:#666
+    style R1B fill:#fff,stroke:#666
+    style R1C fill:#f0f0f0,stroke:#666
+    style R2A fill:#fff,stroke:#666
+    style R2B fill:#fff,stroke:#666
+    style R2C fill:#f0f0f0,stroke:#666

@@ -1,0 +1,15 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px', 'primaryColor': '#f5f5f5', 'primaryBorderColor': '#333', 'lineColor': '#333', 'primaryTextColor': '#000'}}}%%
+flowchart TB
+    subgraph top["<b>非定向信息披露：接收并公布捐赠</b>"]
+        direction LR
+        D["💰 捐赠方"] -->|"捐赠"| B1["<b>Brink</b><br/>基金会"]
+        B1 -->|"公开披露捐赠信息"| X["🌐 X（原 Twitter）<br/>@brink_bitcoin"]
+    end
+
+    subgraph bottom["<b>定向信息披露：审核申请并披露受资助者</b>"]
+        direction LR
+        Dev["👨‍💻 比特币开发者"] -->|"申请资助"| B2["<b>Brink</b><br/>基金会"]
+        B2 -->|"披露定向受资助者名单"| Web["🌐 brink.dev<br/>官方网站"]
+    end
+
+    top ~~~ bottom
