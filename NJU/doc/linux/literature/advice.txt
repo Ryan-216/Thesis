@@ -1,0 +1,158 @@
+基于论文实际内容的文献引用分析
+📊 一、现有引用情况盘点
+从论文参考文献列表可以看到，目前已引用32篇文献：
+
+类型	数量	占比
+英文文献	30篇	94%
+中文文献	2篇（致谢中提及）	6%
+近5年文献	约18篇	56%
+⚠️ 当前问题：引用总量偏少（32篇），中文文献严重不足，需要大幅补充。
+
+🗺️ 二、论文各章节引用现状与缺口
+第一章 绪论
+现有引用：[1][2][3][14]等基础文献
+缺口：
+
+缺乏对开源可持续性问题的系统综述文献
+缺乏比特币生态治理相关中文政策/综述文献
+缺乏信息经济学视角的引导性文献
+第二章 理论基础与文献综述
+这是引用最集中的章节，逐模块分析：
+
+2.1 开源软件开发与开发者激励
+现有引用：
+
+[1] Lerner & Tirole (2002) ✅
+[4] Shah (2006) ✅
+[5] Fang & Neufeld (2009) ✅
+[6] Davidson et al. (2014) ✅
+[8] Bénabou & Tirole (2003) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+开源开发者动机综述	Hertel et al. (2003) Research Policy	经典动机研究必引
+开发者参与持续性	Bhardan & Bhatt (2021) JMIS	与Fang(2009)形成对话
+自我决定理论应用	Ryan & Deci (2000) American Psychologist	你文中提到该理论但未引原文
+挤出效应综述	Frey & Jegen (2001) JEL	crowding-out经典综述
+中文开源研究	刘业政等，《管理科学》	补充中文文献
+2.2 信息披露的理论与实证
+现有引用：
+
+[15] Huang et al. (2021) ✅
+[22] Spence (1973) ✅
+[23] Connelly et al. (2011) ✅
+[24] Toubia & Stephen (2013) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+自愿信息披露理论原始文献	Verrecchia (1983) Journal of Accounting and Economics	你2.2.1节提到该理论但未引
+非营利组织信息透明度	Saxton & Guo (2011) Nonprofit and Voluntary Sector Quarterly	与Brink基金会场景直接相关
+众筹信息披露	Mollick (2014) Journal of Business Venturing	众筹信号机制经典文献
+信息不对称与捐赠	Vesterlund (2003) RAND Journal of Economics	捐赠信息披露的理论基础
+2.3 期望理论与期望失验理论
+现有引用：
+
+[25] Vroom (1964) ✅
+[26] Oliver (1980) ✅
+[27] Abrate et al. (2021) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+期望失验在IS中的应用	Bhattacherjee (2001) MIS Quarterly	你文中2.3.3节明确提到该文但未列入参考文献 ⚠️
+期望理论在在线社区的应用	Nov (2007) Communications of the ACM	连接动机理论与在线贡献
+失望效应实验证据	Bell (1985) Management Science	disappointment theory原始文献
+2.4 情感与信息处理
+现有引用：
+
+[18] Schwarz & Clore (1983) ✅
+[28] Kruglanski et al. (2002) ✅
+[16] Guzzi et al. (2013) ✅
+[29] Schroter et al. (2010) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+情感即信息理论综述	Schwarz (2012) Advances in Experimental Social Psychology	比1983年原文更系统
+目标手段替代实证	Fishbach & Dhar (2005) Journal of Consumer Research	H6替代效应的重要实证支撑
+开源情感分析综述	Novielli et al. (2021) Empirical Software Engineering	专门针对开源社区的情感分析综述 ⭐
+技术社区负面情感研究	Ortu et al. (2015) MSR	与你的比特币Issue情感研究直接相关
+中文情感分析文献	赵宇翔等，《图书情报工作》	补充中文文献
+第三章 研究设计
+现有引用：较少，主要引用数据来源相关
+
+缺口建议补充：
+
+补充方向	推荐文献	理由
+GH Archive数据使用	Gousios (2013) MSR	GH Archive数据集原始文献，必引 ⭐
+GitHub数据研究方法	Kalliamvakou et al. (2014) MSR	GitHub数据的局限性与使用规范
+面板数据方法	Wooldridge (2010) 教材	固定效应模型方法论依据
+工具变量方法	Angrist & Pischke (2009) Mostly Harmless Econometrics	2SLS方法论经典教材
+第四章 捐赠信息披露研究
+现有引用：
+
+[10] Shimada et al. (2022) ✅
+[11] Zhang et al. (2022) ✅
+[12] Conti et al. (2023) ✅
+[13] Overney et al. (2020) ✅
+[17] Wang et al. (2022b) ✅
+[7] Wang et al. (2022a) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+捐赠行为的经济学研究	Andreoni (1990) Economic Journal	warm-glow理论，捐赠动机基础
+开源基金会治理	Riehle (2010) IFIP OSS	开源基金会运作机制
+固定效应模型应用	Hausman (1978) Econometrica	Hausman检验经典文献
+工具变量外生性论证	Stock & Yogo (2005)	弱工具变量检验，你文中明确引用但未列参考文献 ⚠️
+社区赞助溢出效应	Nagle & Teodoridis (2020) Strategic Management Journal	资助对开源创新的影响
+第五章 社区讨论情感研究
+现有引用：
+
+[30] Gilardi et al. (2023) ✅
+[31] Zhang et al. (2020) ✅
+[32] Hutto & Gilbert (2014) ✅
+缺口建议补充：
+
+补充方向	推荐文献	理由
+VAR模型方法论	Sims (1980) Econometrica	VAR模型原始文献，必引 ⭐
+格兰杰因果检验	Granger (1969) Econometrica	你使用了格兰杰检验，必引原文 ⭐
+LLM情感标注	Kruspe et al. (2023)	LLM用于标注任务的评估
+开源社区情感与生产力	Murgia et al. (2018) ICSE	情感影响代码质量的直接证据
+比特币社区研究	Zhu et al. (2021) Electronic Commerce	比特币社区行为的实证研究
+中文情感计算文献	朱廷劭等，《中文信息学报》	补充中文文献
+🚨 三、需要立即修复的引用问题
+以下是论文正文中明确提到但未出现在参考文献中的文献，属于硬性错误：
+
+正文中的表述	缺失文献	紧急程度
+"Bhattacherjee（2001）等人扩展为IS持续使用研究的核心模型"	Bhattacherjee (2001) MIS Quarterly	🔴 必须补充
+"Stock-Yogo（2005）弱工具变量检验的临界值"	Stock & Yogo (2005)	🔴 必须补充
+自我决定理论	Ryan & Deci (2000)	🟡 建议补充
+Verrecchia自愿披露理论	Verrecchia (1983)	🟡 建议补充
+📋 四、中文文献补充清单
+这是目前最大的短板，建议至少补充 15 - 20篇中文文献
+
+主题	推荐期刊	检索关键词
+开源社区知识共享	《图书情报工作》《情报学报》	开源社区、知识贡献、协同创作
+区块链信息披露	《管理科学》《南开管理评论》	区块链、信息透明度、信号理论
+在线社区情感分析	《数据分析与知识发现》	情感分析、在线社区、文本挖掘
+计量方法应用	《统计研究》《数量经济技术经济研究》	面板数据、工具变量、VAR模型
+志愿者激励机制	《公共管理学报》	志愿者、激励、内在动机
+✅ 五、补充后的目标文献结构
+目标：从32篇扩充至 70 - 75篇
+
+  新增英文文献：约20篇（补充至50篇，占70%）
+    ├── 方法论必引：Sims(1980), Granger(1969),
+    │              Bhattacherjee(2001), Stock&Yogo(2005)
+    ├── 理论必引：Ryan&Deci(2000), Verrecchia(1983)
+    ├── 实证补充：Novielli et al.(2021), Murgia et al.(2018)
+    └── 数据方法：Gousios(2013), Kalliamvakou et al.(2014)
+
+  新增中文文献：约18篇（补充至20篇，占30%）
+    ├── 图情核心期刊：8篇
+    ├── 管理/信息系统：5篇
+    └── 计量方法应用：5篇
+💡 六、最终优先级建议
+优先级	行动	数量
+🔴 立即处理	补充正文已提及但未列入的文献（Bhattacherjee, Stock&Yogo等）	3 - 5篇
+🟠 尽快补充	方法论原始文献（Sims, Granger, Wooldridge, Gousios）	4 - 6篇
+🟡 建议补充	各章理论模块的经典文献缺口	10 - 15篇
+🟢 重点扩充	中文文献（从2篇扩充至18 - 20篇）	16 - 18篇
+🎯 总结：你的论文在理论框架和实证设计上已经相当完整，引用的核心英文文献质量较高。主要工作是：①修复几处"引而未列"的硬性错误；②补充方法论原始文献；③大幅增加中文文献至15篇以上，使中英文比例达到 3:7 左右，符合图情专业硕士论文的规范要求。
