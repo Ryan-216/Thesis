@@ -77,6 +77,9 @@
       \field{dateera}{ce}
       \field{pages}{197\bibrangedash 234}
       \range{pages}{38}
+      \verb{doi}
+      \verb 10.1111/1467-6451.00174
+      \endverb
       \keyw{lerner2002simple}
     \endentry
     \entry{chen2021opensource}{article}{}{}
@@ -125,30 +128,35 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{9}
-      \field{title}{开源社区:研究脉络、知识框架和研究展望}
+      \field{number}{2}
+      \field{title}{开源社区：研究脉络、知识框架和研究展望}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{43}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{3\bibrangedash 22}
-      \range{pages}{20}
+      \field{pages}{84\bibrangedash 102}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.16538/j.cnki.fem.20200904.402
+      \endverb
       \keyw{chen2021opensource}
     \endentry
-    \entry{lakhani2004open}{book}{}{}
+    \entry{lakhani2003open}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5e63af7268feabfea0dfb53e2ec62d60}{%
            family={Lakhani},
            familyi={L\bibinitperiod},
            given={Karim\bibnamedelima R.},
            giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=4bd848ad72dbab2ccdb3c022c787fdee}{%
-           family={Von\bibnamedelima Hippel},
-           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+        {{hash=531d779ed35421abcd1ab70e6d12f88f}{%
+           family={Hippel},
+           familyi={H\bibinitperiod},
            given={Eric},
-           giveni={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
       }
       \name{namea}{2}{}{%
         {{hash=5e63af7268feabfea0dfb53e2ec62d60}{%
@@ -156,44 +164,51 @@
            familyi={L\bibinitperiod},
            given={Karim\bibnamedelima R.},
            giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=4bd848ad72dbab2ccdb3c022c787fdee}{%
-           family={Von\bibnamedelima Hippel},
-           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+        {{hash=531d779ed35421abcd1ab70e6d12f88f}{%
+           family={Hippel},
+           familyi={H\bibinitperiod},
            given={Eric},
-           giveni={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
       \strng{namehash}{3aa2ff34d4d326f56a990cb359708fb5}
-      \strng{fullhash}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{fullhashraw}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{bibnamehash}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{authorbibnamehash}{5530e549af9a7b12f0967f8e63c09f54}
+      \strng{fullhash}{51957be282fb102b5c9a701365c8f136}
+      \strng{fullhashraw}{51957be282fb102b5c9a701365c8f136}
+      \strng{bibnamehash}{51957be282fb102b5c9a701365c8f136}
+      \strng{authorbibnamehash}{51957be282fb102b5c9a701365c8f136}
       \strng{authornamehash}{3aa2ff34d4d326f56a990cb359708fb5}
-      \strng{authorfullhash}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{authorfullhashraw}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{nameabibnamehash}{5530e549af9a7b12f0967f8e63c09f54}
+      \strng{authorfullhash}{51957be282fb102b5c9a701365c8f136}
+      \strng{authorfullhashraw}{51957be282fb102b5c9a701365c8f136}
+      \strng{nameabibnamehash}{51957be282fb102b5c9a701365c8f136}
       \strng{nameanamehash}{3aa2ff34d4d326f56a990cb359708fb5}
-      \strng{nameafullhash}{5530e549af9a7b12f0967f8e63c09f54}
-      \strng{nameafullhashraw}{5530e549af9a7b12f0967f8e63c09f54}
+      \strng{nameafullhash}{51957be282fb102b5c9a701365c8f136}
+      \strng{nameafullhashraw}{51957be282fb102b5c9a701365c8f136}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Research Policy}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
+      \field{number}{6}
       \field{title}{How Open Source Software Works: ``Free'' User-to-User Assistance}
-      \field{usera}{M}
+      \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2004}
+      \field{volume}{32}
+      \field{year}{2003}
       \field{dateera}{ce}
-      \keyw{lakhani2004open}
+      \field{pages}{923\bibrangedash 943}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/S0048-7333(02)00095-1
+      \endverb
+      \keyw{lakhani2003open}
     \endentry
     \entry{nakamoto2008bitcoin}{online}{}{}
       \name{author}{1}{}{%
@@ -248,49 +263,46 @@
       \keyw{nakamoto2008bitcoin,report}
     \endentry
     \entry{cheng2024bitcoin}{article}{}{}
-      \name{author}{4}{}{%
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
         {{hash=625c83c1bcfcffea462151ff23ba74d2}{%
            family={程杰},
            familyi={程\bibinitperiod}}}%
         {{hash=c42e375ac2ebe0536d83ec8fc25468bb}{%
            family={金伟},
            familyi={金\bibinitperiod}}}%
-        {{hash=a4c32942d11b490264b10602b99fee00}{%
-           family={盛万兴},
-           familyi={盛\bibinitperiod}}}%
-        {{hash=716cb6a071de19f1ecca66dbd69e18d9}{%
-           family={周赵一},
-           familyi={周\bibinitperiod}}}%
+        {{hash=18a34db6411895d81b437eaa011fca23}{%
+           family={夏清},
+           familyi={夏\bibinitperiod}}}%
       }
-      \name{namea}{4}{}{%
+      \true{morenamea}
+      \name{namea}{3}{}{%
         {{hash=625c83c1bcfcffea462151ff23ba74d2}{%
            family={程杰},
            familyi={程\bibinitperiod}}}%
         {{hash=c42e375ac2ebe0536d83ec8fc25468bb}{%
            family={金伟},
            familyi={金\bibinitperiod}}}%
-        {{hash=a4c32942d11b490264b10602b99fee00}{%
-           family={盛万兴},
-           familyi={盛\bibinitperiod}}}%
-        {{hash=716cb6a071de19f1ecca66dbd69e18d9}{%
-           family={周赵一},
-           familyi={周\bibinitperiod}}}%
+        {{hash=18a34db6411895d81b437eaa011fca23}{%
+           family={夏清},
+           familyi={夏\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {chinese}%
       }
       \strng{namehash}{121c59ef6c04113b2832625ab144cb15}
-      \strng{fullhash}{7fc121b851bbe517093d6a6ffecf11ae}
-      \strng{fullhashraw}{7fc121b851bbe517093d6a6ffecf11ae}
-      \strng{bibnamehash}{68c22700e22e9941a02d432e63a55332}
-      \strng{authorbibnamehash}{68c22700e22e9941a02d432e63a55332}
+      \strng{fullhash}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{fullhashraw}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{bibnamehash}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{authorbibnamehash}{0314c2c1d1c486353aff6e62aeb74737}
       \strng{authornamehash}{121c59ef6c04113b2832625ab144cb15}
-      \strng{authorfullhash}{7fc121b851bbe517093d6a6ffecf11ae}
-      \strng{authorfullhashraw}{7fc121b851bbe517093d6a6ffecf11ae}
-      \strng{nameabibnamehash}{68c22700e22e9941a02d432e63a55332}
+      \strng{authorfullhash}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{authorfullhashraw}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{nameabibnamehash}{0314c2c1d1c486353aff6e62aeb74737}
       \strng{nameanamehash}{121c59ef6c04113b2832625ab144cb15}
-      \strng{nameafullhash}{7fc121b851bbe517093d6a6ffecf11ae}
-      \strng{nameafullhashraw}{7fc121b851bbe517093d6a6ffecf11ae}
+      \strng{nameafullhash}{0314c2c1d1c486353aff6e62aeb74737}
+      \strng{nameafullhashraw}{0314c2c1d1c486353aff6e62aeb74737}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -299,7 +311,7 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{3}
+      \field{number}{11}
       \field{title}{比特币去匿名化技术研究综述}
       \field{usera}{J}
       \field{userd}{chinese}
@@ -307,8 +319,8 @@
       \field{volume}{45}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{pages}{172\bibrangedash 189}
-      \range{pages}{18}
+      \field{pages}{244\bibrangedash 266}
+      \range{pages}{23}
       \keyw{cheng2024bitcoin}
     \endentry
     \entry{shah2006motivation}{article}{}{}
@@ -359,6 +371,9 @@
       \field{dateera}{ce}
       \field{pages}{1000\bibrangedash 1014}
       \range{pages}{15}
+      \verb{doi}
+      \verb 10.1287/mnsc.1060.0553
+      \endverb
       \keyw{shah2006motivation}
     \endentry
     \entry{fang2009understanding}{article}{}{}
@@ -419,6 +434,9 @@
       \field{dateera}{ce}
       \field{pages}{9\bibrangedash 50}
       \range{pages}{42}
+      \verb{doi}
+      \verb 10.2753/MIS0742-1222250401
+      \endverb
       \keyw{fang2009understanding}
     \endentry
     \entry{davidson2014older}{inproceedings}{}{}
@@ -507,6 +525,9 @@
       \field{dateera}{ce}
       \field{pages}{1\bibrangedash 10}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2641580.2641589
+      \endverb
       \keyw{davidson2014older}
     \endentry
     \entry{wang2022monetary}{article}{}{}
@@ -578,6 +599,9 @@
       \field{dateera}{ce}
       \field{pages}{3549\bibrangedash 3572}
       \range{pages}{24}
+      \verb{doi}
+      \verb 10.1287/mnsc.2021.4048
+      \endverb
       \keyw{wang2022monetary}
     \endentry
     \entry{benabou2003intrinsic}{article}{}{}
@@ -638,6 +662,9 @@
       \field{dateera}{ce}
       \field{pages}{489\bibrangedash 520}
       \range{pages}{32}
+      \verb{doi}
+      \verb 10.1111/1467-937X.00253
+      \endverb
       \keyw{benabou2003intrinsic}
     \endentry
     \entry{qiao2021mitigating}{article}{}{}
@@ -718,6 +745,9 @@
       \field{dateera}{ce}
       \field{pages}{82\bibrangedash 107}
       \range{pages}{26}
+      \verb{doi}
+      \verb 10.1080/07421222.2021.1870385
+      \endverb
       \keyw{qiao2021mitigating}
     \endentry
     \entry{shimada2022github}{inproceedings}{}{}
@@ -806,6 +836,9 @@
       \field{dateera}{ce}
       \field{pages}{1058\bibrangedash 1069}
       \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3510003.3510116
+      \endverb
       \keyw{shimada2022github}
     \endentry
     \entry{zhang2022who}{inproceedings}{}{}
@@ -905,6 +938,9 @@
       \field{dateera}{ce}
       \field{pages}{1\bibrangedash 18}
       \range{pages}{18}
+      \verb{doi}
+      \verb 10.1145/3491102.3501822
+      \endverb
       \keyw{zhang2022who}
     \endentry
     \entry{conti2023incentivizing}{inproceedings}{}{}
@@ -983,6 +1019,9 @@
       \field{userf}{english}
       \field{year}{2023}
       \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.3386/w31668
+      \endverb
       \keyw{conti2023incentivizing}
     \endentry
     \entry{overney2020not}{inproceedings}{}{}
@@ -1061,73 +1100,83 @@
       \field{dateera}{ce}
       \field{pages}{1209\bibrangedash 1221}
       \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3377811.3380410
+      \endverb
       \keyw{overney2020not}
     \endentry
-    \entry{petryk2023gharchive}{inproceedings}{}{}
+    \entry{alami2024sustainability}{article}{}{}
       \name{author}{3}{}{%
-        {{hash=84c9a323f069ac72051812a8764cd4f4}{%
-           family={Petryk},
+        {{hash=3b9764b6f7a54d9b0199b0b649d228c0}{%
+           family={Alami},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dadb26d2c640b7aa2a2932132de01339}{%
+           family={Pardo},
            familyi={P\bibinitperiod},
-           given={Bohdan},
-           giveni={B\bibinitperiod}}}%
-        {{hash=e382f3812c19986a34d892dba5faa42b}{%
-           family={Milevskyi},
-           familyi={M\bibinitperiod},
-           given={Stanislav},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e49aa631edbf4e6bb1f966390ca96328}{%
-           family={Poshyvanyk},
-           familyi={P\bibinitperiod},
-           given={Denys},
-           giveni={D\bibinitperiod}}}%
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=78845484a1e9b8f8c480077855155c68}{%
+           family={Linåker},
+           familyi={L\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
       }
       \name{namea}{3}{}{%
-        {{hash=84c9a323f069ac72051812a8764cd4f4}{%
-           family={Petryk},
+        {{hash=3b9764b6f7a54d9b0199b0b649d228c0}{%
+           family={Alami},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dadb26d2c640b7aa2a2932132de01339}{%
+           family={Pardo},
            familyi={P\bibinitperiod},
-           given={Bohdan},
-           giveni={B\bibinitperiod}}}%
-        {{hash=e382f3812c19986a34d892dba5faa42b}{%
-           family={Milevskyi},
-           familyi={M\bibinitperiod},
-           given={Stanislav},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e49aa631edbf4e6bb1f966390ca96328}{%
-           family={Poshyvanyk},
-           familyi={P\bibinitperiod},
-           given={Denys},
-           giveni={D\bibinitperiod}}}%
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=78845484a1e9b8f8c480077855155c68}{%
+           family={Linåker},
+           familyi={L\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{1881a72e47995a0633f50c51ca0d25c6}
-      \strng{fullhash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{fullhashraw}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{bibnamehash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{authorbibnamehash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{authornamehash}{1881a72e47995a0633f50c51ca0d25c6}
-      \strng{authorfullhash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{authorfullhashraw}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{nameabibnamehash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{nameanamehash}{1881a72e47995a0633f50c51ca0d25c6}
-      \strng{nameafullhash}{6ecd0ba9dafc7699159b5cbf628856e3}
-      \strng{nameafullhashraw}{6ecd0ba9dafc7699159b5cbf628856e3}
+      \strng{namehash}{c002ed4be760d63b7845fef7971e2773}
+      \strng{fullhash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{fullhashraw}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{bibnamehash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{authorbibnamehash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{authornamehash}{c002ed4be760d63b7845fef7971e2773}
+      \strng{authorfullhash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{authorfullhashraw}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{nameabibnamehash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{nameanamehash}{c002ed4be760d63b7845fef7971e2773}
+      \strng{nameafullhash}{aa1d7579374b5cc6a22e00630b5ceacb}
+      \strng{nameafullhashraw}{aa1d7579374b5cc6a22e00630b5ceacb}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)}
+      \field{journaltitle}{Empirical Software Engineering}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{title}{A Large-Scale Empirical Study on the State of {CI/CD} Practices in the Open Source}
-      \field{usera}{C}
+      \field{number}{5}
+      \field{title}{Free Open Source Communities Sustainability: Does It Make a Difference in Software Quality?}
+      \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2023}
+      \field{volume}{29}
+      \field{year}{2024}
       \field{dateera}{ce}
-      \keyw{petryk2023gharchive}
+      \field{pages}{Article 127}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/s10664-024-10529-6
+      \endverb
+      \keyw{alami2024sustainability}
     \endentry
     \entry{wu2024governance}{article}{}{}
       \name{author}{2}{}{%
@@ -1169,87 +1218,156 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{5}
-      \field{title}{科技治理与治理科技——区块链技术治理的多维审视}
+      \field{number}{8}
+      \field{title}{科技治理与治理科技：以区块链数字资产的规制研究为视角}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{39}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{pages}{901\bibrangedash 912}
-      \range{pages}{12}
+      \field{pages}{1375\bibrangedash 1388}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.16418/j.issn.1000-3045.20240323001
+      \endverb
       \keyw{wu2024governance}
     \endentry
-    \entry{huang2021examining}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=30918ba64f15da7ff8ea9c593a930c6e}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Ke},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fe52dbd971ced117fd411842aa4bbc45}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xiaolong},
-           giveni={X\bibinitperiod}}}%
-        {{hash=4f58c1992a80507b39d2dd5fb73e2c5e}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Bernard\bibnamedelimb C.\bibnamedelimi Y.},
-           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+    \entry{connelly2011signaling}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=c947c8c39f921ebcabc5010564dbb5dc}{%
+           family={Connelly},
+           familyi={C\bibinitperiod},
+           given={Brian\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3b0facb8b5bdaa5dc9a2989fdd91cdc4}{%
+           family={Certo},
+           familyi={C\bibinitperiod},
+           given={S.\bibnamedelimi Trevis},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=80b651c5e9be42360766f5f0058f56fb}{%
+           family={Ireland},
+           familyi={I\bibinitperiod},
+           given={R.\bibnamedelimi Duane},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=53fccc9c694dc0b69f53271e1f570fe8}{%
+           family={Reutzel},
+           familyi={R\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \name{namea}{3}{}{%
-        {{hash=30918ba64f15da7ff8ea9c593a930c6e}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Ke},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fe52dbd971ced117fd411842aa4bbc45}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xiaolong},
-           giveni={X\bibinitperiod}}}%
-        {{hash=4f58c1992a80507b39d2dd5fb73e2c5e}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Bernard\bibnamedelimb C.\bibnamedelimi Y.},
-           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      \name{namea}{4}{}{%
+        {{hash=c947c8c39f921ebcabc5010564dbb5dc}{%
+           family={Connelly},
+           familyi={C\bibinitperiod},
+           given={Brian\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3b0facb8b5bdaa5dc9a2989fdd91cdc4}{%
+           family={Certo},
+           familyi={C\bibinitperiod},
+           given={S.\bibnamedelimi Trevis},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=80b651c5e9be42360766f5f0058f56fb}{%
+           family={Ireland},
+           familyi={I\bibinitperiod},
+           given={R.\bibnamedelimi Duane},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=53fccc9c694dc0b69f53271e1f570fe8}{%
+           family={Reutzel},
+           familyi={R\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{4d9abc38bbf122f4a78c9e5367b7b07c}
-      \strng{fullhash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{fullhashraw}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{bibnamehash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{authorbibnamehash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{authornamehash}{4d9abc38bbf122f4a78c9e5367b7b07c}
-      \strng{authorfullhash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{authorfullhashraw}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{nameabibnamehash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{nameanamehash}{4d9abc38bbf122f4a78c9e5367b7b07c}
-      \strng{nameafullhash}{108202f67fe8a8ee1bfa545aadc4c26a}
-      \strng{nameafullhashraw}{108202f67fe8a8ee1bfa545aadc4c26a}
+      \strng{namehash}{06ffb2e26cb5c34060831135501085f6}
+      \strng{fullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
+      \strng{fullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
+      \strng{bibnamehash}{5ffd25b1822596b5674231261baa6ee7}
+      \strng{authorbibnamehash}{5ffd25b1822596b5674231261baa6ee7}
+      \strng{authornamehash}{06ffb2e26cb5c34060831135501085f6}
+      \strng{authorfullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
+      \strng{authorfullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
+      \strng{nameabibnamehash}{5ffd25b1822596b5674231261baa6ee7}
+      \strng{nameanamehash}{06ffb2e26cb5c34060831135501085f6}
+      \strng{nameafullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
+      \strng{nameafullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Association for Information Systems}
+      \field{journaltitle}{Journal of Management}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{number}{3}
-      \field{title}{Examining the Role of Information Signals in Crowdfunding: A Meta-Analytic Approach}
+      \field{number}{1}
+      \field{title}{Signaling Theory: A Review and Assessment}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{22}
-      \field{year}{2021}
+      \field{volume}{37}
+      \field{year}{2011}
       \field{dateera}{ce}
-      \field{pages}{651\bibrangedash 680}
-      \range{pages}{30}
-      \keyw{huang2021examining}
+      \field{pages}{39\bibrangedash 67}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1177/0149206310388419
+      \endverb
+      \keyw{connelly2011signaling}
+    \endentry
+    \entry{mollick2014dynamics}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=32446d44de47fd1bae2745b4876b9b07}{%
+           family={Mollick},
+           familyi={M\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=32446d44de47fd1bae2745b4876b9b07}{%
+           family={Mollick},
+           familyi={M\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{fullhash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{fullhashraw}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{bibnamehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{authorbibnamehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{authornamehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{authorfullhash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{authorfullhashraw}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{nameabibnamehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{nameanamehash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{nameafullhash}{32446d44de47fd1bae2745b4876b9b07}
+      \strng{nameafullhashraw}{32446d44de47fd1bae2745b4876b9b07}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business Venturing}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{The Dynamics of Crowdfunding: An Exploratory Study}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jbusvent.2013.06.005
+      \endverb
+      \keyw{mollick2014dynamics}
     \endentry
     \entry{guzzi2013}{inproceedings}{}{}
       \name{author}{5}{}{%
@@ -1341,6 +1459,9 @@
       \field{dateera}{ce}
       \field{pages}{377\bibrangedash 386}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MSR.2013.6624039
+      \endverb
       \keyw{guzzi2013}
     \endentry
     \entry{wang2022influence}{inproceedings}{}{}
@@ -1440,6 +1561,9 @@
       \field{dateera}{ce}
       \field{pages}{924\bibrangedash 933}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/COMPSAC54236.2022.00144
+      \endverb
       \keyw{wang2022influence}
     \endentry
     \entry{schwarz1983moods}{article}{}{}
@@ -1500,6 +1624,9 @@
       \field{dateera}{ce}
       \field{pages}{513\bibrangedash 523}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1037/0022-3514.45.3.513
+      \endverb
       \keyw{schwarz1983moods}
     \endentry
     \entry{gerosa2021shifting}{inproceedings}{}{}
@@ -1675,15 +1802,15 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{10}
-      \field{title}{开源软件社区知识协作网络核心开发者识别研究}
+      \field{number}{3}
+      \field{title}{开源软件社区知识协作网络核心开发者识别——以{AngularJS}为例}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{43}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{1835\bibrangedash 1843}
+      \field{pages}{551\bibrangedash 559}
       \range{pages}{9}
       \keyw{lu2021core}
     \endentry
@@ -1814,14 +1941,14 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{1}
-      \field{title}{开源创新的现状、热点及趋势分析}
+      \field{number}{5}
+      \field{title}{开源创新的现状、热点及趋势分析——基于2005—2024年知网文献的计量研究}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{year}{2025}
       \field{dateera}{ce}
-      \field{pages}{176\bibrangedash 190}
+      \field{pages}{125\bibrangedash 139}
       \range{pages}{15}
       \keyw{wang2025opensource}
     \endentry
@@ -1871,16 +1998,19 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{4}
-      \field{title}{开源数字经济的创新逻辑}
+      \field{number}{3}
+      \field{title}{开源数字经济的创新逻辑：大数据合作资产视角}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{20}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{46\bibrangedash 55}
-      \range{pages}{10}
+      \field{pages}{37\bibrangedash 49}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.16797/j.cnki.11-5224/c.20210706.009
+      \endverb
       \keyw{qi2021opensource}
     \endentry
     \entry{hertel2003motivation}{article}{}{}
@@ -1951,58 +2081,61 @@
       \field{dateera}{ce}
       \field{pages}{1159\bibrangedash 1177}
       \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/S0048-7333(03)00047-7
+      \endverb
       \keyw{hertel2003motivation}
     \endentry
     \entry{tulili2025exploring}{inproceedings}{}{}
       \name{author}{3}{}{%
-        {{hash=0e4d004c89c0fb3ca08167f8717e323f}{%
+        {{hash=43fd4339a8c2228df00aa190c439aba4}{%
            family={Tulili},
            familyi={T\bibinitperiod},
-           given={Tina},
-           giveni={T\bibinitperiod}}}%
-        {{hash=79c55eca775de87d32f6c20226bd13f1}{%
-           family={Feitosa},
-           familyi={F\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=c526947bff4f91d727e5b4dd9e8003d3}{%
-           family={Avgeriou},
-           familyi={A\bibinitperiod},
-           given={Paris},
-           giveni={P\bibinitperiod}}}%
+           given={Tien\bibnamedelima Rahayu},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9111366883278821d99a9dac469dedb4}{%
+           family={Rastogi},
+           familyi={R\bibinitperiod},
+           given={Ayushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=44ca95c923d5add46d6b2f39e1e816a8}{%
+           family={Capiluppi},
+           familyi={C\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
       }
       \name{namea}{3}{}{%
-        {{hash=0e4d004c89c0fb3ca08167f8717e323f}{%
+        {{hash=43fd4339a8c2228df00aa190c439aba4}{%
            family={Tulili},
            familyi={T\bibinitperiod},
-           given={Tina},
-           giveni={T\bibinitperiod}}}%
-        {{hash=79c55eca775de87d32f6c20226bd13f1}{%
-           family={Feitosa},
-           familyi={F\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=c526947bff4f91d727e5b4dd9e8003d3}{%
-           family={Avgeriou},
-           familyi={A\bibinitperiod},
-           given={Paris},
-           giveni={P\bibinitperiod}}}%
+           given={Tien\bibnamedelima Rahayu},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9111366883278821d99a9dac469dedb4}{%
+           family={Rastogi},
+           familyi={R\bibinitperiod},
+           given={Ayushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=44ca95c923d5add46d6b2f39e1e816a8}{%
+           family={Capiluppi},
+           familyi={C\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{b7602a53fa4e728759e0d408fc2ee08f}
-      \strng{fullhash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{fullhashraw}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{bibnamehash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{authorbibnamehash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{authornamehash}{b7602a53fa4e728759e0d408fc2ee08f}
-      \strng{authorfullhash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{authorfullhashraw}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{nameabibnamehash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{nameanamehash}{b7602a53fa4e728759e0d408fc2ee08f}
-      \strng{nameafullhash}{f900c98fb9369b199022dee4b2d8c0e6}
-      \strng{nameafullhashraw}{f900c98fb9369b199022dee4b2d8c0e6}
+      \strng{namehash}{30df360173477452ff42ebfb51418e34}
+      \strng{fullhash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{fullhashraw}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{bibnamehash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{authorbibnamehash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{authornamehash}{30df360173477452ff42ebfb51418e34}
+      \strng{authorfullhash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{authorfullhashraw}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{nameabibnamehash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{nameanamehash}{30df360173477452ff42ebfb51418e34}
+      \strng{nameafullhash}{3db6343e0669db1f3a07c9a9798fb890}
+      \strng{nameafullhashraw}{3db6343e0669db1f3a07c9a9798fb890}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -2011,14 +2144,14 @@
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{title}{Exploring Turnover, Retention, and Growth of Open Source Software Core Teams}
+      \field{title}{Exploring Turnover, Retention and Growth in an {OSS} Ecosystem}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
       \field{year}{2025}
       \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 12}
-      \range{pages}{12}
+      \field{pages}{887\bibrangedash 897}
+      \range{pages}{11}
       \verb{doi}
       \verb 10.1145/3756681.3757050
       \endverb
@@ -2083,15 +2216,15 @@
       \field{languageid}{chinese}
       \field{lansortorder}{1}
       \field{number}{3}
-      \field{title}{虚拟社区激励政策对成员参与动机的影响研究}
+      \field{title}{虚拟社区激励政策对成员参与动机的影响:强化还是削弱?}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{10}
       \field{year}{2014}
       \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 18}
-      \range{pages}{18}
+      \field{pages}{99\bibrangedash 112}
+      \range{pages}{14}
       \keyw{lou2014incentive}
     \endentry
     \entry{ryan2000self}{article}{}{}
@@ -2152,6 +2285,9 @@
       \field{dateera}{ce}
       \field{pages}{68\bibrangedash 78}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1037/0003-066X.55.1.68
+      \endverb
       \keyw{ryan2000self}
     \endentry
     \entry{wang2022reward}{article}{}{}
@@ -2200,7 +2336,7 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{4}
+      \field{number}{2}
       \field{title}{有偿奖励对医生在线健康社区中贡献行为的影响}
       \field{usera}{J}
       \field{userd}{chinese}
@@ -2208,8 +2344,8 @@
       \field{volume}{31}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{pages}{781\bibrangedash 793}
-      \range{pages}{13}
+      \field{pages}{343\bibrangedash 352}
+      \range{pages}{10}
       \keyw{wang2022reward}
     \endentry
     \entry{yang2021differential}{article}{}{}
@@ -2290,6 +2426,9 @@
       \field{dateera}{ce}
       \field{pages}{1133\bibrangedash 1147}
       \range{pages}{15}
+      \verb{doi}
+      \verb 10.1002/asi.24481
+      \endverb
       \keyw{yang2021differential}
     \endentry
     \entry{qin2020contribution}{article}{}{}
@@ -2333,16 +2472,19 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{8}
-      \field{title}{在线用户社区用户贡献行为形成机制研究}
+      \field{number}{9}
+      \field{title}{在线用户社区用户贡献行为形成机制研究:在线社会支持和自我决定理论视角}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{32}
       \field{year}{2020}
       \field{dateera}{ce}
-      \field{pages}{158\bibrangedash 169}
-      \range{pages}{12}
+      \field{pages}{168\bibrangedash 181}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.14120/j.cnki.cn11-5057/f.2020.09.014
+      \endverb
       \keyw{qin2020contribution}
     \endentry
     \entry{qin2015cas}{article}{}{}
@@ -2392,16 +2534,19 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{11}
-      \field{title}{基于{CAS}理论的企业开放式创新社区在线用户贡献行为研究}
+      \field{number}{1}
+      \field{title}{基于{CAS}理论的企业开放式创新社区在线用户贡献行为研究:以国内知名企业社区为例}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{27}
       \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{88\bibrangedash 99}
+      \field{pages}{126\bibrangedash 137}
       \range{pages}{12}
+      \verb{doi}
+      \verb 10.14120/j.cnki.cn11-5057/f.2015.01.012
+      \endverb
       \keyw{qin2015cas}
     \endentry
     \entry{sun2017motivation}{article}{}{}
@@ -2472,6 +2617,9 @@
       \field{dateera}{ce}
       \field{pages}{329\bibrangedash 337}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1287/mksc.2016.1022
+      \endverb
       \keyw{sun2017motivation}
     \endentry
     \entry{kobayakawa2020impact}{article}{}{}
@@ -2551,6 +2699,9 @@
       \field{dateera}{ce}
       \field{pages}{650\bibrangedash 657}
       \range{pages}{8}
+      \verb{doi}
+      \verb 10.2197/ipsjjip.28.650
+      \endverb
       \keyw{kobayakawa2020impact}
     \endentry
     \entry{dai2019collaborative}{article}{}{}
@@ -2605,16 +2756,16 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{2}
-      \field{title}{开发人员协同开发行为特征对开源项目成功的影响研究}
+      \field{number}{10}
+      \field{title}{开发人员协同开发行为特征对开源项目成功的影响}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{3}
       \field{year}{2019}
       \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 10}
-      \range{pages}{10}
+      \field{pages}{110\bibrangedash 117}
+      \range{pages}{8}
       \keyw{dai2019collaborative}
     \endentry
     \entry{verrecchia1983discretionary}{article}{}{}
@@ -2664,6 +2815,9 @@
       \field{dateera}{ce}
       \field{pages}{179\bibrangedash 194}
       \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/0165-4101(83)90011-3
+      \endverb
       \keyw{verrecchia1983discretionary}
     \endentry
     \entry{liu2015nonprofit}{article}{}{}
@@ -2700,15 +2854,15 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{4}
+      \field{number}{2}
       \field{title}{非营利组织在线问责实践会影响组织的捐赠收入吗?}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{86\bibrangedash 93}
-      \range{pages}{8}
+      \field{pages}{86\bibrangedash 93\bibrangessep 133}
+      \range{pages}{9}
       \keyw{liu2015nonprofit}
     \endentry
     \entry{spence1973job}{article}{}{}
@@ -2759,178 +2913,61 @@
       \field{dateera}{ce}
       \field{pages}{355\bibrangedash 374}
       \range{pages}{20}
+      \verb{doi}
+      \verb 10.2307/1882010
+      \endverb
       \keyw{spence1973job}
     \endentry
-    \entry{connelly2011signaling}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=c947c8c39f921ebcabc5010564dbb5dc}{%
-           family={Connelly},
-           familyi={C\bibinitperiod},
-           given={Brian\bibnamedelima L.},
-           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=3b0facb8b5bdaa5dc9a2989fdd91cdc4}{%
-           family={Certo},
-           familyi={C\bibinitperiod},
-           given={S.\bibnamedelimi Trevis},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=80b651c5e9be42360766f5f0058f56fb}{%
-           family={Ireland},
-           familyi={I\bibinitperiod},
-           given={R.\bibnamedelimi Duane},
-           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=53fccc9c694dc0b69f53271e1f570fe8}{%
-           family={Reutzel},
-           familyi={R\bibinitperiod},
-           given={Christopher\bibnamedelima R.},
-           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \name{namea}{4}{}{%
-        {{hash=c947c8c39f921ebcabc5010564dbb5dc}{%
-           family={Connelly},
-           familyi={C\bibinitperiod},
-           given={Brian\bibnamedelima L.},
-           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=3b0facb8b5bdaa5dc9a2989fdd91cdc4}{%
-           family={Certo},
-           familyi={C\bibinitperiod},
-           given={S.\bibnamedelimi Trevis},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=80b651c5e9be42360766f5f0058f56fb}{%
-           family={Ireland},
-           familyi={I\bibinitperiod},
-           given={R.\bibnamedelimi Duane},
-           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=53fccc9c694dc0b69f53271e1f570fe8}{%
-           family={Reutzel},
-           familyi={R\bibinitperiod},
-           given={Christopher\bibnamedelima R.},
-           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{06ffb2e26cb5c34060831135501085f6}
-      \strng{fullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \strng{fullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \strng{bibnamehash}{5ffd25b1822596b5674231261baa6ee7}
-      \strng{authorbibnamehash}{5ffd25b1822596b5674231261baa6ee7}
-      \strng{authornamehash}{06ffb2e26cb5c34060831135501085f6}
-      \strng{authorfullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \strng{authorfullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \strng{nameabibnamehash}{5ffd25b1822596b5674231261baa6ee7}
-      \strng{nameanamehash}{06ffb2e26cb5c34060831135501085f6}
-      \strng{nameafullhash}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \strng{nameafullhashraw}{fb5eab6bf2ce05c41392d9f8fedd1135}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Management}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{Signaling Theory: A Review and Assessment}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{37}
-      \field{year}{2011}
-      \field{dateera}{ce}
-      \field{pages}{39\bibrangedash 67}
-      \range{pages}{29}
-      \keyw{connelly2011signaling}
-    \endentry
-    \entry{mollick2014dynamics}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=32446d44de47fd1bae2745b4876b9b07}{%
-           family={Mollick},
-           familyi={M\bibinitperiod},
-           given={Ethan},
-           giveni={E\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=32446d44de47fd1bae2745b4876b9b07}{%
-           family={Mollick},
-           familyi={M\bibinitperiod},
-           given={Ethan},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{fullhash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{fullhashraw}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{bibnamehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{authorbibnamehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{authornamehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{authorfullhash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{authorfullhashraw}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{nameabibnamehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{nameanamehash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{nameafullhash}{32446d44de47fd1bae2745b4876b9b07}
-      \strng{nameafullhashraw}{32446d44de47fd1bae2745b4876b9b07}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Business Venturing}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{The Dynamics of Crowdfunding: An Exploratory Study}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{29}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 16}
-      \range{pages}{16}
-      \keyw{mollick2014dynamics}
-    \endentry
     \entry{kim2022risk}{article}{}{}
-      \name{author}{2}{}{%
+      \name{author}{3}{}{%
         {{hash=6e7832b8abad07f92e1f175fb7a034b4}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Keongtae},
            giveni={K\bibinitperiod}}}%
-        {{hash=a73806a1a0d6604ecd8744b887eddf4d}{%
-           family={Viswanathan},
-           familyi={V\bibinitperiod},
-           given={Siva},
-           giveni={S\bibinitperiod}}}%
+        {{hash=f19a3629990ea8f0ffe236ef9dc1e3e2}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jooyoung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f76d68dd6b038f64d1854f6afc8d4d18}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
       }
-      \name{namea}{2}{}{%
+      \name{namea}{3}{}{%
         {{hash=6e7832b8abad07f92e1f175fb7a034b4}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Keongtae},
            giveni={K\bibinitperiod}}}%
-        {{hash=a73806a1a0d6604ecd8744b887eddf4d}{%
-           family={Viswanathan},
-           familyi={V\bibinitperiod},
-           given={Siva},
-           giveni={S\bibinitperiod}}}%
+        {{hash=f19a3629990ea8f0ffe236ef9dc1e3e2}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jooyoung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f76d68dd6b038f64d1854f6afc8d4d18}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \strng{namehash}{fdb9ee6db38df6fbef5f74d0551ec085}
-      \strng{fullhash}{7486f17a895997d700713377c09d232a}
-      \strng{fullhashraw}{7486f17a895997d700713377c09d232a}
-      \strng{bibnamehash}{7486f17a895997d700713377c09d232a}
-      \strng{authorbibnamehash}{7486f17a895997d700713377c09d232a}
+      \strng{fullhash}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{fullhashraw}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{bibnamehash}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{authorbibnamehash}{2efbf5d58106c1d284370a6354ee41a0}
       \strng{authornamehash}{fdb9ee6db38df6fbef5f74d0551ec085}
-      \strng{authorfullhash}{7486f17a895997d700713377c09d232a}
-      \strng{authorfullhashraw}{7486f17a895997d700713377c09d232a}
-      \strng{nameabibnamehash}{7486f17a895997d700713377c09d232a}
+      \strng{authorfullhash}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{authorfullhashraw}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{nameabibnamehash}{2efbf5d58106c1d284370a6354ee41a0}
       \strng{nameanamehash}{fdb9ee6db38df6fbef5f74d0551ec085}
-      \strng{nameafullhash}{7486f17a895997d700713377c09d232a}
-      \strng{nameafullhashraw}{7486f17a895997d700713377c09d232a}
+      \strng{nameafullhash}{2efbf5d58106c1d284370a6354ee41a0}
+      \strng{nameafullhashraw}{2efbf5d58106c1d284370a6354ee41a0}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -2940,60 +2977,70 @@
       \field{languageid}{english}
       \field{lansortorder}{4}
       \field{number}{3}
-      \field{title}{The Experts in the Crowd: The Role of Experienced Investors in a Crowdfunding Market}
+      \field{title}{Risk Disclosure in Crowdfunding}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
       \field{volume}{33}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{pages}{1089\bibrangedash 1108}
-      \range{pages}{20}
+      \field{pages}{1023\bibrangedash 1041}
+      \range{pages}{19}
       \verb{doi}
       \verb 10.1287/isre.2021.1096
       \endverb
       \keyw{kim2022risk}
     \endentry
     \entry{conti2025beefing}{article}{}{}
-      \name{author}{2}{}{%
+      \name{author}{3}{}{%
         {{hash=faea94647714ad571912f593eebf7c8b}{%
            family={Conti},
            familyi={C\bibinitperiod},
            given={Annamaria},
            giveni={A\bibinitperiod}}}%
-        {{hash=b09d222c51985c4e9ad2dc7bb1d80a93}{%
+        {{hash=5b224e01877025c68cef5f0d5763e399}{%
+           family={Peukert},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aade2cf9efa29e8ac34e7fdd25f6c055}{%
            family={Roche},
            familyi={R\bibinitperiod},
-           given={Martin\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
       }
-      \name{namea}{2}{}{%
+      \name{namea}{3}{}{%
         {{hash=faea94647714ad571912f593eebf7c8b}{%
            family={Conti},
            familyi={C\bibinitperiod},
            given={Annamaria},
            giveni={A\bibinitperiod}}}%
-        {{hash=b09d222c51985c4e9ad2dc7bb1d80a93}{%
+        {{hash=5b224e01877025c68cef5f0d5763e399}{%
+           family={Peukert},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aade2cf9efa29e8ac34e7fdd25f6c055}{%
            family={Roche},
            familyi={R\bibinitperiod},
-           given={Martin\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \strng{namehash}{590dd1ea036201cadff0953dd37d23ba}
-      \strng{fullhash}{a2299ff608a09333b05a84251a97dc11}
-      \strng{fullhashraw}{a2299ff608a09333b05a84251a97dc11}
-      \strng{bibnamehash}{a2299ff608a09333b05a84251a97dc11}
-      \strng{authorbibnamehash}{a2299ff608a09333b05a84251a97dc11}
+      \strng{fullhash}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{fullhashraw}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{bibnamehash}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{authorbibnamehash}{21ff5db66d71c5066a113e35f8b45c1e}
       \strng{authornamehash}{590dd1ea036201cadff0953dd37d23ba}
-      \strng{authorfullhash}{a2299ff608a09333b05a84251a97dc11}
-      \strng{authorfullhashraw}{a2299ff608a09333b05a84251a97dc11}
-      \strng{nameabibnamehash}{a2299ff608a09333b05a84251a97dc11}
+      \strng{authorfullhash}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{authorfullhashraw}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{nameabibnamehash}{21ff5db66d71c5066a113e35f8b45c1e}
       \strng{nameanamehash}{590dd1ea036201cadff0953dd37d23ba}
-      \strng{nameafullhash}{a2299ff608a09333b05a84251a97dc11}
-      \strng{nameafullhashraw}{a2299ff608a09333b05a84251a97dc11}
+      \strng{nameafullhash}{21ff5db66d71c5066a113e35f8b45c1e}
+      \strng{nameafullhashraw}{21ff5db66d71c5066a113e35f8b45c1e}
       \field{extraname}{2}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
@@ -3004,21 +3051,83 @@
       \field{languageid}{english}
       \field{lansortorder}{4}
       \field{number}{4}
-      \field{title}{Beefing {IT} Up for Your Investor? The Role of Information Transparency in Entrepreneurial Finance}
+      \field{title}{Beefing {IT} Up for Your Investor? Engagement with Open Source Communities, Innovation, and Startup Funding}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
       \field{volume}{36}
       \field{year}{2025}
       \field{dateera}{ce}
-      \field{pages}{1437\bibrangedash 1463}
-      \range{pages}{27}
+      \field{pages}{1551\bibrangedash 1573}
+      \range{pages}{23}
       \verb{doi}
       \verb 10.1287/orsc.2023.18348
       \endverb
       \keyw{conti2025beefing}
     \endentry
-    \entry{toubia2021attention}{article}{}{}
+    \entry{qiu2025crowdfunding}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=603ba75a914c4d180cf63d509a36da82}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9012c37c3f84402d4744344e86391a39}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xuefeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=603ba75a914c4d180cf63d509a36da82}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9012c37c3f84402d4744344e86391a39}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xuefeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c5ee350c8558c2b2f13b443bbc6e996e}
+      \strng{fullhash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{fullhashraw}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{bibnamehash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{authorbibnamehash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{authornamehash}{c5ee350c8558c2b2f13b443bbc6e996e}
+      \strng{authorfullhash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{authorfullhashraw}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{nameabibnamehash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{nameanamehash}{c5ee350c8558c2b2f13b443bbc6e996e}
+      \strng{nameafullhash}{d3b8e0efbd438680cebe3086bee3900a}
+      \strng{nameafullhashraw}{d3b8e0efbd438680cebe3086bee3900a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interdisciplinary Journal of Information, Knowledge, and Management}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Examining the Roles of Metainformational Cues in Crowdfunding Success from the Elaboration Likelihood Model Perspective}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{011}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.28945/5479
+      \endverb
+      \keyw{qiu2025crowdfunding}
+    \endentry
+    \entry{toubia2013intrinsic}{article}{}{}
       \name{author}{2}{}{%
         {{hash=ac6cd763c94f28c8d99040c257508b8b}{%
            family={Toubia},
@@ -3067,7 +3176,7 @@
       \field{languageid}{english}
       \field{lansortorder}{4}
       \field{number}{3}
-      \field{title}{Intrinsic vs. Image-Related Utility in Social Media: Why Do People Contribute Content?}
+      \field{title}{Intrinsic vs. Image-Related Utility in Social Media: Why Do People Contribute Content to {Twitter}?}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
@@ -3076,7 +3185,10 @@
       \field{dateera}{ce}
       \field{pages}{368\bibrangedash 392}
       \range{pages}{25}
-      \keyw{toubia2021attention}
+      \verb{doi}
+      \verb 10.1287/mksc.2013.0773
+      \endverb
+      \keyw{toubia2013intrinsic}
     \endentry
     \entry{du2023impact}{article}{}{}
       \name{author}{1}{}{%
@@ -3293,16 +3405,16 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{2}
-      \field{title}{在线产品创新社区用户识别机制与用户贡献行为研究}
+      \field{number}{3}
+      \field{title}{在线产品创新社区用户识别机制与用户贡献行为研究:基于亲社会行为理论视角}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{20}
       \field{year}{2017}
       \field{dateera}{ce}
-      \field{pages}{12\bibrangedash 24}
-      \range{pages}{13}
+      \field{pages}{28\bibrangedash 39}
+      \range{pages}{12}
       \keyw{qin2017user}
     \endentry
     \entry{oliver1980cognitive}{article}{}{}
@@ -3353,6 +3465,9 @@
       \field{dateera}{ce}
       \field{pages}{460\bibrangedash 469}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.2307/3150499
+      \endverb
       \keyw{oliver1980cognitive}
     \endentry
     \entry{abrate2021relationship}{article}{}{}
@@ -3422,6 +3537,9 @@
       \field{dateera}{ce}
       \field{pages}{104314}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.tourman.2021.104314
+      \endverb
       \keyw{abrate2021relationship}
     \endentry
     \entry{bhattacherjee2001understanding}{article}{}{}
@@ -3472,6 +3590,9 @@
       \field{dateera}{ce}
       \field{pages}{351\bibrangedash 370}
       \range{pages}{20}
+      \verb{doi}
+      \verb 10.2307/3250921
+      \endverb
       \keyw{bhattacherjee2001understanding}
     \endentry
     \entry{yang2020sentiment}{article}{}{}
@@ -3508,7 +3629,7 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{3}
+      \field{number}{6}
       \field{title}{社交媒体网络情感传染及线索影响机制的实证分析}
       \field{usera}{J}
       \field{userd}{chinese}
@@ -3516,7 +3637,7 @@
       \field{volume}{37}
       \field{year}{2020}
       \field{dateera}{ce}
-      \field{pages}{141\bibrangedash 152}
+      \field{pages}{115\bibrangedash 126}
       \range{pages}{12}
       \keyw{yang2020sentiment}
     \endentry
@@ -3617,9 +3738,12 @@
       \field{dateera}{ce}
       \field{pages}{331\bibrangedash 378}
       \range{pages}{48}
+      \verb{doi}
+      \verb 10.1016/S0065-2601(02)80008-9
+      \endverb
       \keyw{kruglanski2002theory}
     \endentry
-    \entry{schroter2010}{article}{}{}
+    \entry{schroter2010}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=4fabcf4dd1102dee09dae888c4f73be0}{%
            family={Schroter},
@@ -3673,20 +3797,21 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Empirical Software Engineering}
+      \field{booktitle}{2010 7th IEEE Working Conference on Mining Software Repositories (MSR)}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{number}{6}
-      \field{title}{Do Stack Overflow Answers Reflect the Needs of Developers?}
-      \field{usera}{J}
+      \field{title}{Do Stack Traces Help Developers Fix Bugs?}
+      \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{15}
       \field{year}{2010}
       \field{dateera}{ce}
-      \field{pages}{632\bibrangedash 668}
-      \range{pages}{37}
+      \field{pages}{118\bibrangedash 121}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/msr.2010.5463280
+      \endverb
       \keyw{schroter2010}
     \endentry
     \entry{ortu2015bullies}{inproceedings}{}{}
@@ -3785,9 +3910,12 @@
       \field{dateera}{ce}
       \field{pages}{303\bibrangedash 313}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/MSR.2015.35
+      \endverb
       \keyw{ortu2015bullies}
     \endentry
-    \entry{novielli2018sentiment}{article}{}{}
+    \entry{novielli2018sentiment}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=38d1cc0512728ee8730d261b03d1400f}{%
            family={Novielli},
@@ -3842,75 +3970,78 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Mining Software Repositories Conference (MSR)}
+      \field{booktitle}{Proceedings of the 15th International Conference on Mining Software Repositories (MSR)}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
       \field{title}{A Benchmark Study on Sentiment Analysis for Software Engineering Research}
-      \field{usera}{J}
+      \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
       \field{year}{2018}
       \field{dateera}{ce}
       \field{pages}{364\bibrangedash 375}
       \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3196398.3196403
+      \endverb
       \keyw{novielli2018sentiment}
     \endentry
     \entry{xie2021influence}{inproceedings}{}{}
       \name{author}{2}{}{%
-        {{hash=4d7e559889186dffb2c792e8438356c8}{%
+        {{hash=0363f7e1d4bd6607fa22ea8d2fe44354}{%
            family={Xie},
            familyi={X\bibinitperiod},
-           given={Qi},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=68be201a97ce758817422e6d82872f4d}{%
+           given={Shilin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=afa24df8fadadd706de381a7551af02d}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
-           given={Yuxia},
-           giveni={Y\bibinitperiod}}}%
+           given={Xiaodong},
+           giveni={X\bibinitperiod}}}%
       }
       \name{namea}{2}{}{%
-        {{hash=4d7e559889186dffb2c792e8438356c8}{%
+        {{hash=0363f7e1d4bd6607fa22ea8d2fe44354}{%
            family={Xie},
            familyi={X\bibinitperiod},
-           given={Qi},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=68be201a97ce758817422e6d82872f4d}{%
+           given={Shilin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=afa24df8fadadd706de381a7551af02d}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
-           given={Yuxia},
-           giveni={Y\bibinitperiod}}}%
+           given={Xiaodong},
+           giveni={X\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{3095c06dd1d0db2ba252e1e8d793dce2}
-      \strng{fullhash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{fullhashraw}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{bibnamehash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{authorbibnamehash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{authornamehash}{3095c06dd1d0db2ba252e1e8d793dce2}
-      \strng{authorfullhash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{authorfullhashraw}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{nameabibnamehash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{nameanamehash}{3095c06dd1d0db2ba252e1e8d793dce2}
-      \strng{nameafullhash}{29be1f1f7257042b412aeb6f5c45eebc}
-      \strng{nameafullhashraw}{29be1f1f7257042b412aeb6f5c45eebc}
+      \strng{namehash}{644a8e09b4a4400cfb341d88c1ae636b}
+      \strng{fullhash}{664512ad047edd90b6094012e386b80c}
+      \strng{fullhashraw}{664512ad047edd90b6094012e386b80c}
+      \strng{bibnamehash}{664512ad047edd90b6094012e386b80c}
+      \strng{authorbibnamehash}{664512ad047edd90b6094012e386b80c}
+      \strng{authornamehash}{644a8e09b4a4400cfb341d88c1ae636b}
+      \strng{authorfullhash}{664512ad047edd90b6094012e386b80c}
+      \strng{authorfullhashraw}{664512ad047edd90b6094012e386b80c}
+      \strng{nameabibnamehash}{664512ad047edd90b6094012e386b80c}
+      \strng{nameanamehash}{644a8e09b4a4400cfb341d88c1ae636b}
+      \strng{nameafullhash}{664512ad047edd90b6094012e386b80c}
+      \strng{nameafullhashraw}{664512ad047edd90b6094012e386b80c}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2021 IEEE 25th International Conference on Computer Supported Cooperative Work in Design (CSCWD)}
+      \field{booktitle}{2021 IEEE 24th International Conference on Computer Supported Cooperative Work in Design (CSCWD)}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{title}{The Influence of Developer Sentiment on Willingness to Contribute in Open Source Software}
+      \field{title}{The Influence of Contributor Sentiment on Willingness to Contribute Knowledge in Open Source Product}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{1137\bibrangedash 1142}
+      \field{pages}{614\bibrangedash 619}
       \range{pages}{6}
       \verb{doi}
       \verb 10.1109/cscwd49262.2021.9437837
@@ -3992,7 +4123,7 @@
       \keyw{li2021monitoring}
     \endentry
     \entry{novielli2021assessment}{article}{}{}
-      \name{author}{5}{}{%
+      \name{author}{3}{}{%
         {{hash=38d1cc0512728ee8730d261b03d1400f}{%
            family={Novielli},
            familyi={N\bibinitperiod},
@@ -4003,23 +4134,13 @@
            familyi={C\bibinitperiod},
            given={Fabio},
            giveni={F\bibinitperiod}}}%
-        {{hash=e653212a68f5f0c3a63c34a2757a51ca}{%
-           family={Dongiovanni},
-           familyi={D\bibinitperiod},
-           given={Davide},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0068e7e838a67e99531d747c3fb2e657}{%
-           family={Girardi},
-           familyi={G\bibinitperiod},
-           given={Daniela},
-           giveni={D\bibinitperiod}}}%
         {{hash=235f98ba63295236cda11fe0d3fcb284}{%
            family={Lanubile},
            familyi={L\bibinitperiod},
            given={Filippo},
            giveni={F\bibinitperiod}}}%
       }
-      \name{namea}{5}{}{%
+      \name{namea}{3}{}{%
         {{hash=38d1cc0512728ee8730d261b03d1400f}{%
            family={Novielli},
            familyi={N\bibinitperiod},
@@ -4030,16 +4151,6 @@
            familyi={C\bibinitperiod},
            given={Fabio},
            giveni={F\bibinitperiod}}}%
-        {{hash=e653212a68f5f0c3a63c34a2757a51ca}{%
-           family={Dongiovanni},
-           familyi={D\bibinitperiod},
-           given={Davide},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0068e7e838a67e99531d747c3fb2e657}{%
-           family={Girardi},
-           familyi={G\bibinitperiod},
-           given={Daniela},
-           giveni={D\bibinitperiod}}}%
         {{hash=235f98ba63295236cda11fe0d3fcb284}{%
            family={Lanubile},
            familyi={L\bibinitperiod},
@@ -4050,17 +4161,17 @@
         {english}%
       }
       \strng{namehash}{0b22f240f4eb792836c7e69cdc536c94}
-      \strng{fullhash}{ff88f622c3e121c7511a0c6bbadf1cfd}
-      \strng{fullhashraw}{ff88f622c3e121c7511a0c6bbadf1cfd}
-      \strng{bibnamehash}{a70b53b7c17fd2e97334f9dae19ce17b}
-      \strng{authorbibnamehash}{a70b53b7c17fd2e97334f9dae19ce17b}
+      \strng{fullhash}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{fullhashraw}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{bibnamehash}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{authorbibnamehash}{f5db13277ed416690e1f27c148b13b0d}
       \strng{authornamehash}{0b22f240f4eb792836c7e69cdc536c94}
-      \strng{authorfullhash}{ff88f622c3e121c7511a0c6bbadf1cfd}
-      \strng{authorfullhashraw}{ff88f622c3e121c7511a0c6bbadf1cfd}
-      \strng{nameabibnamehash}{a70b53b7c17fd2e97334f9dae19ce17b}
+      \strng{authorfullhash}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{authorfullhashraw}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{nameabibnamehash}{f5db13277ed416690e1f27c148b13b0d}
       \strng{nameanamehash}{0b22f240f4eb792836c7e69cdc536c94}
-      \strng{nameafullhash}{ff88f622c3e121c7511a0c6bbadf1cfd}
-      \strng{nameafullhashraw}{ff88f622c3e121c7511a0c6bbadf1cfd}
+      \strng{nameafullhash}{f5db13277ed416690e1f27c148b13b0d}
+      \strng{nameafullhashraw}{f5db13277ed416690e1f27c148b13b0d}
       \field{extraname}{2}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
@@ -4071,7 +4182,7 @@
       \field{languageid}{english}
       \field{lansortorder}{4}
       \field{number}{4}
-      \field{title}{Can We Use {SE}-Specific Sentiment Analysis Tools in a Cross-Platform Setting?}
+      \field{title}{Assessment of Off-the-Shelf {SE}-Specific Sentiment Analysis Tools: An Extended Replication Study}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
@@ -4210,7 +4321,7 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{6}
+      \field{number}{12}
       \field{title}{金融市场文本情绪研究综述}
       \field{usera}{J}
       \field{userd}{chinese}
@@ -4218,8 +4329,8 @@
       \field{volume}{7}
       \field{year}{2023}
       \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 21}
-      \range{pages}{21}
+      \field{pages}{22\bibrangedash 39}
+      \range{pages}{18}
       \keyw{li2023sentiment}
     \endentry
     \entry{gu2019governance}{article}{}{}
@@ -4268,15 +4379,15 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{19}
-      \field{title}{开放式创新社区治理机制对用户知识贡献行为的影响研究}
+      \field{number}{20}
+      \field{title}{开放式创新社区治理机制对用户知识贡献行为的影响——虚拟社区感知的中介效应}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{36}
       \field{year}{2019}
       \field{dateera}{ce}
-      \field{pages}{21\bibrangedash 28}
+      \field{pages}{30\bibrangedash 37}
       \range{pages}{8}
       \keyw{gu2019governance}
     \endentry
@@ -4320,16 +4431,21 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{3}
-      \field{title}{许可证特征如何影响开源社区项目创新绩效}
+      \field{note}{网络首发}
+      \field{title}{许可证特征如何影响开源社区项目创新绩效——知识产权治理视角的实证研究}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
-      \field{volume}{42}
       \field{year}{2025}
       \field{dateera}{ce}
       \field{pages}{1\bibrangedash 10}
       \range{pages}{10}
+      \verb{urlraw}
+      \verb https://link.cnki.net/urlid/42.1224.G3.20251208.1725.011
+      \endverb
+      \verb{url}
+      \verb https://link.cnki.net/urlid/42.1224.G3.20251208.1725.011
+      \endverb
       \keyw{hu2025license}
     \endentry
     \entry{sims1980macroeconomics}{article}{}{}
@@ -4380,6 +4496,9 @@
       \field{dateera}{ce}
       \field{pages}{1\bibrangedash 48}
       \range{pages}{48}
+      \verb{doi}
+      \verb 10.2307/1912017
+      \endverb
       \keyw{sims1980macroeconomics}
     \endentry
     \entry{cornell2025vector}{article}{}{}
@@ -4537,75 +4656,55 @@
       \keyw{stock2005testing}
     \endentry
     \entry{bagh2025investor}{article}{}{}
-      \name{author}{5}{}{%
+      \name{author}{3}{}{%
         {{hash=d7dd49a1f21a20810ee32f12d9666199}{%
            family={Bagh},
            familyi={B\bibinitperiod},
            given={Tanveer},
            giveni={T\bibinitperiod}}}%
-        {{hash=17153c5b27557ef182fc690a0b07e1e2}{%
-           family={Shahzad},
-           familyi={S\bibinitperiod},
-           given={Umer},
-           giveni={U\bibinitperiod}}}%
-        {{hash=34ae31d7d8bdf709bfc60deb1a6f56a8}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Qingyu},
-           giveni={Q\bibinitperiod}}}%
         {{hash=8d73ae11a67c09d98da4ffc9d67844d4}{%
            family={Khan},
            familyi={K\bibinitperiod},
            given={Muhammad\bibnamedelima Asif},
            giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=eb89729dd9fe90287f00ac40f4beda4c}{%
-           family={Yiwei},
-           familyi={Y\bibinitperiod},
-           given={Li},
-           giveni={L\bibinitperiod}}}%
+        {{hash=87c5017a3e1674939da16c247bb2d99a}{%
+           family={Iftikhar},
+           familyi={I\bibinitperiod},
+           given={Kainat},
+           giveni={K\bibinitperiod}}}%
       }
-      \name{namea}{5}{}{%
+      \name{namea}{3}{}{%
         {{hash=d7dd49a1f21a20810ee32f12d9666199}{%
            family={Bagh},
            familyi={B\bibinitperiod},
            given={Tanveer},
            giveni={T\bibinitperiod}}}%
-        {{hash=17153c5b27557ef182fc690a0b07e1e2}{%
-           family={Shahzad},
-           familyi={S\bibinitperiod},
-           given={Umer},
-           giveni={U\bibinitperiod}}}%
-        {{hash=34ae31d7d8bdf709bfc60deb1a6f56a8}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Qingyu},
-           giveni={Q\bibinitperiod}}}%
         {{hash=8d73ae11a67c09d98da4ffc9d67844d4}{%
            family={Khan},
            familyi={K\bibinitperiod},
            given={Muhammad\bibnamedelima Asif},
            giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=eb89729dd9fe90287f00ac40f4beda4c}{%
-           family={Yiwei},
-           familyi={Y\bibinitperiod},
-           given={Li},
-           giveni={L\bibinitperiod}}}%
+        {{hash=87c5017a3e1674939da16c247bb2d99a}{%
+           family={Iftikhar},
+           familyi={I\bibinitperiod},
+           given={Kainat},
+           giveni={K\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \strng{namehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{fullhash}{bf7d7309763de2a3379fe9953921bcb3}
-      \strng{fullhashraw}{bf7d7309763de2a3379fe9953921bcb3}
-      \strng{bibnamehash}{f48dc9302fc8f24df9c0ec18397bf25c}
-      \strng{authorbibnamehash}{f48dc9302fc8f24df9c0ec18397bf25c}
+      \strng{fullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{fullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{bibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{authorbibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
       \strng{authornamehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{authorfullhash}{bf7d7309763de2a3379fe9953921bcb3}
-      \strng{authorfullhashraw}{bf7d7309763de2a3379fe9953921bcb3}
-      \strng{nameabibnamehash}{f48dc9302fc8f24df9c0ec18397bf25c}
+      \strng{authorfullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{authorfullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{nameabibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
       \strng{nameanamehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{nameafullhash}{bf7d7309763de2a3379fe9953921bcb3}
-      \strng{nameafullhashraw}{bf7d7309763de2a3379fe9953921bcb3}
+      \strng{nameafullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
+      \strng{nameafullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -4614,11 +4713,11 @@
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{title}{Investor Sentiment and Cryptocurrency Market Dynamics: A Comprehensive Analysis}
+      \field{title}{Investor Sentiment and Cryptocurrency Market Dynamics: A Vector Autoregressive and {Granger} Causality Approach}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{11}
+      \field{volume}{12}
       \field{year}{2025}
       \field{dateera}{ce}
       \field{pages}{102128}
@@ -4759,6 +4858,9 @@
       \field{dateera}{ce}
       \field{pages}{e2305016120}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1073/pnas.2305016120
+      \endverb
       \keyw{gilardi2023chatgpt}
     \endentry
     \entry{zhang2020sentiment}{article}{}{}
@@ -4838,6 +4940,9 @@
       \field{dateera}{ce}
       \field{pages}{70\bibrangedash 80}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ICSME46990.2020.00017
+      \endverb
       \keyw{zhang2020sentiment}
     \endentry
     \entry{hutto2014vader}{article}{}{}
@@ -4898,6 +5003,9 @@
       \field{dateera}{ce}
       \field{pages}{216\bibrangedash 225}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1609/icwsm.v8i1.14550
+      \endverb
       \keyw{hutto2014vader}
     \endentry
     \entry{granger1969investigating}{article}{}{}
@@ -4948,6 +5056,9 @@
       \field{dateera}{ce}
       \field{pages}{424\bibrangedash 438}
       \range{pages}{15}
+      \verb{doi}
+      \verb 10.2307/1912791
+      \endverb
       \keyw{granger1969investigating}
     \endentry
     \entry{yang2015social}{article}{}{}
@@ -5018,6 +5129,9 @@
       \field{dateera}{ce}
       \field{pages}{200\bibrangedash 215}
       \range{pages}{16}
+      \verb{doi}
+      \verb 10.16418/j.issn.1000-3045.2015.02.008
+      \endverb
       \keyw{yang2015social}
     \endentry
     \entry{lu2018sharing}{article}{}{}
@@ -5061,7 +5175,7 @@
       \field{languageid}{chinese}
       \field{lansortorder}{1}
       \field{number}{11}
-      \field{title}{分享还是不分享——知识分享的心理学研究}
+      \field{title}{分享还是不分享:社会困境视角下知识分享}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
@@ -5118,16 +5232,16 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{2}
-      \field{title}{在线风暴情境下多元参与主体对用户生成内容的影响研究}
+      \field{number}{3}
+      \field{title}{在线风暴情境下多元参与主体对用户生成内容的影响}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{33}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{pages}{398\bibrangedash 413}
-      \range{pages}{16}
+      \field{pages}{771\bibrangedash 781}
+      \range{pages}{11}
       \keyw{zhang2024ugc}
     \endentry
     \entry{wang2023config}{article}{}{}
@@ -5170,15 +5284,15 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{5}
-      \field{title}{组态视角下社交型问答社区用户持续知识贡献的影响路径研究}
+      \field{number}{17}
+      \field{title}{组态视角下社交型问答社区用户持续知识贡献的影响路径研究——基于社会生态框架}
       \field{usera}{J}
       \field{userd}{chinese}
       \field{userf}{chinese}
       \field{volume}{40}
       \field{year}{2023}
       \field{dateera}{ce}
-      \field{pages}{125\bibrangedash 134}
+      \field{pages}{129\bibrangedash 138}
       \range{pages}{10}
       \keyw{wang2023config}
     \endentry
@@ -5234,7 +5348,7 @@
       \field{langid}{english}
       \field{languageid}{chinese}
       \field{lansortorder}{1}
-      \field{number}{2}
+      \field{number}{3}
       \field{title}{基于社会资本理论的在线医疗社区医生知识贡献行为动因研究}
       \field{usera}{J}
       \field{userd}{chinese}
@@ -5242,8 +5356,8 @@
       \field{volume}{43}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{pages}{61\bibrangedash 71}
-      \range{pages}{11}
+      \field{pages}{67\bibrangedash 74}
+      \range{pages}{8}
       \keyw{fu2022social}
     \endentry
   \enddatalist
