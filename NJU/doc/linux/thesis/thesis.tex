@@ -326,7 +326,7 @@ Brink 基金会在实践中形成了非定向披露与定向披露两种信息�
 二者在受众结构、信号内容和心理机制上存在本质差异，
 却可能产生相互交织的激励效果。本研究希望厘清：
 
-\textbf{RQ1}：Bitcoin Brink 基金会的非定向捐赠披露与定向捐赠披露如何分别影响
+RQ1：Bitcoin Brink 基金会的非定向捐赠披露与定向捐赠披露如何分别影响
 开发者的代码活动、审查活动和讨论活动？当两种披露同时存在时，
 二者之间是否产生交互效应？
 
@@ -335,7 +335,7 @@ Brink 基金会在实践中形成了非定向披露与定向披露两种信息�
 也可能作为一种项目状态的信号，影响开发者的行动选择。
 在代码活动与讨论参与这两种典型的开发活动之间，是否存在情感所触发的动态路径？
 
-\textbf{RQ2}：比特币开源社区 Issue 讨论中的情感状态如何在时间维度上影响
+RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度上影响
 开发者的代码活动与讨论活动？代码活动的变化是否进一步影响讨论活动，
 形成可识别的跨活动传导路径？
 
@@ -1143,7 +1143,7 @@ Google Trends 数据通过 pytrends Python 接口采集，
 需要经历系统的清洗与匹配流程方可形成可分析的面板数据集。
 本研究按照以下五个步骤依序完成数据整合：
 
-\textbf{第一步，开发者 ID 统一化与机器人过滤。}
+第一步，开发者 ID 统一化与机器人过滤。
 GH Archive 事件中的行为主体以 actor\_id（数字型）和 actor\_login（字符串型）
 双字段记录。本研究将两者双向映射，以确保同一开发者在不同时期使用不同账号名时
 不被误计为多人。机器人账号通过账号名称正则过滤剔除，
@@ -1151,13 +1151,13 @@ GH Archive 事件中的行为主体以 actor\_id（数字型）和 actor\_login�
 以及 GitHub Actions、Dependabot 等平台内建自动化账号，
 此步骤共识别并剔除约30个机器人账号。
 
-\textbf{第二步，时间对齐。}
+第二步，时间对齐。
 所有数据源统一以协调世界时（UTC）为时区基准，
 以 ISO 8601 周标准（周一为一周起始日）为时间颗粒，
 将全部事件时间戳转换为对应 ISO 周标识符（格式：YYYY-WXX），
 确保六类数据可以在相同的时间键上进行关联合并。
 
-\textbf{第三步，样本筛选。}
+第三步，样本筛选。
 保留2022年1月（2022-W01）至2023年12月（2023-W52）共105个 ISO 周内，
 在 bitcoin/bitcoin 主仓库有至少一次活动记录的开发者。
 进一步剔除在观测期内实际获得 Bitcoin Brink 全职资助的4名开发者，
@@ -1165,13 +1165,13 @@ GH Archive 事件中的行为主体以 actor\_id（数字型）和 actor\_login�
 保证回归系数反映的是信息披露的纯信息效应。
 最终样本包含1,610名开发者，共约169,785个开发者-周观测单元。
 
-\textbf{第四步，披露事件标记。}
+第四步，披露事件标记。
 将 Brink 在 X 平台发布的非定向披露公告日期和在官方网站发布的定向披露公告日期，
 分别精确映射至对应 ISO 周，生成非定向披露金额变量
 （披露金额取自然对数，无披露周取0）和定向披露虚拟变量
 （定向披露公布后各周取1，公布前取0）。
 
-\textbf{第五步，情感聚合。}
+第五步，情感聚合。
 对 GH Archive 中 bitcoin/bitcoin 主仓库 Issue 区的评论文本，
 逐条进行情感分析，获得每条评论的情感极性得分（compound score，
 取值区间$[-1, 1]$，正值代表正面情感，负值代表负面情感）。
@@ -1303,7 +1303,7 @@ Google Trends 和 Yahoo Finance 提供的数据均为面向公众的聚合统计
 在汇报统计结果时，所有分析均以聚合形式呈现，
 回归系数反映的是样本整体的平均处理效应，
 不对特定开发者的个体行为作出点名式描述。
-在附录的披露事件列表中，出现的受资助开发者姓名
+本研究涉及的受资助开发者姓名
 均来自 Brink 官方网站已公开发布的信息，未超出已公开范围。
 
 \subsection{数据安全与可复现性}
@@ -1424,7 +1424,7 @@ Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两�
 
 值得注意的是，这一推论在区分三类活动时仍然成立。代码活动（提交代码与发起 Pull Request）、审查活动（审查他人的 Pull Request）与讨论活动（参与 Issue 讨论）虽然在认知投入程度和可见度上有所差异，但它们同样受到上述期望激活机制的驱动。因此，本研究提出：
 
-\textbf{H1}：非定向捐赠披露对开发者的整体开发者活动具有正向影响（H1a：代码活动；H1b：审查活动；H1c：讨论活动）。
+H1：非定向捐赠披露对开发者的整体开发者活动具有正向影响（H1a：代码活动；H1b：审查活动；H1c：讨论活动）。
 
 \subsection{定向披露的正向主效应}
 
@@ -1434,7 +1434,7 @@ Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两�
 
 此外，定向披露还具有“榜样效应”的潜力。受助开发者的公开识别向社区传递了一种隐性规范：哪类深度参与（代码审查、持续提交高质量 Pull Request）会被识别和奖励。这一规范信号有助于引导非受助开发者聚焦于类似的高质量活动方式，从而形成整体社区活动质量的正向外部性。Yang 等（2021）\cite{yang2021differential} 在开源社区持续参与研究中也指出，社会认可的可见度是影响开发者持续参与意愿的重要因素。因此，本研究提出：
 
-\textbf{H2}：定向捐赠披露对开发者的整体开发者活动具有正向影响（H2a：代码活动；H2b：审查活动；H2c：讨论活动）。
+H2：定向捐赠披露对开发者的整体开发者活动具有正向影响（H2a：代码活动；H2b：审查活动；H2c：讨论活动）。
 
 \subsection{定向披露对非定向披露效应的负向调节}
 
@@ -1446,7 +1446,7 @@ Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两�
 
 进一步地，从情绪信息理论（Schwarz \& Clore, 1983）\cite{schwarz1983moods} 的视角来看，负向失验所引发的消极情绪还会作为“背景感受”渗透到个体对未来激励信号的解读过程中，使其在面对新的捐款公告时，更倾向于以较为保守或中性的态度进行评估，从而降低积极期望的激活程度。这一情绪中介路径进一步强化了上述认知层面的抑制效果。因此，本研究提出：
 
-\textbf{H3}：定向披露对非定向披露激励开发者活动的正向效应具有负向调节作用（H3a：代码活动；H3b：审查活动；H3c：讨论活动）。
+H3：定向披露对非定向披露激励开发者活动的正向效应具有负向调节作用（H3a：代码活动；H3b：审查活动；H3c：讨论活动）。
 
 综合三组假设，本研究的理论模型如图~\ref{fig:research-model-1} 所示。
 图中将三组假设嵌入期望理论的分析框架：
@@ -1511,13 +1511,13 @@ Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两�
 
 \subsection{关键变量定义}
 
-\textbf{因变量。}本研究设置三类开发者活动指标作为因变量，均取自然对数变换以缓解右偏分布问题。代码活动（$\ln\text{Code}_{it}$）定义为开发者 $i$ 在第 $t$ 周内发生的代码提交相关事件数（包含 PE、CE、DE、CCE、PRE）的对数，反映其主动推送代码的强度；审查活动（$\ln\text{Review}_{it}$）定义为代码审查相关事件数（PRRE、PRRCE）的对数，反映其对他人代码的评审与质量把关行为；讨论活动（$\ln\text{Issue}_{it}$）定义为 Issue 提交事件数（ISE）的对数，反映其参与社区技术讨论的广度。
+本研究设置三类开发者活动指标作为因变量，均取自然对数变换以缓解右偏分布问题。代码活动（$\ln\text{Code}_{it}$）定义为开发者 $i$ 在第 $t$ 周内发生的代码提交相关事件数（包含 PE、CE、DE、CCE、PRE）的对数，反映其主动推送代码的强度；审查活动（$\ln\text{Review}_{it}$）定义为代码审查相关事件数（PRRE、PRRCE）的对数，反映其对他人代码的评审与质量把关行为；讨论活动（$\ln\text{Issue}_{it}$）定义为 Issue 提交事件数（ISE）的对数，反映其参与社区技术讨论的广度。
 
-\textbf{核心自变量。}非定向信息披露强度以 $UD_t$ 度量，操作化为第 $t$ 周及其前三周的捐款金额四周移动平均值取自然对数。采用移动平均的理由在于：捐款公告的信息传播和认知加工需要一定时间，移动平均能够更准确地捕捉披露信息在社区中的累积扩散效应，而非仅关注当期瞬时冲击。定向信息披露以 $TD_t$ 度量，操作化为第 $t$ 周及其前三周公布的受资助开发者人数的四周移动平均值。与二值虚拟变量相比，这一连续度量能够区分不同批次定向披露的强度差异，例如，2022年4月一次性公布4名受助者的信息冲击强度，显著高于此后每次仅公布1名受助者的情形。交互项 $UD_t \times TD_t$ 用于检验定向披露对非定向披露激励效果的调节作用。
+非定向信息披露强度以 $UD_t$ 度量，操作化为第 $t$ 周及其前三周的捐款金额四周移动平均值取自然对数。采用移动平均的理由在于：捐款公告的信息传播和认知加工需要一定时间，移动平均能够更准确地捕捉披露信息在社区中的累积扩散效应，而非仅关注当期瞬时冲击。定向信息披露以 $TD_t$ 度量，操作化为第 $t$ 周及其前三周公布的受资助开发者人数的四周移动平均值。与二值虚拟变量相比，这一连续度量能够区分不同批次定向披露的强度差异，例如，2022年4月一次性公布4名受助者的信息冲击强度，显著高于此后每次仅公布1名受助者的情形。交互项 $UD_t \times TD_t$ 用于检验定向披露对非定向披露激励效果的调节作用。
 
-\textbf{控制变量。}模型纳入以下控制变量以尽可能吸收混淆因素：（1）比特币市场表现变量，包括比特币价格对数（$\text{lnClose}_t$）、交易量对数（$\text{lnVolume}_t$）和周收益率（$\text{Return}_t$），以捕捉加密货币市场波动对开发者情绪与时间投入的影响；（2）开源社区活跃度变量，包括 Fork 数对数（$\text{lnFork}_{it}$）和 Watch 数对数（$\text{lnWatch}_{it}$），以反映开发者对比特币相关仓库的兴趣广度和社区整体关注度；（3）比特币 Google Trends 搜索指数对数（$\text{lnGtrend}_t$），以控制比特币整体公众热度的时变趋势；（4）项目进展变量（$\text{Release}_t$），以 Bitcoin 核心仓库的 Release 事件衡量项目开发节奏，控制版本发布前后开发活动的自然波动；（5）半年度时间虚拟变量（$\text{HalfYear}_{2,3,4}$），以吸收观测窗口内的中期时间趋势。
+模型纳入以下控制变量以尽可能吸收混淆因素：（1）比特币市场表现变量，包括比特币价格对数（$\text{lnClose}_t$）、交易量对数（$\text{lnVolume}_t$）和周收益率（$\text{Return}_t$），以捕捉加密货币市场波动对开发者情绪与时间投入的影响；（2）开源社区活跃度变量，包括 Fork 数对数（$\text{lnFork}_{it}$）和 Watch 数对数（$\text{lnWatch}_{it}$），以反映开发者对比特币相关仓库的兴趣广度和社区整体关注度；（3）比特币 Google Trends 搜索指数对数（$\text{lnGtrend}_t$），以控制比特币整体公众热度的时变趋势；（4）项目进展变量（$\text{Release}_t$），以 Bitcoin 核心仓库的 Release 事件衡量项目开发节奏，控制版本发布前后开发活动的自然波动；（5）半年度时间虚拟变量（$\text{HalfYear}_{2,3,4}$），以吸收观测窗口内的中期时间趋势。
 
-\textbf{工具变量。}$Z_t$ 为”Bitcoin Brink”在第 $t$ 周的 Google Trends 搜索量指数四周移动平均值的对数，及其与定向披露的交互项 $Z_t \times TD_t$，分别作为 $UD_t$ 与交互项 $UD_t \times TD_t$ 的工具变量，详见第~\ref{sec:iv-method} 节的说明。
+$Z_t$ 为”Bitcoin Brink”在第 $t$ 周的 Google Trends 搜索量指数四周移动平均值的对数，及其与定向披露的交互项 $Z_t \times TD_t$，分别作为 $UD_t$ 与交互项 $UD_t \times TD_t$ 的工具变量，详见第~\ref{sec:iv-method} 节的说明。
 
 各变量定义汇总见表~\ref{tab:variables-1}。
 
@@ -1630,7 +1630,7 @@ Y_{it} = \beta_1 UD_t + \beta_2 TD_t
 
 尽管固定效应模型已经在很大程度上控制了可观测和部分不可观测的混淆因素，捐款金额变量仍可能存在内生性问题。一个潜在的反向因果路径是：当比特币核心开发社区的活跃度较高时，项目的市场可见度和公众关注度随之提升，这可能吸引更多外部捐赠方向 Brink 发起捐款，进而增大非定向披露金额。若此机制存在，则 $UD_t$ 与误差项 $\varepsilon_{it}$ 之间存在正相关，导致 FE 估计量对 $\beta_1$ 的估计出现正向偏误。此外，交互项 $UD_t \times TD_t$ 由于包含了内生的 $UD_t$ 成分，同样需要进行内生性处理。
 
-为此，本研究采用两阶段最小二乘法（2SLS）解决内生性问题。模型中存在两个内生变量：$UD_t$（非定向信息披露强度）和 $UD_t \times TD_t$（交互项），相应地，本研究构建了两个工具变量：（1）$Z_t$，即”Bitcoin Brink”Google Trends 搜索指数的四周移动平均值取对数，作为非定向披露强度的工具变量；（2）$Z_t \times TD_t$，即搜索指数与定向披露的交互项，作为 $UD_t \times TD_t$ 的工具变量。工具变量的合理性基于以下论证：（1）\textbf{相关性}：当社会公众对 Brink 的搜索兴趣升高时，往往意味着 Brink 的知名度和品牌曝光度处于高峰，此时机构或个人捐赠方更有可能对其发起大额捐款，因此搜索指数与捐款金额之间存在显著正相关；（2）\textbf{排他性}：Google 搜索指数反映的是互联网用户的信息查询行为，这一行为本身不会直接影响特定开发者在某一周内的 GitHub 活动次数，因为开发者的代码产出主要由技术任务进度、个人时间安排与社区内部协作节奏决定，而非外部公众的搜索行为，因此该工具变量的排他性约束具有合理的理论支撑。
+为此，本研究采用两阶段最小二乘法（2SLS）解决内生性问题。模型中存在两个内生变量：$UD_t$（非定向信息披露强度）和 $UD_t \times TD_t$（交互项），相应地，本研究构建了两个工具变量：（1）$Z_t$，即”Bitcoin Brink”Google Trends 搜索指数的四周移动平均值取对数，作为非定向披露强度的工具变量；（2）$Z_t \times TD_t$，即搜索指数与定向披露的交互项，作为 $UD_t \times TD_t$ 的工具变量。工具变量的合理性基于以下论证：（1）相关性：当社会公众对 Brink 的搜索兴趣升高时，往往意味着 Brink 的知名度和品牌曝光度处于高峰，此时机构或个人捐赠方更有可能对其发起大额捐款，因此搜索指数与捐款金额之间存在显著正相关；（2）排他性：Google 搜索指数反映的是互联网用户的信息查询行为，这一行为本身不会直接影响特定开发者在某一周内的 GitHub 活动次数，因为开发者的代码产出主要由技术任务进度、个人时间安排与社区内部协作节奏决定，而非外部公众的搜索行为，因此该工具变量的排他性约束具有合理的理论支撑。
 
 2SLS 的两阶段设定如下：
 
@@ -1716,13 +1716,13 @@ Y_{it} = \beta_1 UD_t + \beta_2 TD_t
     \end{minipage}
 \end{table}
 
-\textbf{H1 的验证。}在固定效应模型中，非定向信息披露（$UD_t$）的系数在代码活动上显著为正（$\beta_1 = 0.000$，$t = 2.36$，$p < 0.05$），在审查活动上同样显著为正（$\beta_1 = 0.001$，$t = 2.06$，$p < 0.05$），在讨论活动上系数接近零且不显著（$t = -0.00$）。经 2SLS 估计后，代码活动和审查活动的系数幅度均显著扩大（分别为 0.003 和 0.008），显著性水平提升至 1\% 水平，说明修正内生性偏误后非定向披露的正向激励效果更为突出。H1a 和 H1b 得到支持，H1c 未能获得统计证据。从期望理论的框架来看（参见图~\ref{fig:research-model-1}），这一结果可通过期望值维度加以解释：期望值反映的是开发者对"努力$\to$绩效"关联的主观估计。代码提交和代码审查是可直接观测的技术产出，与获得资助方认可和奖励之间具有清晰的绩效关联；而讨论活动（如提交 Issue）更多体现为社区协商行为，其对获得绩效认定乃至资助的贡献路径较为间接。因此，当捐赠信息披露激活开发者对奖励的预期时，开发者倾向于将增量努力分配到期望值较高的代码与审查活动上，而非讨论活动，导致后者的响应不显著。
+在固定效应模型中，非定向信息披露（$UD_t$）的系数在代码活动上显著为正（$\beta_1 = 0.000$，$t = 2.36$，$p < 0.05$），在审查活动上同样显著为正（$\beta_1 = 0.001$，$t = 2.06$，$p < 0.05$），在讨论活动上系数接近零且不显著（$t = -0.00$）。经 2SLS 估计后，代码活动和审查活动的系数幅度均显著扩大（分别为 0.003 和 0.008），显著性水平提升至 1\% 水平，说明修正内生性偏误后非定向披露的正向激励效果更为突出。H1a 和 H1b 得到支持，H1c 未能获得统计证据。从期望理论的框架来看（参见图~\ref{fig:research-model-1}），这一结果可通过期望值维度加以解释：期望值反映的是开发者对"努力$\to$绩效"关联的主观估计。代码提交和代码审查是可直接观测的技术产出，与获得资助方认可和奖励之间具有清晰的绩效关联；而讨论活动（如提交 Issue）更多体现为社区协商行为，其对获得绩效认定乃至资助的贡献路径较为间接。因此，当捐赠信息披露激活开发者对奖励的预期时，开发者倾向于将增量努力分配到期望值较高的代码与审查活动上，而非讨论活动，导致后者的响应不显著。
 
-\textbf{H2 的验证。}固定效应模型中，定向信息披露（$TD_t$）的系数在代码活动（$\beta_2 = 0.005$，$t = 2.54$，$p < 0.05$）和审查活动（$\beta_2 = 0.017$，$t = 3.46$，$p < 0.01$）上均显著为正，而在讨论活动上不显著。2SLS 模型中，代码活动和审查活动的系数分别升至 0.061 和 0.198，均在 1\% 水平显著，与 FE 结果的方向一致且更加稳健。H2a 与 H2b 均获得支持，H2c 未得到显著证据。这一模式与 H1 的发现相互印证：定向披露通过揭示”绩效$\to$奖励”路径，进一步强化了工具性感知，但这种强化同样集中于绩效关联明确的代码与审查活动，对讨论活动的期望值提升有限。值得注意的是，定向披露在本模型中以连续变量（四周移动平均受赠者人数）而非虚拟变量刻画，其系数的经济含义为：受赠者公告数量每增加一人，对开发者审查活动的边际激励效应为 0.017（FE）或 0.198（2SLS）。
+固定效应模型中，定向信息披露（$TD_t$）的系数在代码活动（$\beta_2 = 0.005$，$t = 2.54$，$p < 0.05$）和审查活动（$\beta_2 = 0.017$，$t = 3.46$，$p < 0.01$）上均显著为正，而在讨论活动上不显著。2SLS 模型中，代码活动和审查活动的系数分别升至 0.061 和 0.198，均在 1\% 水平显著，与 FE 结果的方向一致且更加稳健。H2a 与 H2b 均获得支持，H2c 未得到显著证据。这一模式与 H1 的发现相互印证：定向披露通过揭示”绩效$\to$奖励”路径，进一步强化了工具性感知，但这种强化同样集中于绩效关联明确的代码与审查活动，对讨论活动的期望值提升有限。值得注意的是，定向披露在本模型中以连续变量（四周移动平均受赠者人数）而非虚拟变量刻画，其系数的经济含义为：受赠者公告数量每增加一人，对开发者审查活动的边际激励效应为 0.017（FE）或 0.198（2SLS）。
 
-\textbf{H3 的验证。}交互项（$UD_t \times TD_t$）的系数在 FE 模型中对代码活动（$\beta_3 = -0.001$，$t = -1.13$）和审查活动（$\beta_3 = -0.001$，$t = -0.94$）方向为负但统计上不显著。然而，在 2SLS 模型中，交互项系数显著增大：代码活动为 $-0.041$（$t = -2.56$，$p < 0.05$），审查活动为 $-0.133$（$t = -2.78$，$p < 0.01$），均达到统计显著水平。FE 模型中交互项不显著而 2SLS 模型中显著的差异，恰好反映了内生性偏误的影响：FE 模型由于未处理非定向披露的内生性，导致交互项的调节效应被衰减偏误所掩盖；2SLS 模型通过工具变量剔除了捐款金额的内生成分后，定向披露对非定向披露的负向调节作用得以真实呈现。以审查活动为例，当 $TD_t = 1$（即近期每周均有一名受赠者公告）时，非定向披露的净效应为 $\beta_1 + \beta_3 = 0.008 - 0.133 = -0.125$，表明高频率的定向披露不仅抵消了非定向披露的正向激励，甚至使其转为负向效应。H3a 和 H3b 在 2SLS 模型中获得支持，H3c 未达显著水平。
+交互项（$UD_t \times TD_t$）的系数在 FE 模型中对代码活动（$\beta_3 = -0.001$，$t = -1.13$）和审查活动（$\beta_3 = -0.001$，$t = -0.94$）方向为负但统计上不显著。然而，在 2SLS 模型中，交互项系数显著增大：代码活动为 $-0.041$（$t = -2.56$，$p < 0.05$），审查活动为 $-0.133$（$t = -2.78$，$p < 0.01$），均达到统计显著水平。FE 模型中交互项不显著而 2SLS 模型中显著的差异，恰好反映了内生性偏误的影响：FE 模型由于未处理非定向披露的内生性，导致交互项的调节效应被衰减偏误所掩盖；2SLS 模型通过工具变量剔除了捐款金额的内生成分后，定向披露对非定向披露的负向调节作用得以真实呈现。以审查活动为例，当 $TD_t = 1$（即近期每周均有一名受赠者公告）时，非定向披露的净效应为 $\beta_1 + \beta_3 = 0.008 - 0.133 = -0.125$，表明高频率的定向披露不仅抵消了非定向披露的正向激励，甚至使其转为负向效应。H3a 和 H3b 在 2SLS 模型中获得支持，H3c 未达显著水平。
 
-\textbf{工具变量有效性检验。}Anderson LM 检验统计量为 1609.515（$p < 0.001$），拒绝了”工具变量不足以识别”的零假设，表明两个工具变量具有足够的联合识别力；Cragg-Donald Wald F 统计量为 $2.79 \times 10^6$，远超 Stock-Yogo（2005）\cite{stock2005testing}弱工具变量检验的临界值，排除了弱工具变量的可能性。第一阶段回归结果显示，$Z_t$ 对 $UD_t$ 的系数为 7.461（$t = 8348.74$，$p < 0.01$），具有极强的预测能力，进一步佐证了工具变量的相关性条件。综合检验结果，本研究所使用的工具变量满足相关性与排他性要求，2SLS 估计结果具有可信的因果解释基础。
+Anderson LM 检验统计量为 1609.515（$p < 0.001$），拒绝了”工具变量不足以识别”的零假设，表明两个工具变量具有足够的联合识别力；Cragg-Donald Wald F 统计量为 $2.79 \times 10^6$，远超 Stock-Yogo（2005）\cite{stock2005testing}弱工具变量检验的临界值，排除了弱工具变量的可能性。第一阶段回归结果显示，$Z_t$ 对 $UD_t$ 的系数为 7.461（$t = 8348.74$，$p < 0.01$），具有极强的预测能力，进一步佐证了工具变量的相关性条件。综合检验结果，本研究所使用的工具变量满足相关性与排他性要求，2SLS 估计结果具有可信的因果解释基础。
 
 \subsection{结果解读与经济意义}
 
@@ -2029,7 +2029,7 @@ Schwarz 和 Clore \citeyear{schwarz1983moods}的原始实验表明，
 
 由此，本章提出假设：
 
-\textbf{H4}：社区讨论情感极性的降低（即负面情感增加），
+H4：社区讨论情感极性的降低（即负面情感增加），
 正向影响开发活动水平。
 
 相应地，负面情感信号不仅激励代码层面的应对，同样可以激励讨论层面的参与。
@@ -2040,7 +2040,7 @@ Schwarz 和 Clore \citeyear{schwarz1983moods}的原始实验表明，
 负面情感信号所传达的问题紧迫性，会同等程度地激活代码层面和讨论层面的行动意愿，
 因为两者都是响应社区问题的有效手段。
 
-\textbf{H5}：社区讨论情感极性的降低，
+H5：社区讨论情感极性的降低，
 正向影响讨论活动水平。
 
 \subsection{目标手段替代理论与活动间替代效应}
@@ -2081,7 +2081,7 @@ Kruglanski 等人\citeyear{kruglanski2002theory}的目标手段替代理论指�
 
 由此提出：
 
-\textbf{H6}：开发活动水平的增加负向影响后续的讨论活动水平。
+H6：开发活动水平的增加负向影响后续的讨论活动水平。
 
 三个假设共同构成本章的情感传导机制模型，如图~\ref{fig:path-model-2} 所示：
 
@@ -2164,7 +2164,7 @@ LLM 具备深层语境理解能力，能够识别双关、讽刺、
 等技术领域的表现优于基于词典的传统工具
 \cite{zhang2020sentiment}。
 
-\textbf{模型选择。}
+模型选择。
 本研究采用 Claude Sonnet 4.5（claude-sonnet-4.5）作为主要情感打分模型。
 为确保结论对情感测量工具选择的不敏感性，
 稳健性检验中分别以 DeepSeek-V3.2（deepseek-v3.2）和 GPT-5.2（gpt-5.2）
@@ -2175,7 +2175,7 @@ LLM 具备深层语境理解能力，能够识别双关、讽刺、
 所有 LLM 均通过 OpenAI 兼容接口调用，
 推理温度设置为 0 以保证结果的确定性与可重复性。
 
-\textbf{评分方案。}
+评分方案。
 针对每条 Issue 评论，本研究设计结构化提示，
 要求模型在九分制量表上（1--9，5 为中性，1 为极度负面，9 为极度正面）
 对评论的整体情感极性进行评分，并附上简短的评分依据。
@@ -2184,16 +2184,16 @@ LLM 具备深层语境理解能力，能够识别双关、讽刺、
 此外，提示还包含六类基本情感（愤怒、厌恶、恐惧、快乐、悲伤、惊讶）
 及“失望（期望失验）”维度的分项评分，
 为后续研究的情感类型细化分析提供基础数据。
-完整的提示词文本见附录 D。
+完整的提示词文本见附录 B。
 
-\textbf{文本预处理。}
+文本预处理。
 在情感打分前，对每条评论依次执行以下操作：
 （1）过滤纯代码片段（以三个反引号 \texttt{```} 包裹的内容），消除代码噪声；
 （2）仅保留包含至少 5 个有效词的评论，剔除过短的无意义内容；
 （3）对超过 15,000 字符的超长评论进行截断处理，
 以减少极端长文本对情感得分均值的杠杆效应。
 
-\textbf{聚合方法。}
+聚合方法。
 每周情感极性值（$\text{Sentiment}_t$）定义为该周所有有效 Issue 评论
 情感极性得分的算术均值，取值域为 $[1, 9]$，以 5 为中性基准，
 高于 5 表示正面情感为主，低于 5 表示负面情感为主。
@@ -2201,7 +2201,7 @@ LLM 具备深层语境理解能力，能够识别双关、讽刺、
 标准差约为 0.63，表明整体情感以中性偏正为主，
 与技术性讨论社区的情感分布特征相符。
 
-\textbf{稳健性检验中的替代工具对照。}
+稳健性检验中的替代工具对照。
 为检验主要结论对情感测量方法选择的不敏感性，
 本研究在稳健性检验中引入三种替代工具：
 （1）DeepSeek-V3.2 和 GPT-5.2 两个替代 LLM，采用与主分析相同的结构化提示和九分制量表；
@@ -2370,33 +2370,33 @@ $\boldsymbol{\varepsilon}_t \sim \text{i.i.d.} \mathcal{N}(\mathbf{0}, \boldsymb
 
 本章按以下六步开展实证分析：
 
-\textbf{第一步，平稳性检验。}
+第一步，平稳性检验。
 对三个内生变量分别进行增广迪基-富勒（Augmented Dickey-Fuller, ADF）单位根检验，
 确认序列平稳性，以满足 VAR 水平模型估计的基本前提。
 若变量为非平稳序列（I(1)），则需进行差分处理或引入协整分析框架（VECM 模型）；
 若变量为平稳序列（I(0)），则可直接在水平值上估计 VAR 模型。
 
-\textbf{第二步，最优滞后阶数选择。}
+第二步，最优滞后阶数选择。
 基于赤池信息准则（AIC）与贝叶斯信息准则（BIC/SBIC）
 确定最优滞后阶数 $p$，在模型拟合优度与参数简约性之间取得平衡。
 AIC 偏向选择较高的滞后阶数以保留更多动态信息，
 BIC 对参数数量的惩罚更重，倾向于更简约的模型。
 当两者建议不同时，综合考量 AIC 在动态预测场景下对欠拟合的适度容忍性进行取舍。
 
-\textbf{第三步，VAR($p$) 模型估计。}
+第三步，VAR($p$) 模型估计。
 以最优滞后阶数估计含外生变量的 VAR($p$) 模型，
 采用小样本自由度修正（Degree of Freedom Correction, DFK 修正）提高估计稳健性。
 DFK 修正通过用自由度调整的协方差矩阵替代最大似然估计的协方差矩阵，
 在小样本下相较于标准 VAR 估计具有更好的有限样本性质。
 
-\textbf{第四步，格兰杰因果检验。}
+第四步，格兰杰因果检验。
 对各方程进行格兰杰因果沃尔德检验（Granger Causality Wald Test），
 通过 $\chi^2$ 统计量在 0.05 的显著性水平下判断变量间的格兰杰因果关系，
 直接对应 H4（Sentiment Granger-causes Development）、
 H5（Sentiment Granger-causes Discussion）和 H6（Development Granger-causes Discussion）的检验。
 反向检验（Development/Discussion Granger-causes Sentiment）则用于验证情感变量的外生性。
 
-\textbf{第五步，脉冲响应函数（IRF）分析。}
+第五步，脉冲响应函数（IRF）分析。
 构建 $3 \times 3$ 的脉冲响应函数矩阵，可视化单变量冲击的系统动态效应。
 采用乔列斯基（Cholesky）正交分解对新息协方差矩阵进行识别，
 变量排序设定为 Sentiment → Development → Discussion，
@@ -2404,7 +2404,7 @@ H5（Sentiment Granger-causes Discussion）和 H6（Development Granger-causes D
 而开发活动的周转时间通常短于讨论活动（提交代码的决策较快，参与讨论的决策较慢）。
 采用 bootstrapping 方法估计 95\% 置信区间，追踪 10 期（约 10 周）的脉冲响应路径。
 
-\textbf{第六步，预测误差方差分解（FEVD）。}
+第六步，预测误差方差分解（FEVD）。
 量化情感冲击对开发活动和讨论活动预测误差方差的解释占比，
 评估情感信号在整个系统中的相对重要性。
 FEVD 将 $h$ 步预测误差方差分解为各变量正交冲击的解释份额，
@@ -2467,7 +2467,7 @@ FEVD 将 $h$ 步预测误差方差分解为各变量正交冲击的解释份额�
         \midrule
         0 & $-$2829.39 & --- & 3.8e+08 & 28.273 & 28.470 \\
         1 & $-$2586.23 & 486.32*** & 3.7e+07 & 25.943 & 26.288* \\
-        2 & $-$2566.63 & 39.19*** & 3.3e+07* & \textbf{25.837*} & 26.330 \\
+        2 & $-$2566.63 & 39.19*** & 3.3e+07* & 25.837* & 26.330 \\
         3 & $-$2559.75 & 13.77 & 3.4e+07 & 25.858 & 26.499 \\
         4 & $-$2556.65 & 6.19 & 3.6e+07 & 25.917 & 26.706 \\
         \bottomrule
@@ -2820,7 +2820,6 @@ DeepSeek-V3.2 和 GPT-5.2 与主分析模型分属不同公司和训练路线，
 VADER 则是基于规则和词典的传统方法，与 LLM 的语义推理存在本质差异。
 若所有工具下的核心结论保持一致，则可排除情感传导效应对特定测量工具的依赖。
 
-\textbf{DeepSeek-V3.2 替代检验。}
 以 DeepSeek-V3.2 的九分制评分替换主分析的情感变量后，
 情感极性滞后一期（$Sentiment_{t-1}$）对开发活动的系数为
 $-48.14$（$z = -2.85$，$p = 0.004$），
@@ -2830,7 +2829,6 @@ $-48.14$（$z = -2.85$，$p = 0.004$），
 $-0.550$（$z = -2.76$，$p = 0.006$），替代效应同样显著。
 三条核心路径的方向和显著性与主分析完全一致，H4、H5、H6 均获支持。
 
-\textbf{GPT-5.2 替代检验。}
 以 GPT-5.2 的九分制评分替换情感变量后，
 情感极性滞后一期对开发活动的系数为
 $-22.95$（$z = -1.69$，$p = 0.092$），
@@ -2843,7 +2841,6 @@ GPT-5.2 检验中 H6（路径3）保持显著，H4 和 H5（路径1、2）方向
 其评分均值和标准差与 Claude Sonnet 4.5 存在一定偏差，导致统计功效有所下降。
 尽管如此，系数方向的完全一致性仍支持主要结论的稳健性。
 
-\textbf{VADER 词典方法替代检验。}
 以 VADER 的 compound 分数（$-1$ 至 $+1$）替换 LLM 的九分制情感变量后，
 情感极性滞后一期对开发活动的系数为
 $-68.59$（$z = -2.03$，$p = 0.042$），
@@ -3356,7 +3353,7 @@ Shimada 等 \citeyear{shimada2022github}）
 
 \subsection{两项研究的综合结论}
 
-从两项研究的共同发现中，可以提炼出一个更为一般性的命题：\textbf{在开源社区中，信息而非金钱，是影响开发者参与行为的直接驱动因素}。研究一表明，捐赠行为的信息披露（甚至是捐赠可能性的模糊预期）足以产生显著的激励效应，而无需实际财务转移的发生。研究二表明，情感作为一种非正式的集体信息，能够以可预测的方向和时序影响后续的行为活动，代码生产与讨论参与均对情感信号作出有规律的反应。二者共同构成“信息驱动参与（Information-Driven Participation）”这一理论命题在不同层次与不同类型信息上的双侧证据。
+从两项研究的共同发现中，可以提炼出一个更为一般性的命题：在开源社区中，信息而非金钱，是影响开发者参与行为的直接驱动因素。研究一表明，捐赠行为的信息披露（甚至是捐赠可能性的模糊预期）足以产生显著的激励效应，而无需实际财务转移的发生。研究二表明，情感作为一种非正式的集体信息，能够以可预测的方向和时序影响后续的行为活动，代码生产与讨论参与均对情感信号作出有规律的反应。二者共同构成“信息驱动参与（Information-Driven Participation）”这一理论命题在不同层次与不同类型信息上的双侧证据。
 
 这一命题对理解开源软件可持续性具有深远意义。资金支持固然是维持开源社区长期活力的必要条件，但如何设计信息披露机制以最大化其激励效应、如何感知和管理社区情感信息环境，或许同样是不可忽视的治理维度。开源生态的可持续性，在相当程度上取决于信息流通的质量与设计，这是本文两项研究共同指向的核心结论。
 
@@ -3411,102 +3408,256 @@ Shimada 等 \citeyear{shimada2022github}）
 
 \appendix
 
-\chapter{Brink 捐赠信息披露事件列表}
+\chapter{2SLS 第一阶段回归结果}
 
-\todo{整理2022—2023年期间所有非定向披露和定向披露事件的完整列表}
+表~\ref{tab:first-stage} 报告了两阶段最小二乘法（2SLS）第一阶段的回归结果。
+两个内生变量分别为非定向信息披露强度（$UD_t$）及其与定向信息披露的交互项（$UD_t \times TD_t$），
+两个排除性工具变量分别为"Bitcoin Brink"Google Trends 搜索指数的四周移动平均值的对数（$Z_t$）
+以及搜索指数与定向披露的交互项（$Z_t \times TD_t$）。
 
-\chapter{研究一：2SLS 第一阶段回归结果}
+第一阶段结果显示，$Z_t$ 对 $UD_t$ 的估计系数为 7.461（$t = 8348.74$，$p < 0.01$），
+表明公众搜索关注度每提升 1\%，Brink 的捐款金额四周移动平均值增加约 7.5\%，
+工具变量与内生变量之间存在极强的正向关联。
+$Z_t \times TD_t$ 对 $UD_t \times TD_t$ 的系数同样高度显著（$t = 16023.42$，$p < 0.01$），
+确认了交互项工具变量的相关性条件。
+两个工具变量的 $t$ 统计量均远超传统阈值，
+结合主分析中报告的 Cragg-Donald Wald F 统计量（$2.79 \times 10^6$），
+充分排除了弱工具变量的可能性。
 
-\todo{插入第一阶段回归结果，说明工具变量相关性（F 统计量 > 10）}
-
-\chapter{研究二：VAR 模型稳健性检验}
-
-\todo{替换情感工具、调整时间粒度的稳健性检验结果}
+\begin{table}[htbp]
+    \centering
+    \caption{2SLS 第一阶段回归结果}
+    \label{tab:first-stage}
+    \small
+    \begin{tabularx}{\textwidth}{Xrr}
+        \toprule
+        & \multicolumn{2}{c}{因变量（内生变量）} \\
+        \cmidrule(lr){2-3}
+        变量
+            & $UD_t$ & $UD_t \times TD_t$ \\
+        \midrule
+        $Z_t$（搜索指数）
+            & 7.461$^{***}$ & $-$0.092$^{***}$ \\
+            & (8348.74) & ($-$408.33) \\[0.4em]
+        $Z_t \times TD_t$（搜索指数$\times$定向披露）
+            & 0.000$^{***}$ & 0.000$^{***}$ \\
+            & (48127.75) & (16023.42) \\[0.4em]
+        $TD_t$（定向信息披露）
+            & $-$0.028$^{***}$ & 1.384$^{***}$ \\
+            & ($-$153.70) & (31313.65) \\[0.4em]
+        $\text{lnClose}_t$
+            & $-$1.327$^{***}$ & $-$0.330$^{***}$ \\
+            & ($-$7047.05) & ($-$11964.66) \\[0.4em]
+        $\text{lnVolume}_t$
+            & $-$0.075$^{***}$ & 0.153$^{***}$ \\
+            & ($-$635.57) & (6097.13) \\[0.4em]
+        $\text{Return}_t$
+            & $-$20.473$^{***}$ & $-$2.819$^{***}$ \\
+            & ($-$12408.98) & ($-$15747.22) \\[0.4em]
+        $\text{lnFork}_{it}$
+            & $-$0.004 & 0.002 \\
+            & ($-$0.26) & (0.27) \\[0.4em]
+        $\text{lnWatch}_{it}$
+            & 0.021$^{**}$ & 0.002 \\
+            & (1.97) & (0.53) \\[0.4em]
+        $\text{lnGtrend}_t$
+            & 0.694$^{***}$ & $-$0.349$^{***}$ \\
+            & (2193.17) & ($-$3970.27) \\[0.4em]
+        $\text{HalfYear}_2$
+            & $-$1.179$^{***}$ & $-$0.561$^{***}$ \\
+            & ($-$3812.87) & ($-$6555.67) \\[0.4em]
+        $\text{HalfYear}_3$
+            & 1.482$^{***}$ & $-$0.277$^{***}$ \\
+            & (5658.58) & ($-$4228.16) \\[0.4em]
+        $\text{HalfYear}_4$
+            & 0.205$^{***}$ & $-$0.255$^{***}$ \\
+            & (509.96) & ($-$2186.93) \\[0.4em]
+        $\text{Release}_t$
+            & 0.320$^{***}$ & 0.330$^{***}$ \\
+            & (6069.57) & (43927.61) \\
+        \midrule
+        个体固定效应 & 是 & 是 \\
+        $N$         & 169,050 & 169,050 \\
+        $N_g$       & 1,610   & 1,610 \\
+        \bottomrule
+    \end{tabularx}
+    \begin{minipage}{\textwidth}
+        \vspace{0.3em}
+        \footnotesize 注：括号内为 $t$ 统计量；$^{*}p<0.1$，$^{**}p<0.05$，$^{***}p<0.01$。
+        $UD_t$：非定向捐赠金额四周移动平均值的对数；
+        $UD_t \times TD_t$：非定向信息披露与定向信息披露的交互项；
+        $Z_t$："Bitcoin Brink" Google Trends 四周移动平均值的对数（排除性工具变量）；
+        $Z_t \times TD_t$：搜索指数与定向披露的交互项（排除性工具变量）。
+        第一阶段 $t$ 统计量的极大值源于工具变量在个体-周面板中的时间序列高度相关性，
+        该特征与 Cragg-Donald Wald F 统计量（$2.79 \times 10^6$）一致，
+        充分支持工具变量的强相关性条件。
+    \end{minipage}
+\end{table}
 
 \chapter{情感分析方法说明}
 
 \section{方法概述}
 
-本研究采用大型语言模型（LLM）对比特币 GitHub Issue 评论进行情感分析。
-主要分析模型为 Claude Sonnet 4.5（claude-sonnet-4.5），
-辅以 DeepSeek-R1（deepseek-r1）进行跨模型一致性核验。
-模型通过 OpenAI 兼容 API 接口调用，推理温度（temperature）设置为 0，
-保证相同输入下输出结果的确定性与可重复性。
-每条评论独立打分，输出为 JSON 结构化格式。
+本研究采用大型语言模型对 bitcoin/bitcoin 仓库 Issue 评论进行逐条情感分析。
+主分析模型为 Claude Sonnet 4.5（claude-sonnet-4.5），
+稳健性检验分别以 DeepSeek-V3.2（deepseek-v3.2）和 GPT-5.2（gpt-5.2）
+两个替代 LLM 以及 VADER 词典方法进行对照。
+三个 LLM 分属 Anthropic、DeepSeek、OpenAI 三家公司，
+架构与训练路线各不相同，可最大化跨模型多样性；
+VADER 作为基于规则的工具，与 LLM 的语义推理在方法论上存在本质差异。
+所有 LLM 均通过 OpenAI 兼容 API 接口调用，
+推理温度设置为 0，并启用 JSON 强制输出模式
+（\texttt{response\_format=\{"type":"json\_object"\}}），
+以保证结果的确定性、可重复性与格式规范性。
 
-\section{情感打分提示词（System Prompt）}
+\section{情感打分提示词}
 
-以下为提交给模型的系统提示词（System Prompt），用于情感打分任务。
+以下为提交给模型的系统提示词（System Prompt）与用户提示词（User Prompt）的完整文本。
 
 \vspace{1em}
-\noindent\textbf{System Prompt:}
+\noindent System Prompt:
 
 \begin{quote}\small
 You are an expert sentiment analyst. Analyze the given text and provide comprehensive sentiment scores across multiple dimensions.
 
 \medskip
-\textbf{Task 1: Overall Sentiment Polarity (9-point scale)}
+Task 1: Overall Sentiment Polarity (9-point scale)
 
 Evaluate the overall emotional tone:
 \begin{itemize}
-  \item \textbf{1--4}: Negative sentiment (1=extremely negative, 4=slightly negative)\\
-    Indicators: anger, disappointment, criticism, frustration, complaints
-  \item \textbf{5}: Neutral sentiment\\
-    Indicators: objective, factual, balanced, or mixed emotions
-  \item \textbf{6--9}: Positive sentiment (6=slightly positive, 9=extremely positive)\\
-    Indicators: joy, gratitude, approval, excitement, satisfaction
+  \item 1--4: Negative sentiment (1=extremely negative, 4=slightly negative)
+    \begin{itemize}
+      \item Indicators: anger, disappointment, criticism, frustration, complaints
+    \end{itemize}
+  \item 5: Neutral sentiment
+    \begin{itemize}
+      \item Indicators: objective, factual, balanced, or mixed emotions
+    \end{itemize}
+  \item 6--9: Positive sentiment (6=slightly positive, 9=extremely positive)
+    \begin{itemize}
+      \item Indicators: joy, gratitude, approval, excitement, satisfaction
+    \end{itemize}
 \end{itemize}
 
 \medskip
-\textbf{Task 2: Six Basic Emotions (5-point scale, 0--4 for each)}
+Task 2: Six Basic Emotions (5-point scale, 0--4 for each)
 
 Rate the intensity of each emotion:
-Anger / Disgust / Fear / Happiness / Sadness / Surprise
-(0=none, 4=extreme)
+\begin{itemize}
+  \item Anger: Irritation, frustration, hostility (0=none, 4=extreme)
+  \item Disgust: Revulsion, contempt, distaste (0=none, 4=extreme)
+  \item Fear: Anxiety, worry, concern (0=none, 4=extreme)
+  \item Happiness: Joy, satisfaction, contentment (0=none, 4=extreme)
+  \item Sadness: Sorrow, disappointment, melancholy (0=none, 4=extreme)
+  \item Surprise: Astonishment, unexpectedness (0=none, 4=extreme)
+\end{itemize}
 
 \medskip
-\textbf{Task 3: Disappointment — Expectation Disconfirmation (5-point scale, 0--4)}
+Task 3: Disappointment --- Expectation Disconfirmation (5-point scale, 0--4)
 
+This is a critical dimension for measuring expectation violation.
 Disappointment occurs when reality fails to meet prior expectations or hopes.
-Key Indicators: explicit statements of unmet expectations, comparisons between
-anticipated and actual outcomes, phrases like ``unfortunately'', ``fell short'',
-loss of enthusiasm previously present.
+
+Definition: Disappointment reflects the gap between what was expected/hoped for
+and what actually occurred. It is distinct from general sadness or anger,
+as it specifically involves unmet expectations.
+
+Key Indicators:
+\begin{itemize}
+  \item Explicit statements of unmet expectations
+        (e.g., ``I expected X but got Y'', ``This is not what I hoped for'')
+  \item Expressions of letdown, disillusionment, or feeling underwhelmed
+  \item Comparisons between anticipated and actual outcomes
+  \item Phrases like ``unfortunately'', ``sadly'', ``not as good as expected'', ``fell short''
+  \item Regret about decisions or outcomes that didn't meet hopes
+  \item Loss of enthusiasm or optimism that was previously present
+\end{itemize}
 
 Rating Scale:
-0 = No disappointment (expectations met or exceeded);
-1 = Slight disappointment;
-2 = Moderate disappointment;
-3 = Strong disappointment;
-4 = Extreme disappointment / profound sense of letdown.
+\begin{itemize}
+  \item 0: No disappointment --- expectations met or exceeded, or no expectations were present
+  \item 1: Slight disappointment --- minor unmet expectations, easily overlooked
+  \item 2: Moderate disappointment --- clear gap between expectations and reality, noticeable dissatisfaction
+  \item 3: Strong disappointment --- significant expectation violation, considerable distress or frustration
+  \item 4: Extreme disappointment --- severe expectation disconfirmation, profound sense of letdown or betrayal
+\end{itemize}
+
+Important: Distinguish disappointment from:
+\begin{itemize}
+  \item Pure anger (which may lack the expectation component)
+  \item General sadness (which may not involve unmet expectations)
+  \item Neutral criticism (which may be objective without emotional investment)
+\end{itemize}
 
 \medskip
-\textbf{Output Format:} Return a JSON object with scores and a one-sentence
-basis for each dimension (sentiment\_polarity, anger, disgust, fear, happiness,
-sadness, surprise, disappointment).
-Provide ONLY the JSON object, no additional text.
+Output Format:
+
+Return a JSON object with the following structure. For each score, provide a brief
+one-sentence basis explaining your rating:
+
+\begin{verbatim}
+{
+    "sentiment_polarity": {
+        "score": <int, 1-9>,
+        "basis": "<one sentence explanation>"
+    },
+    "anger": {
+        "score": <int, 0-4>,
+        "basis": "<one sentence explanation>"
+    },
+    "disgust":       { "score": <int, 0-4>, "basis": "..." },
+    "fear":          { "score": <int, 0-4>, "basis": "..." },
+    "happiness":     { "score": <int, 0-4>, "basis": "..." },
+    "sadness":       { "score": <int, 0-4>, "basis": "..." },
+    "surprise":      { "score": <int, 0-4>, "basis": "..." },
+    "disappointment": {
+        "score": <int, 0-4>,
+        "basis": "<explanation focusing on
+                   expectation disconfirmation>"
+    }
+}
+\end{verbatim}
+
+Important:
+\begin{itemize}
+  \item Provide ONLY the JSON object, no additional text
+  \item Each score must be within the specified range
+  \item For disappointment, the basis should explicitly reference the expectation-reality gap if present
+\end{itemize}
 \end{quote}
 
 \vspace{0.5em}
-\noindent\textbf{User Prompt:}
+\noindent User Prompt:
 \begin{quote}\small
-Text to analyze: \textit{[评论全文，超过 15,000 字符的评论截断处理]}
+Text to analyze: \textit{[待分析的评论全文]}
 \end{quote}
 
 \section{技术配置与处理流程}
 
 \begin{enumerate}
-  \item \textbf{模型配置}：主分析使用 claude-sonnet-4.5，temperature = 0；
-        稳健性对照使用 VADER（\texttt{hutto2014vader}）；
-        交叉核验使用 deepseek-r1，temperature = 0。
-  \item \textbf{文本预处理}：
+  \item 模型配置：主分析使用 claude-sonnet-4.5，temperature = 0；
+        稳健性检验使用 DeepSeek-V3.2（deepseek-v3.2）和 GPT-5.2（gpt-5.2）
+        两个替代 LLM，temperature = 0；
+        词典基线使用 VADER\cite{hutto2014vader}。
+        所有 LLM 均启用 JSON 强制输出模式。
+  \item 文本预处理：
     \begin{itemize}
-      \item 过滤以三个反引号包裹的纯代码片段
-      \item 仅保留含至少 5 个有效词的评论
-      \item 超过 15,000 字符的评论截断至 15,000 字符
+      \item 过滤以三个反引号包裹的纯代码片段，消除代码噪声
+      \item 仅保留包含至少 5 个有效词的评论，剔除过短的无意义内容
+      \item 对超过 15,000 字符的超长评论进行截断处理，
+            以减少极端长文本对情感得分均值的杠杆效应
     \end{itemize}
-  \item \textbf{并发处理}：采用多线程（默认 10 线程）并发调用，支持断点续传（本地 JSON 缓存）；API 限速时采用指数退避重试策略（最多 10 次，最大等待 30 秒）。
-  \item \textbf{聚合方法}：以周为单位，计算所有有效评论情感极性得分（1--9 分制）的算术均值，得到每周情感极性变量（Sentiment$_t$）。
-  \item \textbf{脚本位置}：完整分析脚本见 \texttt{NJU/sentiment\_scoring.py}。
+  \item 并发与容错：采用线程池（\texttt{ThreadPoolExecutor}，默认 10 线程）
+        并发调用 API。
+        针对超时和 429（速率限制）两类错误分别实施指数退避重试策略，
+        超时错误最大等待 30 秒，速率限制错误最大等待 60 秒，
+        均最多重试 10 次。所有请求结果以 JSON 文件逐条缓存至本地，
+        支持中断后的断点续传。
+  \item 输出格式：每条评论返回包含 8 个维度（情感极性、愤怒、厌恶、
+        恐惧、快乐、悲伤、惊讶、失望）评分及评分依据的嵌套 JSON 对象。
+  \item 聚合方法：以周为单位，计算所有有效评论情感极性得分（1--9 分制）
+        的算术均值，得到每周情感极性变量（$\text{Sentiment}_t$）。
+  \item 脚本位置：完整分析脚本见 \texttt{sentiment\_scoring.py}。
 \end{enumerate}
 
 \end{document}
