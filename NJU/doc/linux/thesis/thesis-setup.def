@@ -126,31 +126,11 @@
 
 % bib 类用于参考文献设置
 \njusetup[bib]{
-    % style = numeric|author-year,
-    % 参考文献样式
-    % 默认为顺序编码制（numeric）
-    % 可选著者-出版年制（author-year）
-    %
     resource = {thesis.bib},
-    % 参考文献数据源
-    % 需要带扩展名的完整文件名
-    % 可使用逗号分隔多个文件
-    % 此条等效于 \addbibresource 命令
-    %
-    % option = {
-        % doi    = false,
-        % isbn   = false,
-        % url    = false,
-        % eprint = false,
-        % 关闭部分无用文献信息
-        %
-        % refsection = chapter,
-        % 将参考文献表置于每章后
-        %
-        % gbnamefmt = lowercase
-        % 使用仅首字母大写的姓名
-    %   }
-    % 额外的 biblatex 宏包选项
+    option = {
+        sorting = gb7714-2015,
+        gblanorder = englishahead,
+    }
 }
 
 % image 类用于载入外置的图片
@@ -228,11 +208,8 @@
 
 % footnote 类用于设置脚注样式，功能详见手册
 \njusetup[footnote]{
-  % style = pifont|circled,
+  style = circled,
   % 使用圈码编号
-  %
-  % hang = false,
-  % 不使用悬挂缩进
 }
 
 % 页眉页脚内容设置

@@ -65,6 +65,17 @@
 % 在导言区随意定制所需命令
 \NewDocumentCommand\todo{m}{\textbf{[待补充：#1]}} % 待填写标记
 
+% 将 \cite 重定义为脚注引用（完整参考文献信息显示在页脚）
+\AtBeginDocument{%
+  \DeclareCiteCommand{\cite}[\mkbibfootnote]
+    {\usebibmacro{prenote}}
+    {\usedriver
+      {\DeclareNameAlias{sortname}{default}}
+      {\thefield{entrytype}}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}%
+}
+
 \begin{document}
 
 %---------------------------------------------------------------------
@@ -166,9 +177,9 @@ Python、Git 等工具深度嵌入全球数百万开发者的日常工作流程�
 理解驱使开发者持续投入时间和精力的因素便成为开源研究的核心议题。
 
 这一问题在比特币（Bitcoin）社区中表现得尤为突出。
-比特币是 Satoshi Nakamoto 于2008年提出的点对点电子现金系统\cite{nakamoto2008bitcoin,cheng2024bitcoin}，
+比特币是 Satoshi Nakamoto\footnote{Satoshi Nakamoto 为化名，其真实身份至今未被确认。} 于2008年提出的点对点电子现金系统\cite{nakamoto2008bitcoin,cheng2024bitcoin}，
 其底层协议自诞生之日起便以完全开源的形式运作，
-项目代码库托管于 GitHub 平台，目前已积累超过76,000名关注者，
+项目代码库托管于 GitHub\footnote{GitHub（\url{https://github.com}）是全球最大的代码托管与开源协作平台，由微软于2018年收购。} 平台，目前已积累超过76,000名关注者，
 吸引了来自全球的数千名开发者贡献代码与文档。
 比特币不同于其他开源项目的关键在于：它背后没有任何公司主体为开发活动提供资金保障，
 也没有雇主为核心开发者发放薪酬。整个项目的存续与演进完全建立在志愿贡献的基础之上，
@@ -191,7 +202,7 @@ Python、Git 等工具深度嵌入全球数百万开发者的日常工作流程�
 货币奖励被证明能够在一定程度上促进开发者的贡献\cite{wang2022monetary}，
 但其与内在动机的关系颇为微妙：若管理不当，不适当的金钱激励反而可能产生”挤出效应”，
 削弱开发者原本的内在驱动力\cite{benabou2003intrinsic,qiao2021mitigating}。
-2019年，GitHub 正式推出 Sponsors 机制，首次为开源贡献提供了平台级的捐赠基础设施，
+2019年，GitHub 正式推出 Sponsors 机制\footnote{GitHub Sponsors：\url{https://github.com/sponsors}，允许用户直接向开源开发者提供定期或一次性经济赞助。}，首次为开源贡献提供了平台级的捐赠基础设施，
 使任何人都可以向自己欣赏的开发者提供经济支持。
 这一机制的出现引发了学界的广泛关注。
 Shimada 等人\cite{shimada2022github}的研究发现，
@@ -208,7 +219,7 @@ Overney 等人\cite{overney2020not}的研究也表明，
 上述研究的密集出现，折射出开源生态在现实层面所面临的深层可持续性困境。
 现代数字经济的高速运转建立在大量关键开源组件之上，然而这些组件的维护工作往往
 高度集中于少数志愿开发者，缺乏稳定的制度性支持。
-2021年底曝光的 Apache Log4j 漏洞事件以极为惨烈的方式揭示了这一隐忧：
+2021年底曝光的 Apache Log4j 漏洞事件\footnote{即 CVE-2021-44228，又称"Log4Shell"，被评为 CVSS 最高危险等级10.0分，影响了全球数十亿台设备。}以极为惨烈的方式揭示了这一隐忧：
 一个嵌入全球数十亿软件系统的核心日志库，长期仅由数名志愿者以业余时间维护，
 其安全漏洞的存在几乎使整个互联网基础设施陷入系统性风险\cite{alami2024sustainability}。
 在比特币生态中，这种脆弱性以更为独特的方式呈现：
@@ -216,7 +227,7 @@ Overney 等人\cite{overney2020not}的研究也表明，
 而其底层协议的核心维护工作却高度依赖为数不多的全职开发者，
 任何核心人才的流失或社区参与的持续萎缩，
 都有可能对协议演进能力乃至网络整体安全产生深远影响。
-正是在这一背景下，以 Brink 为代表的专项资助机构应运而生，
+正是在这一背景下，以 Brink\footnote{Bitcoin Brink 官方网站：\url{https://brink.dev}。} 为代表的专项资助机构应运而生，
 探索出基于信息透明化和分阶段披露的独特激励路径，
 以期在不违背去中心化治理理念的前提下，维持更广泛开发者群体的参与意愿与贡献活力\cite{wu2024governance}。
 对这一机制的科学评估，因此具有超越单一案例的现实普遍意义。
@@ -476,9 +487,9 @@ RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度�
 以自愿形式贡献代码、文档和讨论，彼此之间的协调依靠版本控制系统、
 邮件列表和代码审查流程等技术与社会机制来实现。
 
-自由软件运动在20世纪80年代由 Richard Stallman 奠定理念基础，
-而 Linux 内核于1991年的出现则将这一理念推向工程实践的前沿。
-进入21世纪，互联网基础设施的快速普及与 Git 版本控制工具的成熟，
+自由软件运动在20世纪80年代由 Richard Stallman\footnote{Richard Stallman 于1983年发起 GNU 项目，并于1985年创立自由软件基金会（Free Software Foundation, FSF），提出了"自由软件"的概念与 GPL 许可证体系。} 奠定理念基础，
+而 Linux 内核于1991年由 Linus Torvalds 发布后则将这一理念推向工程实践的前沿。
+进入21世纪，互联网基础设施的快速普及与 Git\footnote{Git 是 Linus Torvalds 于2005年为管理 Linux 内核源代码而开发的分布式版本控制系统，目前已成为软件工程领域的标准协作工具。} 版本控制工具的成熟，
 极大降低了全球开发者协作的组织成本，以 GitHub 为核心的开源生态随之形成。
 时至今日，Linux 内核支撑着全球绝大多数服务器与移动设备，
 Python 成为数据科学和人工智能研究的通用语言，
@@ -937,7 +948,7 @@ Li 等人（2021）开发了一套负面情感事件监测框架，
 这类工具在通用文本上表现尚可，
 但在高度技术化的开源讨论文本中，大量领域专属表达（如代码片段、版本号、
 错误堆栈信息）会对情感评分产生系统性干扰，导致准确性受限。
-近年来，基于预训练语言模型的情感分析方法（如 BERT 及其衍生模型）
+近年来，基于预训练语言模型的情感分析方法（如 BERT\footnote{BERT（Bidirectional Encoder Representations from Transformers）由 Google 于2018年提出，是一种基于 Transformer 架构的双向预训练语言模型，在多项自然语言处理任务上取得了突破性进展。} 及其衍生模型）
 在技术文本理解上取得了显著进步。
 Novielli 等人（2021）对多种现成的软件工程专用情感分析工具进行了跨平台评估，
 发现工具性能在不同数据源之间存在显著差异，
@@ -1121,9 +1132,9 @@ GitHub 作为全球最大的开源代码托管平台，
     \end{tabularx}
 \end{table}
 
-GH Archive 是由 Ilya Grigorik 维护的 GitHub 事件归档服务，
+GH Archive\footnote{GH Archive 项目主页：\url{https://www.gharchive.org}。} 是由 Ilya Grigorik 维护的 GitHub 事件归档服务，
 自2011年起持续以小时为粒度记录 GitHub 平台上的全量公开事件，
-并通过 Google BigQuery 提供免费的大规模查询接口。
+并通过 Google BigQuery\footnote{Google BigQuery 是 Google Cloud 提供的无服务器、高扩展性的数据仓库服务，支持使用标准 SQL 对 PB 级数据集进行快速查询。} 提供免费的大规模查询接口。
 本研究从 GH Archive 中提取 \texttt{bitcoin/bitcoin} 仓库的九类事件：
 PushEvent（PE）、CreateEvent（CE）、DeleteEvent（DE）、CommitCommentEvent（CCE）、
 PullRequestEvent（PRE）、PullRequestReviewEvent（PRRE）、
@@ -2154,7 +2165,7 @@ IssueCommentEvent（ICE）、IssuesEvent（ISE）与 PullRequestReviewCommentEve
 \subsection{情感测量方法}
 
 本研究以大型语言模型（Large Language Model, LLM）为主要工具对 Issue 评论文本进行情感分析。
-相较于基于词典的传统方法（如 VADER）和早期预训练模型，
+相较于基于词典的传统方法（如 VADER\footnote{VADER（Valence Aware Dictionary and sEntiment Reasoner）是一种针对社交媒体文本设计的基于规则的情感分析工具，项目地址：\url{https://github.com/cjhutto/vaderSentiment}。}）和早期预训练模型，
 LLM 具备深层语境理解能力，能够识别双关、讽刺、
 条件句等复杂语言现象中隐含的情感倾向，
 并可通过结构化提示（Prompt）实现对特定情感维度的精细化测量
@@ -2165,7 +2176,7 @@ LLM 具备深层语境理解能力，能够识别双关、讽刺、
 \cite{zhang2020sentiment}。
 
 模型选择。
-本研究采用 Claude Sonnet 4.5（claude-sonnet-4.5）作为主要情感打分模型。
+本研究采用 Claude Sonnet 4.5\footnote{Claude Sonnet 4.5 由 Anthropic 公司开发，模型 API 文档：\url{https://docs.anthropic.com}。}（claude-sonnet-4.5）作为主要情感打分模型。
 为确保结论对情感测量工具选择的不敏感性，
 稳健性检验中分别以 DeepSeek-V3.2（deepseek-v3.2）和 GPT-5.2（gpt-5.2）
 两个替代大型语言模型，以及 VADER 传统词典方法，
