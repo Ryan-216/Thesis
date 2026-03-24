@@ -138,15 +138,15 @@
     % path = {{./figure/}{./image/}},
     % 图片搜索路径
     %
-    nju-emblem = {nju-emblem},
-    nju-name = {nju-name},
+    % nju-emblem = {nju-emblem},
+    % nju-name = {nju-name},
     % 校徽和校名图片路径
     % 建议使用 PDF 格式的矢量图
     % 使用外置图片有助于减少编译时间
     % 空置时会自动使用 njuvisual 宏包绘制
     %
-    % nju-emblem = {nju-emblem-purple},
-    % nju-name = {nju-name-purple},
+    nju-emblem = {nju-emblem-purple},
+    nju-name = {nju-name-purple},
     % 替换为紫色版本
     % 这个选项只能填写一次
     % 切换时要注释掉上方的黑色版本
@@ -210,6 +210,7 @@
 \njusetup[footnote]{
   style = circled,
   % 使用圈码编号
+  hang = false
 }
 
 % 页眉页脚内容设置
