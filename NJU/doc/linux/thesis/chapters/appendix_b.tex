@@ -2,7 +2,7 @@
 
 \section{方法概述}
 
-本研究采用大型语言模型对 bitcoin/bitcoin 仓库 Issue 评论进行情感分析，采用"先按周聚合、后整体评分"的策略。
+本研究采用大型语言模型对 bitcoin/bitcoin 仓库 Issue 评论进行情感分析，采用“先按周聚合、后整体评分”的策略。
 主分析模型为 Claude Sonnet 4.5（claude-sonnet-4.5），
 稳健性检验分别以 DeepSeek-V3.2（deepseek-v3.2）和 GPT-5.2（gpt-5.2）
 两个替代 LLM 以及 VADER 词典方法进行对照。
@@ -16,7 +16,7 @@ VADER 作为基于规则的工具，与 LLM 的语义推理在方法论上存在
 
 \section{情感打分提示词}
 
-以下为提交给模型的系统提示词（System Prompt）与用户提示词（User Prompt）的完整文本。
+以下为提交给模型的系统提示词与用户提示词的完整文本。
 
 \vspace{1em}
 \noindent System Prompt:

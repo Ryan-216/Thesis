@@ -1,79 +1,3 @@
-\begin{abstract}
-比特币是目前市值最高的加密货币，开发工作完全依赖全球开源开发者的自愿贡献。
-如何激励开发者持续参与，始终是比特币社区及众多开源项目面临的核心挑战。
-既有研究多关注实际货币激励对开发者行为的影响，
-但捐赠信息披露本身所产生的激励效应，以及
-社区内部情感状态对开发者活动的动态作用，至今缺乏系统考察。
-
-本文以 GitHub 上的比特币开源项目为研究对象，围绕两个相互补充的问题展开：
-
-其一，外部非盈利基金会（Bitcoin Brink）的捐赠信息披露如何影响开发者活动。
-Brink 运营中存在两次信息披露：在 X 平台公布收到的捐款信息（非定向披露），
-以及在官网公布受资助开发者名单（定向披露）。
-本文采用面板数据固定效应模型与工具变量方法，
-剔除实际受资助开发者后识别纯信息效应。
-结果表明，两种披露均对开发者活动产生显著正向影响，
-但定向披露对非定向披露的正向效应形成负向调节——
-这与期望失验理论所预测的失望效应相一致。
-
-其二，比特币社区 Issue 讨论中的情感状态如何影响开发者活动，
-代码活动与讨论活动之间是否存在替代效应。
-基于向量自回归（VAR）模型的分析发现，滞后一期的负面情感对代码活动与讨论活动均有正向影响，
-而滞后两期的代码活动则负向影响讨论活动，
-由此揭示出“情感→代码/讨论→讨论”的传导路径。
-上述结果分别借助情感即信息理论和目标手段替代理论予以解释。
-
-本研究从信息视角重新审视开源开发者的激励机制，
-为比特币及更广泛开源社区的捐赠信息披露策略设计提供实证参考，
-同时对图书情报学中信息行为与用户激励研究作出理论贡献。
-\end{abstract}
-
-% 英文摘要
-\begin{abstract*}
-Bitcoin, the world's highest-valued cryptocurrency, relies entirely on voluntary contributions
-from open-source Developmenters worldwide. Sustaining Developmenter motivation remains a central
-challenge for the Bitcoin community and open-source projects at large. While prior research
-has predominantly examined the direct effects of monetary incentives, the motivating impact
-of \textit{donation information disclosure} itself—decoupled from actual financial transfers—
-and the role of \textit{community sentiment} in shaping Developmenter behavior remain underexplored.
-
-This thesis examines two complementary research questions using the Bitcoin GitHub repository
-as the empirical context. First, it investigates how two distinct donation disclosure
-strategies employed by the non-profit organization Bitcoin Brink affect Developmenter activity:
-untargeted announcements of received donations posted on platform X, and targeted
-grantee disclosures published on Brink's official website. Employing panel fixed-effects
-models and instrumental variable estimation—while excluding actual grantees to isolate
-pure information effects—the study finds that both disclosure types positively influence
-Developmenter contributions. However, targeted disclosure negatively moderates the positive
-effect of untargeted disclosure, consistent with the disappointment mechanism predicted
-by expectancy disconfirmation theory.
-
-Second, the thesis examines how community sentiment expressed in Issue discussions
-dynamically influences Developmenter activities, and whether substitution effects exist between
-code and discussion activities. Using Vector Autoregression (VAR) models, the analysis
-reveals that lagged negative sentiment positively influences both code and discussion
-activities, while increased code activity subsequently suppresses discussion activity.
-This yields the influence pathway: sentiment → code/discussion → discussion, explained
-through affect-as-information theory and goal–means substitution theory.
-
-This research reframes open-source Developmenter motivation from an informational perspective,
-offering actionable insights for donation disclosure strategy design in Bitcoin and
-broader open-source communities, and contributing theoretically to information behavior
-research in library and information science.
-\end{abstract*}
-
-% 目录
-\tableofcontents
-% 图表目录
-\listoffigures
-\listoftables
-
-%---------------------------------------------------------------------
-%   正文
-%---------------------------------------------------------------------
-\mainmatter
-
-%%====================================================================
 \chapter{绪论}
 %%====================================================================
 
@@ -91,7 +15,7 @@ Python、Git 等工具深度嵌入数百万开发者的日常工作流程——
 但也带来了一个根本性的挑战——既然贡献出于自愿，
 理解驱使开发者持续投入时间和精力的因素便成为开源研究的核心议题。
 
-上述问题在比特币（Bitcoin）社区中表现得尤为突出。
+上述问题在比特币社区中表现得尤为突出。
 比特币是 Satoshi Nakamoto\footnote{Satoshi Nakamoto 为化名，其真实身份至今未被确认。} 于2008年提出的点对点电子现金系统\cite{nakamoto2008bitcoin,cheng2024bitcoin}，
 底层协议自诞生之日起便以完全开源的形式运作，
 代码库托管于 GitHub\footnote{GitHub（\url{https://github.com}）是全球最大的代码托管与开源协作平台，由微软于2018年收购。} 平台，目前已积累超过76,000名关注者，
@@ -100,7 +24,7 @@ Python、Git 等工具深度嵌入数百万开发者的日常工作流程——
 也没有雇主为核心开发者发放薪酬。项目的存续与演进完全建立在志愿贡献之上，
 而这些贡献直接关乎一个数千亿美元规模金融网络的安全与可靠。
 核心开发者一旦离去或社区贡献持续萎缩，比特币网络将面临严峻的技术维护风险。
-因此，如何有效激励开发者持续贡献，是比特币社区乃至整个开源生态面临的核心治理议题。
+因此，有效激励开发者持续贡献，是比特币社区乃至整个开源生态面临的核心治理议题。
 
 学术界围绕开源开发者激励机制已积累了丰富成果。
 早期研究发现，开发者的参与主要受内在动机驱动：对技术问题的纯粹兴趣\cite{shah2006motivation}、
@@ -134,7 +58,7 @@ Overney 等人\cite{overney2020not}的研究也表明，
 上述研究的密集涌现，折射出开源生态在现实层面所面临的深层可持续性困境。
 现代数字经济的高速运转建立在大量关键开源组件之上，但这些组件的维护工作往往
 高度集中于少数志愿开发者，缺乏稳定的制度性支持。
-2021年底曝光的 Apache Log4j 漏洞事件\footnote{即 CVE-2021-44228，又称"Log4Shell"，被评为 CVSS 最高危险等级10.0分，影响了全球数十亿台设备。}便以极为惨烈的方式揭示了这一隐忧：
+2021年底曝光的 Apache Log4j 漏洞事件\footnote{即 CVE-2021-44228，又称“Log4Shell”，被评为 CVSS 最高危险等级10.0分，影响了全球数十亿台设备。}便以极为惨烈的方式揭示了这一隐忧：
 一个嵌入全球数十亿软件系统的核心日志库，长期仅由数名志愿者利用业余时间维护，
 安全漏洞的存在几乎使整个互联网基础设施陷入系统性风险\cite{alami2024sustainability}。
 比特币生态中，这种脆弱性以更为独特的方式呈现。
@@ -148,12 +72,12 @@ Overney 等人\cite{overney2020not}的研究也表明，
 对该机制进行科学评估，具有超越单一案例的现实普遍意义。
 
 回顾这些工作可以发现，现有文献对捐赠的理解主要集中于货币转移的经济效应，
-即货币激励能否直接促进开发者参与。
+即货币激励对开发者参与的直接促进作用。
 但在实际的捐赠生态中，信息的流动往往先于资金的转移，
 且覆盖的受众远比实际受益者更广。
 当一个资助机构在社交媒体上宣布收到一笔捐款时，
 所有关注该机构的开发者都会接收到这条信息，
-无论他们最终是否能从中受益。这条信息本身能否对开发者行为产生可测量的影响？
+无论他们最终能否从中受益。这条信息本身对开发者行为产生可测量影响的可能性，
 目前尚缺乏实证检验。仅凭信息而非实际资金转移所产生的激励效应，
 在既有文献中几乎没有得到系统研究。
 该研究空白尤其值得关注：信息披露相较于实际资金分配具有近乎为零的边际成本，
@@ -164,7 +88,7 @@ Overney 等人\cite{overney2020not}的研究也表明，
 这些信号会在开发者心中激活或调整预期结构，进而影响参与决策\cite{connelly2011signaling}。
 类似的逻辑在众筹研究中已有部分印证：项目进展公告能够显著提升后续的支持率，
 即便公告内容并不伴随任何即时的经济转移\cite{mollick2014dynamics}。
-但在开源开发者群体中，信息披露能否以类似机制触发可测量的行为变化，
+但在开源开发者群体中，信息披露以类似机制触发可测量的行为变化，
 尤其是不同类型的披露（普惠型与定向型）是否产生差异化效应，
 实证层面仍是空白。
 
@@ -175,13 +99,13 @@ Overney 等人\cite{overney2020not}的研究也表明，
 Issue 区的讨论情感会随之出现明显的极性变化。
 Guzzi 等人\cite{guzzi2013}发现，开源社区的协作沟通中蕴含着丰富的情感信息，
 这些信息构成了社区健康状态的重要信号。
-但社区情感如何在时间维度上影响开发者的具体行为？
-情感变化能否预测随后的代码活动或讨论活动？
-不同类型的开发活动之间是否存在相互促进或相互抑制的动态关系？
+但社区情感在时间维度上影响开发者具体行为的机制，
+情感变化预测随后代码活动或讨论活动的可能性，
+不同类型的开发活动之间相互促进或相互抑制的动态关系，
 这些问题尚缺乏系统性的实证探讨。
 现有将情感分析引入开源社区的研究，大多以描述情感分布的静态特征
 或考察情感与代码质量的截面相关性为主要目标\cite{guzzi2013}，
-较少采用动态因果推断框架来系统检验情感冲击在时间轴上如何传导至开发者的行动决策。
+较少采用动态因果推断框架来系统检验情感冲击在时间轴上传导至开发者的行动决策。
 更为关键的是，代码活动与讨论活动之间的动态互动——即
 当开发者通过编写代码回应社区问题时，是否会相应减少讨论参与，
 形成活动层面的替代关系——虽有理论依据，
@@ -210,8 +134,8 @@ Brink 成立于2020年，是目前规模最大的专注于比特币核心协议�
 第一阶段，Brink 收到捐款后，会在 X 平台（原 Twitter）官方账号上发布公告，
 公开感谢捐赠方并注明捐款金额，但不说明资金将用于资助哪位具体的开发者。
 这类公告面向所有关注者广泛传播，每一位比特币开发者都可能看到；
-由于受益人尚未确定，公告传递的核心信号是”社区正在获得外部支持，
-有资金可以用于奖励开发者”。本研究将这类披露定义为非定向披露（Untargeted Disclosure），
+由于受益人尚未确定，公告传递的核心信号是"社区正在获得外部支持，
+有资金可以用于奖励开发者"。本研究将这类披露定义为非定向披露（Untargeted Disclosure），
 强调其普惠性——每位开发者均可合理地将自己视为潜在受益者。
 第二阶段，经过通常为数周乃至数月的申请与审核流程后，
 Brink 在官方网站上正式公布当期受资助开发者名单，
@@ -228,7 +152,7 @@ Brink 实际资助的开发者数量极为有限，两年内仅资助了8名开�
 将这8名实际受资助者从分析样本中剔除后，
 研究者便可专注考察：对于其余1610名开发者而言，
 捐赠信息的公开本身（而非任何真实的金钱转移）
-是否对活动行为产生了可测量的影响。
+对活动行为产生了可测量的影响。
 这种“信息与金钱的干净分离”在开源捐赠研究中极为罕见，
 构成了本研究得以回答核心问题的关键条件。
 
@@ -252,18 +176,18 @@ Brink 基金会在实践中形成了非定向披露与定向披露两种信息�
 二者在受众结构、信号内容和心理机制上存在本质差异，
 却可能产生相互交织的激励效果。具体而言：
 
-RQ1：Bitcoin Brink 基金会的非定向捐赠披露与定向捐赠披露如何分别影响
-开发者的代码活动、审查活动和讨论活动？当两种披露同时存在时，
-二者之间是否产生交互效应？
+RQ1：探究 Bitcoin Brink 基金会的非定向捐赠披露与定向捐赠披露分别对
+开发者代码活动、审查活动和讨论活动的影响，并检验当两种披露同时存在时，
+二者之间是否存在交互效应。
 
 第二个研究问题将目光转向社区内部，探讨情感信息的传导机制。
 社区讨论中的情感状态不仅反映开发者的体验，
 也可能作为项目状态的信号影响开发者的行动选择。
-代码活动与讨论参与这两种典型的开发活动之间，是否存在情感所触发的动态路径？
+本研究检验代码活动与讨论参与这两种典型的开发活动之间是否存在情感所触发的动态路径。
 
-RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度上影响
-开发者的代码活动与讨论活动？代码活动的变化是否进一步影响讨论活动，
-形成可识别的跨活动传导路径？
+RQ2：探究比特币开源社区 Issue 讨论中的情感状态在时间维度上对
+开发者代码活动与讨论活动的影响，并分析代码活动的变化是否进一步影响讨论活动，
+形成可识别的跨活动传导路径。
 
 \section{研究方法概述}
 
@@ -301,7 +225,7 @@ RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度�
 由此形成了一种超越货币本身的信号效应。
 本研究通过对样本的精心处理与工具变量的设计，
 将信号效应从货币效应中剥离，首次在开源社区情境下提供了
-“捐赠信息披露本身是否构成有效激励因素”的实证证据，
+“捐赠信息披露本身构成有效激励因素”的实证证据，
 丰富了信息激励理论的层次与应用边界。
 
 在理论框架层面，本研究将期望理论（Expectancy Theory）
@@ -369,21 +293,3 @@ RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度�
 
 \section{论文结构安排}
 
-本文共七章，各章内容安排如下。第二章系统梳理相关理论基础与文献综述，
-依次涵盖开源开发者激励机制的研究脉络、捐赠与赞助机制的文献进展、
-信息披露的理论基础，以及期望理论、期望失验理论、情感即信息理论等核心理论框架。
-第三章作为两项实证研究的共同基础，统一呈现整体研究框架与设计逻辑、
-六类数据源的采集路径与融合流程、两种方法论的选择依据，
-以及数据伦理考量。
-第四章为研究一，围绕捐赠信息披露对开发者活动的影响展开，
-完整呈现研究场景与假设推导、数据来源与变量定义、计量模型构建，
-以及主效应结果、稳健性检验和机制分析。
-第五章为研究二，聚焦比特币社区情感对开发者活动的动态影响，
-介绍 VAR 模型的设定与估计过程，汇报格兰杰因果检验、
-脉冲响应分析与方差分解的结果，并对影响路径给出理论解释。
-第六章在两项独立研究的基础上展开综合讨论，提炼理论贡献与实践启示，
-同时客观说明本研究的局限性及未来可改进的方向。
-第七章总结全文主要研究结论，并对后续研究的拓展方向作出展望。
-
-
-%%====================================================================
