@@ -48,6 +48,18 @@
   ]{njuthesis}
 
 % 模板选项设置，包括个人信息、外观样式等
+
+% 添加用户要求的格式设置
+\usepackage{setspace}  % 用于设置行距
+
+% 设置正文行距为1.5倍
+\linespread{1.5}
+
+% 设置脚注格式
+\renewcommand{\footnotesize}{\zihao{5}}  % 脚注小五号
+\renewcommand{\footnoterule}{\vspace*{-3pt}\hrule width 0.4\columnwidth height 0.4pt \vspace*{2.6pt}}
+
+% 设置参考文献格式（在njuthesis.cls中已定义）
 % 较为冗长且一般不需要反复修改，我们把它放在单独的文件里
 \input{thesis-setup.def}
 

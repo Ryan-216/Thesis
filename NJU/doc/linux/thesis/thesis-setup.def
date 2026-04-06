@@ -26,11 +26,11 @@
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {比特币,开源社区,信息披露,开发者激励,开发者活动，开发者情感},
+    keywords = {比特币,开源社区,信息披露,开发者激励,开发者情感},
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {Bitcoin,{Open-Source Community},{Information Disclosure},{Developer Motivation},{Developer Activity},{Developer Sentiment}},
+    keywords* = {Bitcoin,{Open-Source Community},{Information Disclosure},{Developer Motivation},{Developer Sentiment}},
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
@@ -91,10 +91,10 @@
     % 答辩委员会成员
     % 一般为四名，使用英文半角逗号(,)分隔
     %
-    clc = {G250},
+    clc = {G350},
     % 中国图书分类号
     %
-    udc = {025},
+    udc = {001.18},
     % 国际图书分类号
     %
     secret-level = {公开},
@@ -215,20 +215,20 @@
 
 % 页眉页脚内容设置
 \njusetup{
-  % header/content = {
-  %     {OR}{\thepage},{OL}{\rightmark},
-  %     {EL}{\thepage},{ER}{\leftmark}
-  %   },
+  header/content = {
+      {OR}{\thepage},{OL}{\rightmark},
+      {EL}{\thepage},{ER}{\leftmark}
+    },
   % 页眉设置，详见手册
   % 奇数页页眉：左侧章名，右侧页码
   % 偶数页页眉：左侧页码，右侧节名
   %
-  % footer/content = {}
+  footer/content = {}
 }
 
 % 页眉页脚的字体样式
-% \njusetformat{header}{\small\kaishu}
-% \njusetformat{footer}{}
+\njusetformat{header}{\small\kaishu}
+\njusetformat{footer}{}
 
 % 在盲审模式下隐藏学校信息
 % \njusetup{anonymous-mode/no-nju}
@@ -240,3 +240,30 @@
 % \njusetformat{subsection}{\normalfont\bfseries} % 修改 subsection 为小四号粗体宋体
 % \njusetformat{tabular}{\zihao{-4}\bfseries}     % 修改表格环境的字号
 % \EditInstance{nju}{u/cover/emblem-img}{align=l} % 左对齐的本科生封面校徽
+
+% 根据用户要求添加的格式设置
+% 1. 摘要格式设置
+\njusetup[abstract]{
+  title-style = centered,  % "摘要"二字居中
+}
+
+% 2. 正文标题格式设置
+\njusetformat{chapter}{\centering\heiti\zihao{-2}\bfseries}  % 一级标题：黑体，小二，加粗，居中
+\njusetformat{section}{\heiti\zihao{-3}\bfseries}            % 二级标题：黑体，小三，加粗
+\njusetformat{subsection}{\heiti\zihao{4}\bfseries}          % 三级标题：黑体，四号，加粗
+
+% 3. 正文格式设置
+\renewcommand{\baselinestretch}{1.5}  % 1.5倍行距
+\zihao{-4}\songti                     % 正文：小四号宋体
+
+% 4. 脚注格式设置
+\njusetup[footnote]{
+  style = circled,
+  hang = false
+}
+
+% 5. 参考文献格式设置（在biblatex中通过其他方式设置）
+% \renewcommand{\bibfont}{\zihao{5}\songti}  % 五号字体，中文宋体，英文Times New Roman
+
+% 6. 关键词格式设置（在abstract环境中自动处理）
+% 7. 页码格式已在njuthesis.cls中设置（摘要罗马数字，正文阿拉伯数字）
