@@ -4069,70 +4069,6 @@
       \endverb
       \keyw{zhang2022who}
     \endentry
-    \entry{fu2022social}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=2a7f78f918f395ae9a3beb701e777f12}{%
-           family={付少雄},
-           familyi={付\bibinitperiod}}}%
-        {{hash=2a04bbf5c64cb7e74b95c7644da17bf4}{%
-           family={朱梦蝶},
-           familyi={朱\bibinitperiod}}}%
-        {{hash=610df5a95f6a54309346e97068c67d65}{%
-           family={郑德俊},
-           familyi={郑\bibinitperiod}}}%
-        {{hash=dcf30f7c63fbe201f8d8b556cc2fdca5}{%
-           family={邓胜利},
-           familyi={邓\bibinitperiod}}}%
-      }
-      \name{namea}{4}{}{%
-        {{hash=2a7f78f918f395ae9a3beb701e777f12}{%
-           family={付少雄},
-           familyi={付\bibinitperiod}}}%
-        {{hash=2a04bbf5c64cb7e74b95c7644da17bf4}{%
-           family={朱梦蝶},
-           familyi={朱\bibinitperiod}}}%
-        {{hash=610df5a95f6a54309346e97068c67d65}{%
-           family={郑德俊},
-           familyi={郑\bibinitperiod}}}%
-        {{hash=dcf30f7c63fbe201f8d8b556cc2fdca5}{%
-           family={邓胜利},
-           familyi={邓\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \strng{namehash}{46e97393b6376e1ab0255aaf9d2d7eb6}
-      \strng{fullhash}{4211e1b0cec935515a1c96b8be62c92a}
-      \strng{fullhashraw}{4211e1b0cec935515a1c96b8be62c92a}
-      \strng{bibnamehash}{5378c259b02c3eaefbf62f90ef548789}
-      \strng{authorbibnamehash}{5378c259b02c3eaefbf62f90ef548789}
-      \strng{authornamehash}{46e97393b6376e1ab0255aaf9d2d7eb6}
-      \strng{authorfullhash}{4211e1b0cec935515a1c96b8be62c92a}
-      \strng{authorfullhashraw}{4211e1b0cec935515a1c96b8be62c92a}
-      \strng{nameabibnamehash}{5378c259b02c3eaefbf62f90ef548789}
-      \strng{nameanamehash}{46e97393b6376e1ab0255aaf9d2d7eb6}
-      \strng{nameafullhash}{4211e1b0cec935515a1c96b8be62c92a}
-      \strng{nameafullhashraw}{4211e1b0cec935515a1c96b8be62c92a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{情报资料工作}
-      \field{langid}{english}
-      \field{languageid}{chinese}
-      \field{lansortorder}{4}
-      \field{number}{3}
-      \field{title}{基于社会资本理论的在线医疗社区医生知识贡献行为动因研究}
-      \field{usera}{J}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{volume}{43}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{pages}{67\bibrangedash 74}
-      \range{pages}{8}
-      \keyw{fu2022social}
-    \endentry
     \entry{dai2019collaborative}{article}{}{}
       \name{author}{4}{}{%
         {{hash=358412c43e1098fd22a6fdf58e9bd2f8}{%
@@ -4729,58 +4665,6 @@
       \field{pages}{343\bibrangedash 352}
       \range{pages}{10}
       \keyw{wang2022reward}
-    \endentry
-    \entry{wang2023config}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=992750859fd2b0059fbfb40e4518f5f9}{%
-           family={王莉雅},
-           familyi={王\bibinitperiod}}}%
-        {{hash=da49341e2ecbededa6817bac05bf0b45}{%
-           family={王树祥},
-           familyi={王\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=992750859fd2b0059fbfb40e4518f5f9}{%
-           family={王莉雅},
-           familyi={王\bibinitperiod}}}%
-        {{hash=da49341e2ecbededa6817bac05bf0b45}{%
-           family={王树祥},
-           familyi={王\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \strng{namehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{fullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{fullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{bibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authorbibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authornamehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{authorfullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authorfullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameabibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameanamehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{nameafullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameafullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{科技进步与对策}
-      \field{langid}{english}
-      \field{languageid}{chinese}
-      \field{lansortorder}{4}
-      \field{number}{17}
-      \field{title}{组态视角下社交型问答社区用户持续知识贡献的影响路径研究——基于社会生态框架}
-      \field{usera}{J}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{volume}{40}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{pages}{129\bibrangedash 138}
-      \range{pages}{10}
-      \keyw{wang2023config}
     \endentry
     \entry{wang2025opensource}{article}{}{}
       \name{author}{3}{}{%
