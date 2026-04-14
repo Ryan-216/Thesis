@@ -88,6 +88,20 @@
     {\usebibmacro{postnote}}%
 }
 
+% 在文档开始时再设置参考文献格式
+\AtBeginDocument{%
+  % 设置参考文献字体：五号字体
+  \renewcommand{\bibfont}{\zihao{5}}%
+  
+  % 设置行间距为 1.5 倍
+  \linespread{1.5}\selectfont%
+  
+  % 设置参考文献条目间距
+  \setlength{\bibitemsep}{0.5\baselineskip}%
+  \setlength{\bibparsep}{0pt}%
+}
+
+
 \begin{document}
 
 %---------------------------------------------------------------------

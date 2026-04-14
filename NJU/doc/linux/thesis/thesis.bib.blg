@@ -1,0 +1,17 @@
+[0] Config.pm:328> INFO - This is Biber 2.21 running in TOOL mode
+[0] Config.pm:331> INFO - Logfile is 'thesis.bib.blg'
+[171] biber:342> INFO - === Tue Apr 14, 2026, 21:30:24
+[216] Biber.pm:4674> INFO - Looking for bibtex file 'thesis.bib'
+[220] bibtex.pm:1713> INFO - LaTeX decoding ...
+[309] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[925] Biber.pm:1709> INFO - Datamodel validation starting
+[936] Biber.pm:1759> INFO - Datamodel validation complete
+[958] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[959] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[959] Biber.pm:4307> INFO - Sorting list 'tool/global//global/global/global' of type 'entry' with template 'tool' and locale 'en_US'
+[959] Biber.pm:4313> INFO - No sort tailoring available for locale 'en_US'
+[1012] bibtex.pm:440> INFO - Writing 'thesis_bibertool.bib' with encoding 'UTF-8'
+[1014] bibtex.pm:481> INFO - Output to thesis_bibertool.bib
+[1014] Biber.pm:132> WARN - Datamodel: report entry 'nakamoto2008bitcoin' (thesis.bib): Missing mandatory field 'institution'
+[1015] Biber.pm:132> WARN - Datamodel: incollection entry 'stock2005testing' (thesis.bib): Missing mandatory field 'editor'
+[1015] Biber.pm:134> INFO - WARNINGS: 2
