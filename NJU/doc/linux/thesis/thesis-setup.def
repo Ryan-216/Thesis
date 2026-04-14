@@ -216,14 +216,14 @@
 % 页眉页脚内容设置
 \njusetup{
   header/content = {
-      {OR}{\thepage},{OL}{\rightmark},
-      {EL}{\thepage},{ER}{\leftmark}
+      {OR}{\rightmark},   % 奇数页页眉右侧：章名
+      {OL}{},             % 奇数页页眉左侧：空
+      {EL}{\leftmark},    % 偶数页页眉左侧：节名
+      {ER}{}              % 偶数页页眉右侧：空
     },
-  % 页眉设置，详见手册
-  % 奇数页页眉：左侧章名，右侧页码
-  % 偶数页页眉：左侧页码，右侧节名
-  %
-  footer/content = {}
+  footer/content = {
+      {C}{\thepage}       % 页脚居中：页码
+    }
 }
 
 % 页眉页脚的字体样式
@@ -267,3 +267,17 @@
 
 % 6. 关键词格式设置（在abstract环境中自动处理）
 % 7. 页码格式已在njuthesis.cls中设置（摘要罗马数字，正文阿拉伯数字）
+
+
+% 解决 hyperref PDF 书签中的字体命令警告
+\pdfstringdefDisableCommands{%
+  \let\heiti\relax
+  \let\songti\relax
+  \let\kaishu\relax
+  \let\zihao\relax
+  \let\bfseries\relax
+  \let\centering\relax
+}
+
+% 允许更宽松的断行，减少 overfull/underfull 警告
+\sloppy
