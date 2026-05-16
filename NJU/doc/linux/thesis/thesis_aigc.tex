@@ -67,6 +67,8 @@
 \usepackage{booktabs}    % 三线表（toprule/midrule/bottomrule）
 \usepackage{tabularx}    % 自适应列宽表格
 \usepackage{multirow}    % 跨行合并单元格
+\usepackage{tikz}        % 绘制示意图
+\usetikzlibrary{calc, positioning}
 % \usepackage{subcaption} % 嵌套小幅图像，比 subfig 和 subfigure 更新更好
 % \usepackage{siunitx} % 标准单位符号
 % \usepackage{algorithm,algorithmic} % 展示算法伪代码
@@ -1088,6 +1090,152 @@ GitHub 作为全球最大的开源代码托管平台，
 具有更具体的参考价值，管理者可以据此判断哪种类型的激励策略
 对激活哪种类型的活动最为有效。
 
+\section{理论整合框架：信息—心理—行为的三阶段模型}
+
+上述五个理论并非孤立运作，而是在同一因果链条上各司其职。
+为明确各理论之间的分工与衔接关系，本节提出一个统一的
+``信息—心理—行为''三阶段整合模型（见图~\ref{fig:integrated-model}），
+将两项研究中分散的理论命题纳入同一分析框架。
+
+\subsection{第一层：信息信号层}
+
+本研究的逻辑起点是信息信号。两项研究分别关注两类来源不同、性质各异的信息：
+
+第一类为外部信息信号——Brink 基金会的捐赠信息披露。
+非定向披露（X 平台捐款公告）向整个社区广播``资金已进入生态''的信号，
+具有普惠性和弥散性；定向披露（官网受资助名单）则精确标识了``谁因贡献突出而获得认可''，
+具有排他性和参照性。两类披露在受众结构和信号内容上的差异，
+是研究一中区分其差异化激励效应的信息基础。
+
+第二类为内部信息信号——比特币社区 Issue 讨论中的情感极性。
+社区讨论情感并非个别开发者的情绪宣泄，而是一种汇聚了集体认知与关切的``社区温度计''。
+情感极性的波动（尤其是负面倾斜）向社区成员传递了``项目当前状态与理想状态之间存在差距''的信号，
+构成了研究二中情感信号的行为驱动力的信息基础。
+
+这两类信号的区别在于：外部信息信号由机构主动发布，其内容和时点具有相当程度的外生性；
+内部信息信号由社区成员在日常互动中自发产生，具有内生性和涌现性。
+前者更适合通过面板固定效应与工具变量方法识别因果效应，
+后者则需要借助向量自回归（VAR）模型捕捉多变量间的动态反馈关系。
+这一区别也解释了为什么两项研究采用了不同的计量方法论。
+
+\subsection{第二层：心理机制层}
+
+信息信号本身并不直接改变行为，它必须通过开发者的心理认知系统进行加工和转化。
+本研究涉及四条核心心理路径：
+
+路径一：期望激活（Expectancy Activation）。
+依据期望理论（Vroom, 1964）\cite{vroom1964work}，非定向披露通过提升效价（``资助是有价值的''）
+和期望值（``持续参与可能换来回报''）两个维度，激活开发者对潜在奖励的预期，
+形成预期性激励。该路径解释了非定向披露对全体开发者产生广泛正向效应的心理机制。
+
+路径二：工具性校准（Instrumentality Calibration）。
+依据信号理论（Spence, 1973; Connelly et al., 2011）\cite{spence1973job,connelly2011signaling}，
+定向披露通过呈现高可信度的``绩效—奖励''真实案例，帮助开发者校准工具性预期
+（``怎样的贡献水平能够获得资助''），将模糊的激励承诺转化为有据可查的参照路径，
+产生参照性激励。
+
+路径三：期望失验（Expectancy Disconfirmation）。
+依据期望失验理论（Oliver, 1980）\cite{oliver1980cognitive}，
+定向披露在发挥工具性校准功能的同时，也通过明确排除绝大多数开发者，
+系统性地制造了负向期望失验。这一失验从情感和认知两个层面
+削弱了开发者对后续非定向披露的响应强度，构成对路径一的正向效应的反向调节。
+
+路径四：情感启发（Affect Heuristic）。
+依据情感即信息理论（Schwarz \& Clore, 1983）\cite{schwarz1983moods}，
+社区负面情感作为启发式信号，提示开发者``当前存在问题需要解决''，
+从而激活情感性激励，驱动代码活动和讨论活动的同步增加。
+该路径解释了情感信号为何无需通过理性计算即可影响行为。
+
+四条路径并非平行运作：路径一和路径二分别作用于期望理论的不同维度（效价/期望值 vs.\ 工具性），
+共同构成正向激励通道；路径三作为路径二的``副作用''，对路径一的正向效应施加抑制；
+路径四则独立于期望理论框架，通过情感启发机制提供了一个补充性的激励来源。
+这种``双通道（期望通道 + 情感通道）—四路径''的心理机制架构，
+是本研究区分于既有开源激励研究（它们普遍仅关注单一激励通道）的核心理论贡献。
+
+\subsection{第三层：行为响应层}
+
+心理机制的激活最终体现为可观测的开发者行为。
+本研究将开发者活动分解为代码活动、审查活动和讨论活动三个维度，
+其理论依据在于：不同的心理路径对三类活动的驱动强度可能存在差异。
+例如，预期性激励（路径一）更可能驱动具有高绩效可见度的代码和审查活动，
+而情感性激励（路径四）则可能对时间门槛较低的讨论活动产生更即时的驱动效应。
+对三类活动分别建模，使本研究能够更精细地刻画激励机制的作用边界。
+
+更重要的是，代码活动与讨论活动之间并非独立。
+依据目标手段替代理论（Kruglanski et al., 2002）\cite{kruglanski2002theory}，
+当开发者通过代码活动满足了``应对项目问题''的目标后，
+通过讨论活动达成同一目标的需求随之降低，
+从而形成行为间动态替代。
+这一机制将分析层次从``信息→行为''的单向传导，
+提升至``行为→行为''的跨期反馈，
+使本研究的理论模型具备了对开发活动内在动态性的解释能力。
+
+\subsection{框架的整体逻辑与应用路线}
+
+三阶段模型的内在逻辑可概括为：
+两类信息信号（外部捐赠披露 / 内部社区情感）
+→ 四条心理路径（期望激活 / 工具性校准 / 期望失验 / 情感启发）
+→ 三类行为响应（代码 / 审查 / 讨论，以及代码→讨论的动态替代）。
+
+两项研究在该框架中的定位如下：
+研究一聚焦于外部信息信号，
+通过路径一、路径二和路径三的系统运作
+（以及三者之间的交互效应），
+解释非定向与定向披露对三类活动的差异化影响；
+研究二聚焦于内部信息信号，
+通过路径四驱动两类活动的同步增长，
+再经由目标手段替代机制产生行为间的跨期替代。
+两项研究在该框架中互为补充，共同检验了``信息激励开发者行为''的
+两条独立通道及其内部复杂性。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        node distance=0.8cm,
+        box/.style={rectangle, draw=black, rounded corners=3pt, minimum width=2.6cm, minimum height=0.7cm, align=center, font=\footnotesize},
+        arrow/.style={->, >=stealth, thick}
+    ]
+    % 第一层：信息信号
+    \node[box, fill=black!5] (ext) {外部信息信号\\（捐赠披露）};
+    \node[box, fill=black!5, right=3.5cm of ext] (int) {内部信息信号\\（社区情感）};
+    \node[font=\small, above=0.4cm of ext] {\textbf{第一层：信息信号层}};
+    
+    % 第二层：心理机制
+    \node[box, fill=black!12, below=1.2cm of ext] (p1) {路径一：期望激活\\（预期性激励）};
+    \node[box, fill=black!12, below=0.1cm of p1] (p2) {路径二：工具性校准\\（参照性激励）};
+    \node[box, fill=black!12, below=0.1cm of p2] (p3) {路径三：期望失验\\（反向调节）};
+    \node[box, fill=black!12, right=3.5cm of p2] (p4) {路径四：情感启发\\（情感性激励）};
+    \node[font=\small, above=0.4cm of p1] {\textbf{第二层：心理机制层}};
+    
+    % 第三层：行为响应
+    \node[box, fill=black!18, below=1.4cm of p3] (b1) {代码活动};
+    \node[box, fill=black!18, right=0.3cm of b1] (b2) {审查活动};
+    \node[box, fill=black!18, right=0.3cm of b2] (b3) {讨论活动};
+    \node[font=\small, above=0.4cm of b1] {\textbf{第三层：行为响应层}};
+    
+    % 箭头
+    \draw[arrow] (ext.south) -- (p1.north);
+    \draw[arrow] (ext.south) -- (p2.north);
+    \draw[arrow] (p2.east) -- (p4.west) node[midway, above, font=\footnotesize] {共同正向};
+    \draw[arrow, dashed] (p2.south) -- (p3.north) node[midway, right, font=\footnotesize] {副作用};
+    \draw[arrow] (int.south) -- (p4.north);
+    \draw[arrow] (p1.south) -- (b1.north);
+    \draw[arrow] (p4.south) -- (b3.north);
+    \draw[arrow, densely dotted] (b1.east) -- (b2.west);
+    \draw[arrow, densely dotted] (b2.east) -- (b3.west);
+    \draw[arrow, bend right=20] (b1.south) to node[below, font=\footnotesize] {目标手段替代} (b3.south);
+    
+    % 分组标签
+    \draw[gray, thick, dotted] ($(p1.north west)+(-0.3,0.3)$) rectangle ($(p3.south east)+(0.3,-0.3)$);
+    \node[font=\footnotesize, gray, anchor=north west] at ($(p1.north west)+(-0.3,0.3)$) {期望通道};
+    \draw[gray, thick, dotted] ($(p4.north west)+(-0.3,0.3)$) rectangle ($(p4.south east)+(0.3,-0.3)$);
+    \node[font=\footnotesize, gray, anchor=north west] at ($(p4.north west)+(-0.3,0.3)$) {情感通道};
+    
+    \end{tikzpicture}
+    \caption{理论整合框架：信息—心理—行为三阶段模型}
+    \label{fig:integrated-model}
+\end{figure}
+
 \section{本章小结}
 
 本章围绕两项研究的理论需求，系统梳理了五个相互关联的理论与文献板块。
@@ -1100,7 +1248,12 @@ GitHub 作为全球最大的开源代码托管平台，
 并进而触发代码-讨论替代关系提供了理论依据；
 对开源社区活动类型及其相互关系的梳理，
 确立了本研究区分三类开发者活动分别建模的方法论合理性。
-以上理论框架共同构成了后续两项实证研究的逻辑基础，
+在此基础上，本章提出了``信息—心理—行为''三阶段整合模型，
+将外部信息信号（捐赠披露）与内部信息信号（社区情感）纳入统一的信息层面，
+将期望激活、工具性校准、期望失验和情感启发四条心理路径纳入统一的机制层面，
+将三类开发活动及其间的动态替代纳入统一的行为层面，
+明确了各理论之间的分工、衔接与互补关系。
+这一整合框架构成了后续两项实证研究的逻辑基础，
 并在各章假设推导与结果解读中得到具体应用。
 
 
