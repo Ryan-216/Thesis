@@ -450,7 +450,7 @@
     \AtEndEnvironment { document }
       {
         \cleardoublepage
-        \UseInstance { nju } { authdecl-g }
+        % \UseInstance { nju } { authdecl-g }
         \cleardoublepage
       }
   }

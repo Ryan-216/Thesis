@@ -63,7 +63,7 @@
     % 第二导师全称
     % 如果确实没有第二导师，不填写即可
     %
-    submit-date = {2026-05-01},
+    submit-date = {2026-05-19},
     % 提交日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期
@@ -75,17 +75,17 @@
     % degree* = {Master of Engineering},
     % 覆盖默认学位名称
     %
-    field = {开源社区开发者激励},
+    field = {开源社区治理},
     field* = {Open source community developer incentives},
     % 研究领域
     %
-    chairman = {某某某~教授},
+    chairman = {康乐乐~教授},
     % 答辩委员会主席
     % 推荐使用波浪号(~)分隔姓名和职称
     %
     reviewer = {
-        某某某~教授,
-        某某某~教授
+        柯青~教授,
+        赵月华~副教授
     },
     %
     % 答辩委员会成员
@@ -97,10 +97,10 @@
     udc = {001.18},
     % 国际图书分类号
     %
-    secret-level = {公开},
+    secret-level = {},
     % 密级
     %
-    defend-date = {2026-05-20},
+    defend-date = {2026-05-24},
     % 答辩日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期

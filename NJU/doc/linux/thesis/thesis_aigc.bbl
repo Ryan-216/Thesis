@@ -2119,6 +2119,64 @@
       \endverb
       \keyw{li2021monitoring}
     \endentry
+    \entry{mehrabian1974approach}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=76414d390fc9d9dd330c3b8358dc1d75}{%
+           family={Mehrabian},
+           familyi={M\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ee6848fb2fac892f7b0fe7674e81f502}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=76414d390fc9d9dd330c3b8358dc1d75}{%
+           family={Mehrabian},
+           familyi={M\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ee6848fb2fac892f7b0fe7674e81f502}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{df6521e6a362fd8e471cc62967dd4dc2}
+      \strng{fullhash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{fullhashraw}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{bibnamehash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{authorbibnamehash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{authornamehash}{df6521e6a362fd8e471cc62967dd4dc2}
+      \strng{authorfullhash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{authorfullhashraw}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{nameabibnamehash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{nameanamehash}{df6521e6a362fd8e471cc62967dd4dc2}
+      \strng{nameafullhash}{7d7575acc37f3a7b93002260bd59fde9}
+      \strng{nameafullhashraw}{7d7575acc37f3a7b93002260bd59fde9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{1}
+      \field{title}{An Approach to Environmental Psychology}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1974}
+      \field{dateera}{ce}
+      \keyw{mehrabian1974approach}
+    \endentry
     \entry{mollick2014dynamics}{article}{}{}
       \name{author}{1}{}{%
         {{hash=32446d44de47fd1bae2745b4876b9b07}{%
