@@ -75,8 +75,8 @@
     % degree* = {Master of Engineering},
     % 覆盖默认学位名称
     %
-    field = {开源社区治理},
-    field* = {Open source community developer incentives},
+    field = {信息行为},
+    field* = {Information Behavior},
     % 研究领域
     %
     chairman = {康乐乐~教授},
@@ -84,8 +84,7 @@
     % 推荐使用波浪号(~)分隔姓名和职称
     %
     reviewer = {
-        柯青~教授,
-        赵月华~副教授
+        盲审
     },
     %
     % 答辩委员会成员
