@@ -19,6 +19,78 @@
 
 \refsection{0}
   \datalist[entry]{gb7714-2015/global//global/global/global}
+    \entry{abrate2021relationship}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3fdb48ffccb97408385e95e2b6fb72f1}{%
+           family={Abrate},
+           familyi={A\bibinitperiod},
+           given={Graziano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4e880707226a5158244e89524807ddc3}{%
+           family={Quinton},
+           familyi={Q\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a6061a606d7ff11c5ab1e413ae7fce9}{%
+           family={Pera},
+           familyi={P\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=3fdb48ffccb97408385e95e2b6fb72f1}{%
+           family={Abrate},
+           familyi={A\bibinitperiod},
+           given={Graziano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4e880707226a5158244e89524807ddc3}{%
+           family={Quinton},
+           familyi={Q\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a6061a606d7ff11c5ab1e413ae7fce9}{%
+           family={Pera},
+           familyi={P\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{5d7691ef9ffe9708f1cfc764024ab4b6}
+      \strng{fullhash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{fullhashraw}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{bibnamehash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{authorbibnamehash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{authornamehash}{5d7691ef9ffe9708f1cfc764024ab4b6}
+      \strng{authorfullhash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{authorfullhashraw}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{nameabibnamehash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{nameanamehash}{5d7691ef9ffe9708f1cfc764024ab4b6}
+      \strng{nameafullhash}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \strng{nameafullhashraw}{9b40e43b0b53b036afdd1912ad3c64fa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tourism Management}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{1}
+      \field{title}{The Relationship between Price Paid and Hotel Review Ratings: Expectancy-Disconfirmation or Placebo Effect?}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{85}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{104314}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.tourman.2021.104314
+      \endverb
+      \keyw{abrate2021relationship}
+    \endentry
     \entry{alami2024sustainability}{article}{}{}
       \name{author}{3}{}{%
         {{hash=3b9764b6f7a54d9b0199b0b649d228c0}{%
@@ -91,78 +163,6 @@
       \verb 10.1007/s10664-024-10529-6
       \endverb
       \keyw{alami2024sustainability}
-    \endentry
-    \entry{bagh2025investor}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=d7dd49a1f21a20810ee32f12d9666199}{%
-           family={Bagh},
-           familyi={B\bibinitperiod},
-           given={Tanveer},
-           giveni={T\bibinitperiod}}}%
-        {{hash=8d73ae11a67c09d98da4ffc9d67844d4}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={Muhammad\bibnamedelima Asif},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=87c5017a3e1674939da16c247bb2d99a}{%
-           family={Iftikhar},
-           familyi={I\bibinitperiod},
-           given={Kainat},
-           giveni={K\bibinitperiod}}}%
-      }
-      \name{namea}{3}{}{%
-        {{hash=d7dd49a1f21a20810ee32f12d9666199}{%
-           family={Bagh},
-           familyi={B\bibinitperiod},
-           given={Tanveer},
-           giveni={T\bibinitperiod}}}%
-        {{hash=8d73ae11a67c09d98da4ffc9d67844d4}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={Muhammad\bibnamedelima Asif},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=87c5017a3e1674939da16c247bb2d99a}{%
-           family={Iftikhar},
-           familyi={I\bibinitperiod},
-           given={Kainat},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{fullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{fullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{bibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{authorbibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{authornamehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{authorfullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{authorfullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{nameabibnamehash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{nameanamehash}{a41423609687bad2616cba1ded5f967f}
-      \strng{nameafullhash}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \strng{nameafullhashraw}{6fc75c6cfb108bd21e6e00bf6825eda0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Social Sciences \& Humanities Open}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{1}
-      \field{title}{Investor Sentiment and Cryptocurrency Market Dynamics: A Vector Autoregressive and {Granger} Causality Approach}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{12}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{pages}{102128}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.ssaho.2025.102128
-      \endverb
-      \keyw{bagh2025investor}
     \endentry
     \entry{bai2024platform}{article}{}{}
       \name{author}{3}{}{%
@@ -1780,69 +1780,6 @@
       \endverb
       \keyw{kruglanski2002theory}
     \endentry
-    \entry{kulakowski2023sentiment}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=5fbe9aafdb80d189a7503d09c0dfe1cc}{%
-           family={Ku{ł}akowski},
-           familyi={K\bibinitperiod},
-           given={Krzysztof},
-           giveni={K\bibinitperiod}}}%
-        {{hash=538821f7b55e000777f8f07187e37195}{%
-           family={Frasincar},
-           familyi={F\bibinitperiod},
-           given={Flavius},
-           giveni={F\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=5fbe9aafdb80d189a7503d09c0dfe1cc}{%
-           family={Ku{ł}akowski},
-           familyi={K\bibinitperiod},
-           given={Krzysztof},
-           giveni={K\bibinitperiod}}}%
-        {{hash=538821f7b55e000777f8f07187e37195}{%
-           family={Frasincar},
-           familyi={F\bibinitperiod},
-           given={Flavius},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{3ee342dc35fda648c8b23c0d2f1067e1}
-      \strng{fullhash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{fullhashraw}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{bibnamehash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{authorbibnamehash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{authornamehash}{3ee342dc35fda648c8b23c0d2f1067e1}
-      \strng{authorfullhash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{authorfullhashraw}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{nameabibnamehash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{nameanamehash}{3ee342dc35fda648c8b23c0d2f1067e1}
-      \strng{nameafullhash}{e432a3f9972e455b9a8d5d96838356b2}
-      \strng{nameafullhashraw}{e432a3f9972e455b9a8d5d96838356b2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Intelligent Systems}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{1}
-      \field{number}{5}
-      \field{title}{Sentiment Classification of Cryptocurrency-Related Social Media Posts}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{french}
-      \field{volume}{38}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{pages}{6\bibrangedash 14}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1109/mis.2023.3283170
-      \endverb
-      \keyw{kulakowski2023sentiment}
-    \endentry
     \entry{lakhani2003open}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5e63af7268feabfea0dfb53e2ec62d60}{%
@@ -2209,59 +2146,6 @@
       \verb https://bitcoin.org/bitcoin.pdf
       \endverb
       \keyw{nakamoto2008bitcoin,report}
-    \endentry
-    \entry{nov2007motivates}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=178241267e56c627332799472fbd0d85}{%
-           family={Nov},
-           familyi={N\bibinitperiod},
-           given={Oded},
-           giveni={O\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=178241267e56c627332799472fbd0d85}{%
-           family={Nov},
-           familyi={N\bibinitperiod},
-           given={Oded},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{178241267e56c627332799472fbd0d85}
-      \strng{fullhash}{178241267e56c627332799472fbd0d85}
-      \strng{fullhashraw}{178241267e56c627332799472fbd0d85}
-      \strng{bibnamehash}{178241267e56c627332799472fbd0d85}
-      \strng{authorbibnamehash}{178241267e56c627332799472fbd0d85}
-      \strng{authornamehash}{178241267e56c627332799472fbd0d85}
-      \strng{authorfullhash}{178241267e56c627332799472fbd0d85}
-      \strng{authorfullhashraw}{178241267e56c627332799472fbd0d85}
-      \strng{nameabibnamehash}{178241267e56c627332799472fbd0d85}
-      \strng{nameanamehash}{178241267e56c627332799472fbd0d85}
-      \strng{nameafullhash}{178241267e56c627332799472fbd0d85}
-      \strng{nameafullhashraw}{178241267e56c627332799472fbd0d85}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Communications of the ACM}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{1}
-      \field{number}{11}
-      \field{title}{What Motivates {W}ikipedians?}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{50}
-      \field{year}{2007}
-      \field{dateera}{ce}
-      \field{pages}{60\bibrangedash 64}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1145/1297797.1297798
-      \endverb
-      \keyw{nov2007motivates}
     \endentry
     \entry{novielli2021assessment}{article}{}{}
       \name{author}{3}{}{%
@@ -2788,59 +2672,6 @@
       \verb 10.28945/5479
       \endverb
       \keyw{qiu2025crowdfunding}
-    \endentry
-    \entry{riehle2010economic}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=2c8f71e8235302e694efc7128361d5bc}{%
-           family={Riehle},
-           familyi={R\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=2c8f71e8235302e694efc7128361d5bc}{%
-           family={Riehle},
-           familyi={R\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{fullhash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{fullhashraw}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{bibnamehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{authorbibnamehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{authornamehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{authorfullhash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{authorfullhashraw}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{nameabibnamehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{nameanamehash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{nameafullhash}{2c8f71e8235302e694efc7128361d5bc}
-      \strng{nameafullhashraw}{2c8f71e8235302e694efc7128361d5bc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computer}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{1}
-      \field{number}{1}
-      \field{title}{The Economic Case for Open Source Foundations}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{43}
-      \field{year}{2010}
-      \field{dateera}{ce}
-      \field{pages}{86\bibrangedash 90}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1109/MC.2010.24
-      \endverb
-      \keyw{riehle2010economic}
     \endentry
     \entry{ryan2000self}{article}{}{}
       \name{author}{2}{}{%
@@ -4822,58 +4653,6 @@
       \range{pages}{10}
       \keyw{wang2022reward}
     \endentry
-    \entry{wang2023config}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=992750859fd2b0059fbfb40e4518f5f9}{%
-           family={王莉雅},
-           familyi={王\bibinitperiod}}}%
-        {{hash=da49341e2ecbededa6817bac05bf0b45}{%
-           family={王树祥},
-           familyi={王\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=992750859fd2b0059fbfb40e4518f5f9}{%
-           family={王莉雅},
-           familyi={王\bibinitperiod}}}%
-        {{hash=da49341e2ecbededa6817bac05bf0b45}{%
-           family={王树祥},
-           familyi={王\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \strng{namehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{fullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{fullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{bibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authorbibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authornamehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{authorfullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{authorfullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameabibnamehash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameanamehash}{689f81ba4cbada5f5f6f248aef98178d}
-      \strng{nameafullhash}{e21635224a391650cc795c6bcb6a1a84}
-      \strng{nameafullhashraw}{e21635224a391650cc795c6bcb6a1a84}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{科技进步与对策}
-      \field{langid}{english}
-      \field{languageid}{chinese}
-      \field{lansortorder}{4}
-      \field{number}{17}
-      \field{title}{组态视角下社交型问答社区用户持续知识贡献的影响路径研究——基于社会生态框架}
-      \field{usera}{J}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{volume}{40}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{pages}{129\bibrangedash 138}
-      \range{pages}{10}
-      \keyw{wang2023config}
-    \endentry
     \entry{wang2025opensource}{article}{}{}
       \name{author}{3}{}{%
         {{hash=f25f06cf1359f5b66b67daa7a60622f5}{%
@@ -5453,7 +5232,6 @@
       \keyw{qi2021opensource}
     \endentry
   \enddatalist
-  \missing{abrate2021relationship}
 \endrefsection
 \endinput
 

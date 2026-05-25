@@ -89,12 +89,11 @@
     {\multicitedelim}
     {\usebibmacro{postnote}}%
   
-  % 参考文献格式：五号字体，1.5 倍行距
-  % 通过 biblatex 的 \AtBeginBibliography hook 设置，仅影响参考文献部分
+  % 参考文献格式：五号字体，单倍行距，悬挂缩进，两端对齐
   \AtBeginBibliography{%
-    \renewcommand{\bibfont}{\zihao{5}}%
-    \linespread{1.5}\selectfont%
-    \setlength{\bibitemsep}{0.5\baselineskip}%
+    \renewcommand{\bibfont}{\zihao{5}\selectfont}%
+    \setstretch{1.0}%
+    \setlength{\bibitemsep}{0.3\baselineskip}%
     \setlength{\bibparsep}{0pt}%
   }%
 }
@@ -110,66 +109,39 @@
 \raggedbottom
 
 % 中文摘要
+% 中文摘要
+% 中文摘要
+% 中文摘要
 \begin{abstract}
-比特币是目前市值最高的加密货币，其开发完全依赖全球开源开发者的自愿贡献。
-如何激励开发者持续贡献，是比特币社区及众多开源项目面临的核心挑战。
-既有研究主要关注实际货币激励对开发者行为的影响，而对于
-捐赠信息披露本身所产生的激励效应，以及
-社区内部情感状态对开发者活动的动态影响，尚缺乏系统研究。
+比特币的开发完全依赖全球开源开发者的自愿贡献，激励其持续参与是核心治理挑战。
+既有研究主要关注实际货币激励的效果，但驱动开发者行为的更深层力量可能是信息本身：
+社区外部的捐赠公告凭借其携带的信号价值产生的激励效应，
+社区内部的情感氛围在时间维度上对开发者行为走向的塑造作用，
+以及两者之间从个体响应到社区传导的内在关联，这些问题尚缺乏系统考察。
 
-本文以 GitHub 上的比特币开源项目为研究对象，聚焦两个相互补充的研究问题：
-
-其一，外部非盈利基金会（Bitcoin Brink）的捐赠信息披露如何影响开发者活动。
-Brink 在运营过程中存在两次信息披露：在 X 平台公布收到的捐款信息（非定向披露），
-以及在官网公布受资助开发者名单（定向披露）。
-本文采用面板数据固定效应模型与工具变量方法，
-在剔除实际受资助开发者后，识别信息披露的纯信息效应。
-研究发现：两种披露均显著正向影响开发者活动，
-但定向披露对非定向披露的正向效应产生负向调节，
-印证了期望失验理论所预测的失望效应。
-
-其二，比特币社区 Issue 讨论中的情感状态如何影响开发者活动，
-以及代码活动与讨论活动之间是否存在替代效应。
-本文采用向量自回归（VAR）模型，发现滞后一期的负面情感正向影响代码活动与讨论活动，
-滞后两期的代码活动负向影响讨论活动，
-揭示了“情感→代码/讨论→讨论”的影响路径。
-上述结果分别以情感即信息理论和目标手段替代理论加以解释。
-
-本研究从信息视角重新审视开源开发者的激励机制，
-为比特币及其他开源社区的治理和基金会的捐赠信息披露策略设计提供实证参考。
+本文以 GitHub 上的比特币开源项目为研究对象，以 Bitcoin Brink 基金会的两阶段捐赠信息披露
+和社区 Issue 讨论情感为切入点，从外部到内部、从个体到社区逐层展开分析。
+在个体层面，本文在剔除实际受资助开发者后，使用面板固定效应模型与工具变量方法，
+识别捐赠信息披露的纯信息效应。
+结果表明，非定向披露（X 平台捐款公告）与定向披露（官网受资助名单）均显著正向影响开发者的代码与审查活动，
+但定向披露对非定向披露的正向效应产生负向调节，印证了期望失验理论所预测的失望机制。
+在此基础上，本文将视线转向社区层面，采用向量自回归（VAR）模型考察 Issue 讨论情感对开发活动的动态传导。
+发现滞后一期的负面情感正向影响代码与讨论活动，而代码活动在滞后两期负向影响讨论活动，
+揭示了情感经由代码和讨论活动再传导至讨论活动的动态路径，
+分别以情感即信息理论和目标手段替代理论获得解释。
+两项研究共同表明，在开源社区中，信息在金钱之外独立驱动着开发者的行为决策，
+无论是外部捐赠信号还是内部情感信号，
+个体层面的激励响应与社区层面的动态传导共同构成了信息驱动参与的完整图景。
+本文的研究发现为开源社区的治理策略和基金会的信息披露设计提供了实证参考。
 \end{abstract}
 
 % 英文摘要
+% 英文摘要
+% 英文摘要
 \begin{abstract*}
-Bitcoin, the world's highest-valued cryptocurrency, relies entirely on voluntary contributions
-from open-source Developmenters worldwide. Sustaining Developmenter motivation remains a central
-challenge for the Bitcoin community and open-source projects at large. While prior research
-has predominantly examined the direct effects of monetary incentives, the motivating impact
-of donation information disclosure itself—decoupled from actual financial transfers—
-and the role of community sentiment in shaping Developmenter behavior remain underexplored.
+Bitcoin's development relies entirely on voluntary contributions from open-source developers worldwide, making sustained participation a central governance challenge. While prior research has focused on the effects of monetary incentives, a more fundamental force, information itself, remains underexamined: whether external donation announcements can motivate developers solely through the signals they carry, how the affective climate generated within community discussions dynamically shapes developer behavior, and whether individual responses and community-level dynamics are intrinsically linked.
 
-This thesis examines two complementary research questions using the Bitcoin GitHub repository
-as the empirical context. First, it investigates how two distinct donation disclosure
-strategies employed by the non-profit organization Bitcoin Brink affect Developmenter activity:
-untargeted announcements of received donations posted on platform X, and targeted
-grantee disclosures published on Brink's official website. Employing panel fixed-effects
-models and instrumental variable estimation—while excluding actual grantees to isolate
-pure information effects—the study finds that both disclosure types positively influence
-Developmenter contributions. However, targeted disclosure negatively moderates the positive
-effect of untargeted disclosure, consistent with the disappointment mechanism predicted
-by expectancy disconfirmation theory.
-
-Second, the thesis examines how community sentiment expressed in Issue discussions
-dynamically influences Developmenter activities, and whether substitution effects exist between
-code and discussion activities. Using Vector Autoregression (VAR) models, the analysis
-reveals that lagged negative sentiment positively influences both code and discussion
-activities, while increased code activity subsequently suppresses discussion activity.
-This yields the influence pathway: sentiment → code/discussion → discussion, explained
-through affect-as-information theory and goal–means substitution theory.
-
-This research reframes open-source Developmenter motivation from an informational perspective,
-offering actionable insights for donation disclosure strategy design in the governance and foundations 
-of Bitcoin and other open-source communities.
+This thesis addresses these questions using the Bitcoin GitHub repository as the empirical context, taking Bitcoin Brink's two-stage donation disclosure and community Issue discussion sentiment as entry points, progressing from external to internal information sources and from individual to community levels of analysis. At the individual level, after excluding actual grantees to isolate pure information effects, panel fixed-effects and instrumental variable models reveal that both untargeted disclosures (donation announcements on X) and targeted disclosures (grantee lists on Brink's website) significantly increase code and review activities, while targeted disclosure negatively moderates the positive effect of untargeted disclosure, consistent with expectancy disconfirmation theory. Building on these findings, the thesis moves to the community level, employing vector autoregression (VAR) to examine how Issue discussion sentiment transmits across time. Results show that lagged negative sentiment positively influences both code and discussion activities, while lagged code activity suppresses subsequent discussion activity, revealing a dynamic pathway from sentiment through code and discussion activities, explained respectively by affect-as-information theory and goal-means substitution theory. Together, the two studies demonstrate that in open-source communities, information independently drives developer behavior beyond monetary incentives: individual-level incentive responses and community-level dynamic transmission collectively form a complete picture of information-driven participation. These findings offer actionable insights for open-source governance and foundation disclosure strategy design.
 \end{abstract*}
 
 % 目录
@@ -216,10 +188,10 @@ Python、Git 等工具深度嵌入全球数百万开发者的日常工作流程�
 早期研究发现，开发者的参与主要由内在动机驱动：对技术问题的纯粹兴趣\cite{shah2006motivation}、
 在同行社区中积累声誉的渴望\cite{lerner2002simple}，以及通过贡献提升个人技能、
 从而在劳动力市场中获得更好机会的职业考量\cite{fang2009understanding}，
-共同构成了驱动开发者持续投入的基础动力。
+共同构成了驱动开发者持续投入的基础动力\cite{nov2007motivates}。
 此外，Davidson 等人\cite{davidson2014older}指出，利他精神与自我实现感同样是重要的内在激励来源。
 这些研究共同刻画了一个图景：在开源生态中，
-开发者的自主性与社区归属感往往是持续贡献的核心支撑，
+开发者的自主性与社区归属感往往是持续贡献的核心支撑\cite{wang2023config}，
 而非来自外部的物质回报。
 
 然而，随着开源软件在商业和社会中的重要性持续上升，
@@ -313,7 +285,7 @@ Guzzi 等人\cite{guzzi2013}发现，开源社区的协作沟通中蕴含着丰�
 Brink 成立于2020年，是目前规模最大的专注于比特币核心协议开发的资助机构，
 采用众筹模式面向个人捐赠者和机构投资者募集资金，
 并通过严格的申请审核流程为符合条件的比特币开发者提供全职工作资助。
-由于比特币本身的去中心化哲学，Brink 刻意保持独立的非盈利定位，
+由于比特币本身的去中心化哲学，Brink 刻意保持独立的非盈利定位\cite{riehle2010economic}，
 其资金来源和资助决策均对外公开，以维护社区信任。
 正是这种对透明度的高度重视，催生了一套具有内在研究价值的两阶段信息披露机制。
 
@@ -367,9 +339,99 @@ Brink 官网的资助档案以及 Google Trends 的搜索量数据，
 不同规模社区的基金会）中对本研究的核心发现进行复现与扩展，
 以检验理论的外部效度和边界条件。
 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        node distance=0.8cm and 2.6cm,
+        box/.style={rectangle, draw=black, rounded corners=2pt,
+                    minimum width=2.0cm, minimum height=0.6cm,
+                    align=center, font=\small, inner sep=6pt},
+        cbox/.style={box, fill=black!5},
+        arrow/.style={->, >=stealth, thick},
+    ]
+    % 中心：Brink 基金会
+    \node[cbox, minimum width=2.4cm, minimum height=2.0cm] (brink) {Brink\\基金会};
+
+    % 左上：捐赠方
+    \node[cbox, above left=1.4cm and 2.6cm of brink] (donor) {捐赠方};
+    % 右上：X 平台
+    \node[cbox, above right=1.4cm and 2.6cm of brink] (x) {X 平台};
+    % 左下：开发者
+    \node[cbox, below left=1.4cm and 2.6cm of brink] (dev) {开发者};
+    % 右下：官网
+    \node[cbox, below right=1.4cm and 2.6cm of brink] (web) {官网};
+
+    % 阶段一（上方）
+    \draw[arrow] (donor.east) to node[above, font=\small] {资金捐赠} (brink.north west);
+    \draw[arrow] (brink.north east) to node[above, font=\small] {披露捐款信息} (x.west);
+    \node[font=\small\bfseries, above=0.2cm of donor.north west, anchor=south west] {阶段一：非定向披露};
+
+    % 阶段二（下方）
+    \draw[arrow] (dev.east) to node[below, font=\small] {申请资助} (brink.south west);
+    \draw[arrow] (brink.south east) to node[below, font=\small] {公布受资助名单} (web.west);
+    \node[font=\small\bfseries, below=0.2cm of dev.south west, anchor=north west] {阶段二：定向披露};
+
+    \end{tikzpicture}
+    \caption{Brink 捐赠信息披露流程}
+    \label{fig:brink-flow}
+\end{figure}
+
+\subsubsection{非定向披露的运作机制}
+
+在 Brink 的日常运营中，每当完成一笔捐款的接收与确认，便会在其官方 X（原 Twitter）账号 @bitcoinbrink 发布捐赠公告。公告内容通常包含捐赠方名称、捐款金额以及对捐赠方的公开致谢，但不涉及任何资金用途的具体说明，即无法从公告中判断该笔资金将最终资助哪位或哪几位开发者。在本研究观测期（2022年1月至2023年12月）内，Brink 共发布此类非定向披露公告19次，其中15次明确披露了具体捐款金额，单笔披露金额从数千美元到500万美元不等，显示出相当大的跨期变动幅度。非定向披露的典型形式为 X 平台上的一段简短推文，通常包含如下要素：捐赠方名称或代号、捐款金额（以美元或比特币计）、对捐赠方的公开致谢语，以及 Brink 对持续推动比特币核心开发的承诺声明。这类推文的信息密度较低，内容高度标准化，不包含任何关于具体资助用途或受助候选人的信息。图~\ref{fig:untargeted-example} 展示了一条典型的非定向披露推文，其中 Brink 宣布收到来自 @jack 与 \#startsmall 的500万美元捐款承诺，公告仅涉及捐款金额和致谢，未说明资金将定向资助任何特定开发者。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.72\textwidth]{figures/untargeted_example.png}
+    \caption{非定向披露示例：Brink X 平台捐款公告（2023年6月15日）}
+    \label{fig:untargeted-example}
+\end{figure}
+
+从信息传播路径来看，X 平台的公告面向所有公开关注者，不区分身份与贡献层级。这意味着在 Brink 生态中从事开发工作的1600余名开发者，均有机会在第一时间获取这一信息。由于公告并未指定受益方，每位开发者在接收到“有大额捐款注入”的信息时，都可以合理地将自己纳入未来受益者的范畴。Kobayakawa 等（2020）\cite{kobayakawa2020impact} 的研究表明，加密货币市场的资本规模与开源开发活动之间存在正向关联，而 Brink 的捐款公告正是将加密货币生态的资本流动与开源开发者的激励感知直接联结起来的传播节点。这种“普惠性”信息结构，正是非定向披露区别于其他激励机制的核心特征。
+
+从期望理论的视角来看，非定向披露事件至少通过两条心理路径影响开发者的行为意愿：其一是效价路径，捐款公告向外界传递了“Brink 掌握充足资金，有能力对更多开发者给予资助“的积极信号，提升了开发者对潜在奖励价值的主观评估；其二是期望路径，公告所释放的资金实力信号强化了开发者对“当前活动行为能够获得回报”这一预期的信心。综合来看，非定向披露通过激活开发者的积极期望状态，有望在短期内促进活动参与的增加。这一机制在实质上类似于众筹平台上的资金积累公示效应：Wang 等（2022）\cite{wang2022monetary} 在分析货币激励与知识溢出的研究中指出，公开的资金规模信息能够通过期望路径有效激励潜在贡献者的参与投入。
+
+\subsubsection{定向披露的运作机制}
+
+与非定向披露不同，定向披露发生在 Brink 完成内部审核并正式确定受资助开发者之后。Brink 通过在其官方网站（\url{https://brink.dev}）更新受资助者页面，公开列出获批开发者的 GitHub 用户名、资助开始时间及资助期限。这类披露具有明确的指向性：信息内容从“谁捐了多少钱”转变为“谁通过审核、谁获得了资助”，标志着抽象的激励预期转化为可观察的分配事实。
+
+在本研究的观测窗口内，Brink 共进行了5次定向披露，受资助开发者及公告时间汇总如表~\ref{tab:grantees} 所示。
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \caption{Brink 受资助开发者名单（2022年1月—2023年12月）}
+    \label{tab:grantees}
+    \begin{tabularx}{\textwidth}{p{2.8cm}Xp{4.5cm}}
+        \toprule
+        披露日期 & 受资助开发者（GitHub 用户名） & 说明 \\
+        \midrule
+        2022年4月4日  & 0xB10C、vincenzopalazzo、dergoegge、brunoerg & 本轮共资助4名开发者，规模最大 \\
+        2022年5月13日 & fanquake & 单独资助 \\
+        2022年6月30日 & adiabat   & 单独资助 \\
+        2022年7月29日 & stickies-v & 单独资助 \\
+        2023年5月4日  & fjahr      & 单独资助 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+图~\ref{fig:targeted-example} 展示了规模最大的一次定向披露（2022年4月4日）的官方公告页面截图，Brink 明确列出了4名获批开发者的姓名及其比特币开发背景，信息的指向性与权威性与非定向披露截然不同。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.72\textwidth]{figures/targeted_example.png}
+    \caption{定向披露示例：Brink 官网受资助名单公告（2022年4月4日）}
+    \label{fig:targeted-example}
+\end{figure}
+
+从期望理论的工具性维度分析，定向披露为非受助开发者提供了一个具体的参照：他们能够看到哪类贡献者（以代码技能见长、常年深耕核心协议）最终获得了资助，由此推断自身活动与奖励之间的因果关联是真实存在的，进而形成“只要持续高质量参与，也有机会进入下一轮资助名单“的工具性预期。这一机制有别于非定向披露的效价驱动，而是通过直接示范“绩效—奖励”路径，强化开发者的努力意愿。
+
+然而，定向披露的排他性也具有两面性。在公布名单的同时，绝大多数未入选的开发者会意识到：这一轮资助与自己无关。根据 Oliver（1980）\cite{oliver1980cognitive} 的期望失验理论，个体在行为结果与事先预期之间出现落差时，会产生情感负反应，并相应调整未来的期望水平。非受助开发者在非定向披露阶段形成的“可能成为受益者”的期望，将在定向披露的“排他性公告”面前遭受系统性的负向失验。这一心理机制预示着，定向披露的出现可能反向削弱非定向披露对非受助开发者的后续激励效力。
+
 \section{研究问题}
 
-建立在上述背景与研究场景之上，本研究聚焦两个相互补充的核心问题。
+开源社区中存在两种性质不同但同样影响开发者行为的信息源：一是来自社区外部的信号（如基金会捐赠公告），二是产生于社区内部的氛围（如 Issue 讨论中的情感取向）。外部信号通过激活开发者对奖励的预期来激励参与，其作用集中于个体层面；内部氛围则作为一种弥漫于社区的信息场域，在时间维度上持续塑造全体开发者的行为走向。要完整理解"信息如何驱动开发者"，就必须逐层考察这两个来源：先回答"外部信号是否影响个体活动"，再追问"内部氛围如何在社区层面动态传导"。基于这一递进逻辑，本研究提出以下两个问题。
 
 第一个研究问题关注外部信息对开发者行为的影响。
 Brink 基金会在实践中形成了非定向披露与定向披露两种信息传播方式，
@@ -388,6 +450,7 @@ RQ1：Bitcoin Brink 基金会的非定向捐赠披露与定向捐赠披露如何
 RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度上影响
 开发者的代码活动与讨论活动？代码活动的变化是否进一步影响讨论活动，
 形成可识别的跨活动传导路径？
+
 
 \section{研究方法概述}
 
@@ -494,7 +557,7 @@ RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度�
 
 \section{论文结构安排}
 
-本文共七章，各章内容安排如下：第二章系统梳理相关理论基础与文献综述，
+本文共六章，各章内容安排如下：第二章系统梳理相关理论基础与文献综述，
 依次涵盖开源开发者激励机制的研究脉络、捐赠与赞助机制的文献进展、
 信息披露的理论基础，以及期望理论、期望失验理论、情感即信息理论等核心理论框架的回顾。
 第三章作为两项实证研究的共同基础，统一呈现整体研究框架与设计逻辑、
@@ -506,9 +569,8 @@ RQ2：比特币开源社区 Issue 讨论中的情感状态如何在时间维度�
 第五章为研究二，聚焦比特币社区情感对开发者活动的动态影响，
 介绍 VAR 模型的设定与估计过程，汇报格兰杰因果检验、
 脉冲响应分析与方差分解的结果，并对影响路径作出理论解释。
-第六章在两项独立研究的基础上进行综合讨论，提炼理论贡献与实践启示，
-并客观说明本研究的局限性及未来可改进的方向。
-第七章总结全文的主要研究结论，并对后续研究的拓展方向提出展望。
+综合讨论与结论章在两项独立研究的基础上进行综合讨论，提炼理论贡献与实践启示，
+并客观说明本研究的局限性及未来可改进的方向，最后总结全文的主要研究结论，并对后续研究的拓展方向提出展望。
 
 
 %%====================================================================
@@ -1485,7 +1547,7 @@ GH Archive 事件中的行为主体以 actor\_id（数字型）和 actor\_login�
 向量自回归（VAR）模型将三个变量均视为内生变量，
 通过联立方程组同时捕捉所有方向的动态反馈关系，
 无需对因果方向作出不可检验的先验假定\cite{sims1980macroeconomics}。
-Cornell 等人（2025）在加密货币市场的研究中也采用了类似的 VAR 框架，
+Cornell 等人（2025）\cite{cornell2025vector}和 Bagh 等人（2025）\cite{bagh2025investor}在加密货币市场的研究中也采用了类似的 VAR 框架，
 验证了该方法在刻画加密货币生态中多变量复杂因果网络时的适用性\cite{cornell2025vector}。
 
 \subsection{固定效应模型的识别逻辑}
@@ -1584,127 +1646,7 @@ Google Trends 和 Yahoo Finance 提供的数据均为面向公众的聚合统计
 \chapter{捐赠信息披露对开发者活动的影响}
 %%====================================================================
 
-本章聚焦第一个研究问题：外部非盈利基金会的两种捐赠信息披露方式如何分别及交互地影响开发者活动。以 Bitcoin Brink 基金会（以下简称“Brink”）在2022—2023年间的真实披露事件为研究对象，本章在理论层面整合了期望理论与期望失验理论，提出了一个能够统一解释非定向披露的正向主效应、定向披露的正向主效应以及两者间负向交互效应的分析框架；在实证层面，本章利用固定效应面板模型与两阶段最小二乘法，基于169,785个开发者—周观测单元检验了上述三组假设；在机制层面，通过两组开发者异质性分析揭示了信息激励效应的作用边界与强化条件。
-
-本章的整体结构安排如下：第~\ref{sec:research-scene-1} 节介绍 Bitcoin Brink 研究场景及两类披露的运作机制；第~\ref{sec:hypotheses-1} 节基于理论推演提出研究假设；第~\ref{sec:data-1} 节说明数据来源、样本构建与变量定义；第~\ref{sec:model-1} 节阐述计量模型的设定与识别策略；第~\ref{sec:results-1} 节呈现主效应估计结果；第~\ref{sec:robust-1} 节报告稳健性检验；第~\ref{sec:mechanism-1} 节进行机制分析；第~\ref{sec:summary-1} 节总结本章主要发现及理论贡献。
-
-\section{研究场景：Bitcoin Brink 生态}
-\label{sec:research-scene-1}
-
-\subsection{Brink 基金会简介}
-
-Bitcoin Brink（以下简称“Brink”）成立于2020年，
-是目前规模最大的专注于比特币核心协议开发的非营利性资助机构。
-与 GitHub Sponsors 等点对点赞助机制不同，Brink 采用集中式众筹模式：
-面向个人捐赠者和机构投资者募集资金，再经过严格的申请与审核流程，
-将资助名额授予在比特币开源社区贡献突出的全职开发者，
-为其提供可持续的薪资支持。
-
-Brink 的成立背景是比特币核心开发长期依赖少数高度投入的志愿者维系，一旦这些核心开发者因经济压力而减少投入，将对整个网络的安全性和发展节奏构成系统性风险。比特币核心代码库（bitcoin/bitcoin）是比特币网络的权威实现，其质量与安全性直接关系到数千亿美元资产的安全存储与转移。然而，这一关键基础设施长期以来几乎完全依赖自愿性的无偿贡献维持，导致高度依赖极少数全职核心开发者，据估计，长期活跃的核心维护者不足二十人。这一“关键少数”结构使得任何一位核心开发者的退出都可能对项目进展造成显著冲击。Brink 正是在这一背景下，作为比特币开发基础设施的“社会保障网络”而设立，通过提供稳定的经济保障，Brink 致力于降低优质开发者离开社区的概率，确保比特币基础设施的可持续迭代。
-
-从 Overney 等（2020）\cite{overney2020not} 对开源社区捐赠模式的系统研究来看，点对点捐赠模式（如直接向个人开发者捐款）存在明显的“马太效应”，即知名度高的开发者获得的捐款远多于同等贡献水平但知名度较低的开发者。Brink 的集中式筛选与分配模式在一定程度上修正了这一信息不对称导致的资源分配失衡，同时也创造了本研究所关注的特殊信息披露结构。
-
-Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两阶段信息披露过程
-（图~\ref{fig:brink-flow}），正是这一双阶段结构为本研究提供了独特的识别机会。
-
-\begin{figure}[htbp]
-    \centering
-    \begin{tikzpicture}[
-        node distance=0.8cm and 2.6cm,
-        box/.style={rectangle, draw=black, rounded corners=2pt,
-                    minimum width=2.0cm, minimum height=0.6cm,
-                    align=center, font=\small, inner sep=6pt},
-        cbox/.style={box, fill=black!5},
-        arrow/.style={->, >=stealth, thick},
-    ]
-    % 中心：Brink 基金会
-    \node[cbox, minimum width=2.4cm, minimum height=2.0cm] (brink) {Brink\\基金会};
-
-    % 左上：捐赠方
-    \node[cbox, above left=1.4cm and 2.6cm of brink] (donor) {捐赠方};
-    % 右上：X 平台
-    \node[cbox, above right=1.4cm and 2.6cm of brink] (x) {X 平台};
-    % 左下：开发者
-    \node[cbox, below left=1.4cm and 2.6cm of brink] (dev) {开发者};
-    % 右下：官网
-    \node[cbox, below right=1.4cm and 2.6cm of brink] (web) {官网};
-
-    % 阶段一（上方）
-    \draw[arrow] (donor.east) to node[above, font=\small] {资金捐赠} (brink.north west);
-    \draw[arrow] (brink.north east) to node[above, font=\small] {披露捐款信息} (x.west);
-    \node[font=\small\bfseries, above=0.2cm of donor.north west, anchor=south west] {阶段一：非定向披露};
-
-    % 阶段二（下方）
-    \draw[arrow] (dev.east) to node[below, font=\small] {申请资助} (brink.south west);
-    \draw[arrow] (brink.south east) to node[below, font=\small] {公布受资助名单} (web.west);
-    \node[font=\small\bfseries, below=0.2cm of dev.south west, anchor=north west] {阶段二：定向披露};
-
-    \end{tikzpicture}
-    \caption{Brink 捐赠信息披露流程}
-    \label{fig:brink-flow}
-\end{figure}
-
-\subsection{非定向披露的运作机制}
-
-在 Brink 的日常运营中，每当完成一笔捐款的接收与确认，便会在其官方 X（原 Twitter）账号 @bitcoinbrink 发布捐赠公告。公告内容通常包含捐赠方名称、捐款金额以及对捐赠方的公开致谢，但不涉及任何资金用途的具体说明，即无法从公告中判断该笔资金将最终资助哪位或哪几位开发者。在本研究观测期（2022年1月至2023年12月）内，Brink 共发布此类非定向披露公告19次，其中15次明确披露了具体捐款金额，单笔披露金额从数千美元到500万美元不等，显示出相当大的跨期变动幅度。非定向披露的典型形式为 X 平台上的一段简短推文，通常包含如下要素：捐赠方名称或代号、捐款金额（以美元或比特币计）、对捐赠方的公开致谢语，以及 Brink 对持续推动比特币核心开发的承诺声明。这类推文的信息密度较低，内容高度标准化，不包含任何关于具体资助用途或受助候选人的信息。图~\ref{fig:untargeted-example} 展示了一条典型的非定向披露推文，其中 Brink 宣布收到来自 @jack 与 \#startsmall 的500万美元捐款承诺，公告仅涉及捐款金额和致谢，未说明资金将定向资助任何特定开发者。
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.72\textwidth]{figures/untargeted_example.png}
-    \caption{非定向披露示例：Brink X 平台捐款公告（2023年6月15日）}
-    \label{fig:untargeted-example}
-\end{figure}
-
-从信息传播路径来看，X 平台的公告面向所有公开关注者，不区分身份与贡献层级。这意味着在 Brink 生态中从事开发工作的1600余名开发者，均有机会在第一时间获取这一信息。由于公告并未指定受益方，每位开发者在接收到“有大额捐款注入”的信息时，都可以合理地将自己纳入未来受益者的范畴。Kobayakawa 等（2020）\cite{kobayakawa2020impact} 的研究表明，加密货币市场的资本规模与开源开发活动之间存在正向关联，而 Brink 的捐款公告正是将加密货币生态的资本流动与开源开发者的激励感知直接联结起来的传播节点。这种“普惠性”信息结构，正是非定向披露区别于其他激励机制的核心特征。
-
-从期望理论的视角来看，非定向披露事件至少通过两条心理路径影响开发者的行为意愿：其一是效价路径，捐款公告向外界传递了“Brink 掌握充足资金，有能力对更多开发者给予资助“的积极信号，提升了开发者对潜在奖励价值的主观评估；其二是期望路径，公告所释放的资金实力信号强化了开发者对“当前活动行为能够获得回报”这一预期的信心。综合来看，非定向披露通过激活开发者的积极期望状态，有望在短期内促进活动参与的增加。这一机制在实质上类似于众筹平台上的资金积累公示效应：Wang 等（2022）\cite{wang2022monetary} 在分析货币激励与知识溢出的研究中指出，公开的资金规模信息能够通过期望路径有效激励潜在贡献者的参与投入。
-
-\subsection{定向披露的运作机制}
-
-与非定向披露不同，定向披露发生在 Brink 完成内部审核并正式确定受资助开发者之后。Brink 通过在其官方网站（\url{https://brink.dev}）更新受资助者页面，公开列出获批开发者的 GitHub 用户名、资助开始时间及资助期限。这类披露具有明确的指向性：信息内容从“谁捐了多少钱”转变为“谁通过审核、谁获得了资助”，标志着抽象的激励预期转化为可观察的分配事实。
-
-在本研究的观测窗口内，Brink 共进行了5次定向披露，受资助开发者及公告时间汇总如表~\ref{tab:grantees} 所示。
-
-\begin{table}[htbp]
-    \centering
-    \small
-    \caption{Brink 受资助开发者名单（2022年1月—2023年12月）}
-    \label{tab:grantees}
-    \begin{tabularx}{\textwidth}{p{2.8cm}Xp{4.5cm}}
-        \toprule
-        披露日期 & 受资助开发者（GitHub 用户名） & 说明 \\
-        \midrule
-        2022年4月4日  & 0xB10C、vincenzopalazzo、dergoegge、brunoerg & 本轮共资助4名开发者，规模最大 \\
-        2022年5月13日 & fanquake & 单独资助 \\
-        2022年6月30日 & adiabat   & 单独资助 \\
-        2022年7月29日 & stickies-v & 单独资助 \\
-        2023年5月4日  & fjahr      & 单独资助 \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
-
-图~\ref{fig:targeted-example} 展示了规模最大的一次定向披露（2022年4月4日）的官方公告页面截图，Brink 明确列出了4名获批开发者的姓名及其比特币开发背景，信息的指向性与权威性与非定向披露截然不同。
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.72\textwidth]{figures/targeted_example.png}
-    \caption{定向披露示例：Brink 官网受资助名单公告（2022年4月4日）}
-    \label{fig:targeted-example}
-\end{figure}
-
-从期望理论的工具性维度分析，定向披露为非受助开发者提供了一个具体的参照：他们能够看到哪类贡献者（以代码技能见长、常年深耕核心协议）最终获得了资助，由此推断自身活动与奖励之间的因果关联是真实存在的，进而形成“只要持续高质量参与，也有机会进入下一轮资助名单“的工具性预期。这一机制有别于非定向披露的效价驱动，而是通过直接示范“绩效—奖励”路径，强化开发者的努力意愿。
-
-然而，定向披露的排他性也具有两面性。在公布名单的同时，绝大多数未入选的开发者会意识到：这一轮资助与自己无关。根据 Oliver（1980）\cite{oliver1980cognitive} 的期望失验理论，个体在行为结果与事先预期之间出现落差时，会产生情感负反应，并相应调整未来的期望水平。非受助开发者在非定向披露阶段形成的“可能成为受益者”的期望，将在定向披露的“排他性公告”面前遭受系统性的负向失验。这一心理机制预示着，定向披露的出现可能反向削弱非定向披露对非受助开发者的后续激励效力。
-
-\subsection{样本设计与识别策略}
-
-准确识别捐赠信息披露的“纯信息效应”是本研究的核心挑战。为此，本研究在样本设计层面进行了两项关键处理。
-
-第一，剔除实际受助开发者。5次定向披露共涉及8名受助开发者，其活动行为受到实质性货币激励而非单纯信息刺激，若纳入样本将使信息效应与货币效应混淆。因此，本研究将上述8名开发者从分析样本中整体剔除，最终保留了1,610名从未获得 Brink 资助的开发者。这一设计确保了本研究考察的激励效果来源于信息披露本身，而非实际发放的薪资奖励。
-
-第二，选择个体固定效应框架。比特币核心开发者群体在经验积累、社区声誉、技术专长等维度上存在显著的个体异质性，而研究窗口期内的宏观市场环境（比特币价格波动、市场情绪周期）又构成共同的时间冲击。如果不充分控制这两类系统性因素，估计结果将受到严重的遗漏变量偏误干扰。个体固定效应模型通过引入开发者个体固定效应（$u_i$）吸收不随时间变化的个体异质性，同时纳入时间固定效应（$\lambda_t$）与丰富的时变控制变量（比特币市场表现、社区活跃度、Google Trends、项目进展）以吸收时间维度的共同冲击，将分析聚焦于非定向披露强度和定向披露强度的随时间变动部分。
-
-最终样本覆盖2022年第1周至2023年第52周共105个自然周，1,610名开发者，形成169,785个开发者—周面板观测单元，为因果推断提供了充足的统计功效。
+本章聚焦第一个研究问题：外部非盈利基金会的两种捐赠信息披露方式如何分别及交互地影响开发者活动。以 Bitcoin Brink 基金会 在2022—2023年间的真实披露事件为研究对象，本章在理论层面整合了期望理论与期望失验理论，提出了一个能够统一解释非定向披露的正向主效应、定向披露的正向主效应以及两者间负向交互效应的分析框架；在实证层面，本章利用固定效应面板模型与两阶段最小二乘法，基于169,785个开发者—周观测单元检验了上述三组假设；在机制层面，通过两组开发者异质性分析揭示了信息激励效应的作用边界与强化条件。
 
 \section{研究假设}
 \label{sec:hypotheses-1}
@@ -1719,7 +1661,11 @@ Brink 的运营从捐款募集到资助落地，经历了清晰可追踪的两�
 
 值得注意的是，这一推论在区分三类活动时仍然成立。代码活动（提交代码与发起 Pull Request）、审查活动（审查他人的 Pull Request）与讨论活动（参与 Issue 讨论）虽然在认知投入程度和可见度上有所差异，但它们同样受到上述期望激活机制的驱动。因此，本研究提出：
 
-H1：非定向捐赠披露对开发者的整体开发者活动具有正向影响（H1a：代码活动；H1b：审查活动；H1c：讨论活动）。
+H1a：非定向捐赠披露对代码活动具有正向影响。
+
+H1b：非定向捐赠披露对审查活动具有正向影响。
+
+H1c：非定向捐赠披露对讨论活动具有正向影响。
 
 \subsection{定向披露的正向主效应}
 
@@ -1729,7 +1675,11 @@ H1：非定向捐赠披露对开发者的整体开发者活动具有正向影响
 
 此外，定向披露还具有“榜样效应”的潜力。受助开发者的公开识别向社区传递了一种隐性规范：哪类深度参与（代码审查、持续提交高质量 Pull Request）会被识别和奖励。这一规范信号有助于引导非受助开发者聚焦于类似的高质量活动方式，从而形成整体社区活动质量的正向外部性。Yang 等（2021）\cite{yang2021differential} 在开源社区持续参与研究中也指出，社会认可的可见度是影响开发者持续参与意愿的重要因素。Gerosa 等（2021）\cite{gerosa2021shifting} 对开源贡献者动机的动态追踪进一步揭示，社区认可和角色清晰度是驱动开发者从边缘贡献者向核心贡献者转变的关键激励因素，这与定向披露通过榜样信号促进高质量参与的理论逻辑高度一致。Conti 等（2025）\cite{conti2025beefing} 对开源社区参与与企业创新融资之间关系的研究也从侧面印证，社区中可见的贡献活动具有正向的外部信号效应。因此，本研究提出：
 
-H2：定向捐赠披露对开发者的整体开发者活动具有正向影响（H2a：代码活动；H2b：审查活动；H2c：讨论活动）。
+H2a：定向捐赠披露对代码活动具有正向影响。
+
+H2b：定向捐赠披露对审查活动具有正向影响。
+
+H2c：定向捐赠披露对讨论活动具有正向影响。
 
 \subsection{定向披露对非定向披露效应的负向调节}
 
@@ -1741,7 +1691,11 @@ H2：定向捐赠披露对开发者的整体开发者活动具有正向影响（
 
 进一步地，从情绪信息理论（Schwarz \& Clore, 1983）\cite{schwarz1983moods} 的视角来看，负向失验所引发的消极情绪还会作为“背景感受”渗透到个体对未来激励信号的解读过程中，使其在面对新的捐款公告时，更倾向于以较为保守或中性的态度进行评估，从而降低积极期望的激活程度。这一情绪中介路径进一步强化了上述认知层面的抑制效果。因此，本研究提出：
 
-H3：定向披露对非定向披露激励开发者活动的正向效应具有负向调节作用（H3a：代码活动；H3b：审查活动；H3c：讨论活动）。
+H3a：定向披露对非定向披露激励代码活动的正向效应具有负向调节作用。
+
+H3b：定向披露对非定向披露激励审查活动的正向效应具有负向调节作用。
+
+H3c：定向披露对非定向披露激励讨论活动的正向效应具有负向调节作用。
 
 综合三组假设，本研究的理论模型如图~\ref{fig:research-model-1} 所示。
 图中将三组假设嵌入期望理论的分析框架：
@@ -2216,72 +2170,26 @@ Anderson LM 检验统计量为 1609.515（$p < 0.001$），拒绝了“工具变
 
 在方法稳健性上，三组替代性度量检验（虚拟变量加时间窗口$(-1, 2)$、连续值当期度量、虚拟变量当期度量）均证实了主要结论的可靠性，核心变量的符号和显著性在不同度量方式下保持高度一致。工具变量有效性检验（Anderson LM 统计量 1609.515，Cragg-Donald F 统计量 $2.79 \times 10^6$）确认了 2SLS 策略的合理性，排除了内生性偏误对主要结论的威胁。
 
-本章的理论贡献体现在以下几个层面。
-
-第一，在理论框架上，本章将期望理论（Vroom, 1964）\cite{vroom1964work} 与期望失验理论（Oliver, 1980）\cite{oliver1980cognitive} 整合为一个能够统一解释两类披露效果的分析框架。既有文献对这两个理论的应用多为单独使用：期望理论主要被用于解释激励信号的正向驱动机制，而期望失验理论主要被用于解释满意度的形成。本章通过识别非定向披露（激活期望）与定向披露（诱发失验）之间的动态交互关系，首次在开源社区激励情境中将两者整合为一个统一框架，揭示了“信息型正向激励”与“信息型负向调节”的共存条件及其相互作用机制。
-
-第二，在研究情境上，本章将比特币开源社区与 Bitcoin Brink 基金会作为研究场景，利用其双阶段披露结构（非定向的 X 平台公告与定向的官网名单）构建了一个准自然实验设计。这一设计的优越性在于：两类披露行为的发生时序均由外部因素（捐赠方行为与基金会审核流程）决定，具有相当程度的外生性；同时，样本中排除了实际受助开发者，确保了分析聚焦于纯信息效应。这一研究设计为后续类似情境的研究提供了可供参照的方法论范式。
-
-第三，在方法论上，本章采用了个体固定效应与工具变量相结合的识别策略，构建了两个工具变量（Google Trends 搜索指数及其与定向披露的交互项）以处理两个内生变量（非定向披露强度及其与定向披露的交互项），并通过多重稳健性检验和机制分析增强了结论的可信度。
-
-在实践层面，本章的发现对比特币核心开发社区的生态治理以及更广泛的开源资助机构具有重要启示。第一，非定向披露是一种低成本、普惠性的激励工具，在定向披露频率较低时具有显著的社区激励效果；资助机构应善用 X 平台等公开渠道，保持捐款信息的及时、透明披露，以持续激活社区开发者的参与热情。第二，定向披露虽然能够正向激励非受助开发者（通过工具性预期机制），但其频率增大所引发的期望失验效应会系统性地削弱非定向披露的激励价值；因此，资助机构在发布受助名单时，应合理控制公告频率，并同步配合必要的期望管理措施，如强调资助名额将持续扩大、明确下一轮评选周期等，以缓解负向失验效应的累积影响。第三，本章的机制分析揭示，信息型激励效果高度集中于活动活跃、深度嵌入社区的核心开发者群体；对于边缘参与者而言，单纯的捐款信息披露难以有效激活其参与意愿，资助机构若希望扩大激励覆盖面，还需要辅以更具针对性的参与引导机制，如导师制度、新人资助项目、开发任务清单等。
-
-综上所述，本章从实证角度揭示了开源社区捐赠信息披露的双重激励效应，为理解开源社区中的信息激励机制提供了新的理论视角和经验证据，并为后续章节中社区讨论情感效应的研究奠定了比较基础，两类影响因素共同构成了本研究对比特币开发者行为决定机制的完整图景。
 
 
 %%====================================================================
 \chapter{社区讨论情感对开发者活动的影响}
 %%====================================================================
 
-\section{研究背景与问题}
+\section{研究问题}
 
-开源社区不仅是代码协作的技术平台，更是开发者进行知识共享、问题讨论与情感交流的重要社会空间。
-在比特币等加密货币开源项目中，社区讨论区（Issue 区）每天产生大量涉及技术问题、协议设计、安全漏洞的评论内容，
-这些评论在传递信息的同时，也承载着丰富的情感色彩，从对突破性提案的兴奋与认可，
-到对安全漏洞的焦虑与警觉，再到代码审查争议中的摩擦与压力，情感极性随项目进展动态波动。
-
-近年来，情感分析方法被广泛应用于分析在线社区中的开发者行为，
-相关研究揭示了情感与社区健康、成员流失等现象之间的关联
-\cite{yang2021differential,fang2009understanding}。
-早期研究以问卷调查为主要方法，探讨了开发者的主观情感体验与参与动机之间的关系
-\cite{shah2006motivation}，发现享受编程本身、声誉积累等内在动机是开源参与的重要驱动力。
-随着自然语言处理技术的成熟，基于文本的情感分析逐渐取代问卷测量，
-成为研究大规模在线社区中情感动态的主流方法\cite{guzzi2013}。
-Schroter 等人（2010）对 Bug 报告的研究表明，
-报告中包含的信息质量（如堆栈跟踪）直接影响缺陷修复效率\cite{schroter2010}；
-Guzzi 等人的分析则揭示了开源软件邮件列表中情感语调与协作效率的关联\cite{guzzi2013}。
-
-然而，已有文献大多聚焦于情感对社区参与意愿或成员留存等静态指标的截面影响，
-较少从动态时间序列角度考察情感极性变化如何在短期内影响开发者的具体行为输出，
-尤其是代码活动与讨论参与这两种性质不同的活动类型。
-在比特币等加密货币开源项目中，社区情感的波动还与外部市场行情高度耦合，
-例如币价的大幅上涨往往伴随着社区讨论的高涨，而技术争议（如区块大小之争）
-则可能引发社区内部持续的负面情感聚集\cite{kobayakawa2020impact}。
-Bagh 等人（2025）运用 VAR 和格兰杰因果方法分析了投资者情感与加密货币市场动态之间的关系，
-发现情感冲击通过社交媒体渠道对市场参与行为产生显著的短期影响\cite{bagh2025investor}。
-Kulakowski 和 Frasincar（2023）则专门开发了面向加密货币社区社交媒体文本的
-情感分类方法，揭示了该领域文本情感表达的独特模式\cite{kulakowski2023sentiment}。
-这一特殊的信息环境使比特币社区成为研究情感动态影响开发者行为的理想场域：
-一方面，情感波动幅度大、可观测性强；
-另一方面，项目级社区情感（而非个体情感）的测量更易规避问卷方法的主观偏误。
-
-此外，当社区整体情感出现负面倾斜时（如某一安全漏洞被曝光或关键提案遭否决），
-开发者面临多重响应选项：他们可以通过提交代码补丁来直接应对问题，
-也可以通过讨论区的评论互动来寻求共识或宣泄压力，或两者并行。
-这两种活动之间是否存在内生的动态权衡关系（即加大代码投入后是否会减少讨论参与），
-在已有文献中尚未得到系统性检验。
+已有文献大多聚焦于情感对社区参与意愿等静态指标的截面影响，
+较少关注情感的动态变化如何通过时间传导机制影响不同类型开发活动的方向与强度。
+此外，代码活动与讨论活动之间是否存在内生的动态权衡关系，已有文献尚未系统检验。
 
 基于上述研究空白，本章聚焦三个核心问题：
-第一，社区讨论情感极性的变化是否在统计意义上“格兰杰引起”（Granger-cause）
-后续的开发活动与讨论活动？
+第一，社区讨论情感极性的变化是否在统计意义上"格兰杰引起"后续的开发活动与讨论活动？
 第二，情感信号通过何种认知机制作用于开发者的行为决策？
 第三，开发活动与讨论活动之间是否存在可观测的跨期替代效应？
 
 回答这些问题，不仅有助于从信息行为视角深化对开源开发者激励机制的理解，
 更能为开源基金会和社区管理者提供利用情感信号优化社区治理的实践依据。
 
-
-\section{理论假设}
 
 \subsection{情感即信息理论与开发者行为}
 
@@ -3321,27 +3229,6 @@ H6（开发活动$_{t-2}$ → 讨论活动$_t$）：
 其中五种方案的三条路径均在 5\% 水平下显著，GPT-5.2 方案的情感路径在 10\% 水平下边际显著但方向完全一致，
 证明了主要发现的跨方法可重复性。
 
-本章的理论贡献体现在以下三个层面。
-第一，从情感即信息理论出发，将开源社区的情感信号解读为触发开发者行动的认知线索，
-将该理论的适用范围从实验室个体判断拓展至技术社区的集体行为动态，
-丰富了情感即信息理论在计算机支持的协作工作（CSCW）场景中的理论应用。
-第二，结合目标手段替代理论，首次在开源社区的实证数据中验证了
-开发活动与讨论活动之间的跨期替代机制，
-揭示了开源开发者在不同活动形式之间进行动态权衡的隐性规律，
-这一发现对理解开源社区中多类型活动的协同与竞争关系具有重要意义。
-第三，通过格兰杰因果检验、脉冲响应分析和方差分解的多工具验证体系，
-本研究在方法层面为开源社区行为研究提供了一套可复制的时间序列分析范式，
-有助于克服已有研究中普遍存在的内生性问题。
-
-本章的研究发现也对开源社区的管理实践具有直接启示。
-社区情感的负面波动并非纯粹的“危机信号”，而是激励社区成员增加活动参与的有效驱动力；
-管理者无需刻意营造持续的正向情感氛围，
-而应关注情感波动的结构性信息：当负面情感指向具体的技术问题时，
-它实际上是推动项目向前发展的重要力量。
-与此同时，开发活动和讨论活动之间的替代效应提示管理者，
-在资源有限的情况下，激励开发者加大代码投入可能会“挤出”社区的讨论氛围，
-这对于需要大量协商讨论的重大技术决策（如协议升级、架构重构）可能产生负面影响。
-
 与研究一中捐赠信息披露的外部激励效应相比，本章揭示的情感内部激励机制，
 共同构成了比特币开发者行为的完整信息激励图景：
 无论是来自基金会的捐赠信号，还是来自社区内部的情感信号，
@@ -3351,8 +3238,7 @@ H6（开发活动$_{t-2}$ → 讨论活动$_t$）：
 
 
 %%====================================================================
-\chapter{综合讨论}
-%%====================================================================
+\chapter{综合讨论与结论}
 
 \section{两项研究的共同发现与内在联系}
 
@@ -3637,8 +3523,6 @@ Shimada 等 \citeyear{shimada2022github}）
 
 
 %%====================================================================
-\chapter{结论}
-%%====================================================================
 
 本文以比特币（Bitcoin）开源社区为实证场景，以“信息如何驱动开源参与”为核心问题，从两个互补的维度展开系统性考察：研究一聚焦于外部组织的捐赠信息披露对个体开发者活动的影响；研究二探究社区讨论情感对集体层面代码活动与讨论活动的动态影响。两项研究从微观个体与宏观社区、横截面事件与纵向动态过程、捐赠信息与情感信息等多个维度，共同构建了围绕开源社区信息环境的双层分析框架，为理解信息因素如何塑造开源生态的可持续性提供了新的视角。
 
@@ -3680,7 +3564,7 @@ Shimada 等 \citeyear{shimada2022github}）
 
 \subsection{研究场景的拓展与跨社区比较}
 
-本文以比特币社区为单一研究场景，虽然该社区在规模、历史和开源贡献制度方面具有典型性，但研究结论的外部效度仍有待系统检验。未来研究应将研究范围扩展至以太坊（Ethereum）、Litecoin等其他加密货币开源社区，以及更广泛的非加密货币开源项目（如Linux内核、NumPy、scikit-learn等）。通过跨社区比较研究，可以识别哪些发现具有普遍性（如情感的信息传递功能），哪些发现依赖于特定的社区制度背景（如Brink基金会的定向资助模式）。
+本文以比特币社区为单一研究场景，虽然该社区在规模、历史和开源贡献制度方面具有典型性，但研究结论的外部效度仍有待系统检验。未来研究应将研究范围扩展至以太坊（Ethereum）、Litecoin等其他加密货币开源社区\cite{kulakowski2023sentiment}，以及更广泛的非加密货币开源项目（如Linux内核、NumPy、scikit-learn等）。通过跨社区比较研究，可以识别哪些发现具有普遍性（如情感的信息传递功能），哪些发现依赖于特定的社区制度背景（如Brink基金会的定向资助模式）。
 
 尤其值得指出的是，研究一中的“期望失验”效应在很大程度上依赖于Bitcoin Brink特有的“定向/非定向二元披露结构”。在其他采用不同资助披露模式（如GitHub Sponsors的个人订阅模式、Open Collective的众筹模式）的社区中，类似效应是否存在，需要通过专门设计的准自然实验加以检验。跨社区比较的积累将使本文提出的双层信息环境框架在更广泛的开源生态中得到检验与精炼。
 
@@ -3696,7 +3580,7 @@ Shimada 等 \citeyear{shimada2022github}）
 
 \subsection{两项研究的整合分析框架}
 
-本文将两项研究分别置于个体层面和社区层面加以考察。虽然第六章从理论层面提出了“双层信息环境”框架并讨论了跨层次反馈假说，但尚未在实证层面直接检验两类信息效应的交互作用。未来研究可以尝试构建一个整合性分析框架，同时纳入捐赠信息披露事件与社区情感变量，考察二者的独立效应、交互效应及跨层次反馈机制。
+本文将两项研究分别置于个体层面和社区层面加以考察。虽然综合讨论与结论章从理论层面提出了“双层信息环境”框架并讨论了跨层次反馈假说，但尚未在实证层面直接检验两类信息效应的交互作用。未来研究可以尝试构建一个整合性分析框架，同时纳入捐赠信息披露事件与社区情感变量，考察二者的独立效应、交互效应及跨层次反馈机制。
 
 例如，捐赠信息披露对个体行为的激励效应，是否会因社区情感氛围的差异而产生调节？在负面情感弥漫的社区背景下，非定向捐赠披露的“预期性激励”是否会被削弱或放大？反过来，个体层面激励机制的激活，是否会通过行为外溢影响社区整体的情感状态，从而形成从信息披露到情感再到行为的完整反馈回路？这些跨层次的动态过程将是理解开源社区信息生态的重要研究议题，也是本文所提双层信息环境框架最具潜力的发展方向。在方法层面，未来可以考虑引入多层次模型（HLM）、门限VAR（Threshold VAR）或时变参数VAR（TVP-VAR）模型，以更完整地刻画信息—情感—行为三者之间的非线性和时变特征。
 

@@ -287,3 +287,19 @@
 % 避免使用 \sloppy（其效果过于激进，会导致词间距不均匀）
 \tolerance=200
 \emergencystretch=0.5em
+
+% 图表目录中编号格式：图1-1、表1-1 而非 1-1
+\makeatletter
+\renewcommand{\l@figure}[2]{%
+  \begingroup
+    \let\oldnumberline\numberline
+    \def\numberline##1{\oldnumberline{图~##1}}%
+    \@dottedtocline{1}{0em}{3.8em}{#1}{#2}%
+  \endgroup}
+\renewcommand{\l@table}[2]{%
+  \begingroup
+    \let\oldnumberline\numberline
+    \def\numberline##1{\oldnumberline{表~##1}}%
+    \@dottedtocline{1}{0em}{3.8em}{#1}{#2}%
+  \endgroup}
+\makeatother
