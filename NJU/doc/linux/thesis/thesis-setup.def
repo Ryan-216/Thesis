@@ -240,32 +240,37 @@
 % \njusetformat{tabular}{\zihao{-4}\bfseries}     % 修改表格环境的字号
 % \EditInstance{nju}{u/cover/emblem-img}{align=l} % 左对齐的本科生封面校徽
 
-% 根据用户要求添加的格式设置
+% =============================================================================
+% 根据南京大学研究生学位论文格式要求添加的格式设置
+% =============================================================================
+
 % 1. 摘要格式设置
 \njusetup[abstract]{
   title-style = centered,  % "摘要"二字居中
 }
 
 % 2. 正文标题格式设置
-\njusetformat{chapter}{\centering\heiti\zihao{-2}\bfseries}  % 一级标题：黑体，小二，加粗，居中
-\njusetformat{section}{\heiti\zihao{-3}\bfseries}            % 二级标题：黑体，小三，加粗
-\njusetformat{subsection}{\heiti\zihao{4}\bfseries}          % 三级标题：黑体，四号，加粗
+\njusetformat{chapter}{\centering\heiti\zihao{-2}\bfseries}    % 一级标题（章）：黑体，小二，加粗，居中
+\njusetformat{section}{\heiti\zihao{-3}\bfseries}              % 二级标题（节）：黑体，小三，加粗
+\njusetformat{subsection}{\heiti\zihao{4}\bfseries}            % 三级标题（一、）：黑体，四号，加粗
+\njusetformat{subsubsection}{\heiti\zihao{-4}\bfseries}        % 三级子标题（（一））：黑体，小四，加粗
 
 % 3. 正文格式设置
-\renewcommand{\baselinestretch}{1.5}  % 1.5倍行距
+\renewcommand{\baselinestretch}{1.5}  % 正文 1.5 倍行距
 \zihao{-4}\songti                     % 正文：小四号宋体
 
 % 4. 脚注格式设置
+%    脚注字号（小五号 \zihao{-5}）已在 thesis_aigc.tex 中通过 \footnotesize 设置
 \njusetup[footnote]{
   style = circled,
   hang = false
 }
 
-% 5. 参考文献格式设置（在biblatex中通过其他方式设置）
-% \renewcommand{\bibfont}{\zihao{5}\songti}  % 五号字体，中文宋体，英文Times New Roman
+% 5. 参考文献格式（五号字体、1.5 倍行距）已在 thesis_aigc.tex 中
+%    通过 \AtBeginBibliography hook 统一设置，此处不再重复
 
-% 6. 关键词格式设置（在abstract环境中自动处理）
-% 7. 页码格式已在njuthesis.cls中设置（摘要罗马数字，正文阿拉伯数字）
+% 6. 关键词格式（"关键词"加粗、不居中、关键词用分号分隔）
+%    由 njuthesis.cls 模板自动处理
 
 
 % 解决 hyperref PDF 书签中的字体命令警告
@@ -278,5 +283,7 @@
   \let\centering\relax
 }
 
-% 允许更宽松的断行，减少 overfull/underfull 警告
-\sloppy
+% 断行容忍度：设为 0.5em 以平衡文字间距与断行质量
+% 避免使用 \sloppy（其效果过于激进，会导致词间距不均匀）
+\tolerance=200
+\emergencystretch=0.5em
